@@ -1,0 +1,1203 @@
+{
+  "snippetChars": 1200,
+  "passageChars": {
+    "miracl": 291,
+    "bright": 4000
+  },
+  "goldPastSnippet": 0.9867549668874173,
+  "bm25OnCandidates": {
+    "bright-stackoverflow": {
+      "questions": 61,
+      "whole": 0.3442622950819672,
+      "snippet": 0.13114754098360656
+    },
+    "bright-stackoverflow-bm25": {
+      "questions": 47,
+      "whole": 0.40425531914893614,
+      "snippet": 0.1702127659574468
+    }
+  },
+  "firstStages": {
+    "questions": 117,
+    "found": {
+      "both": 47,
+      "withEmbeddingsOnly": 14,
+      "bm25Only": 0
+    },
+    "first": {
+      "both": 11,
+      "withEmbeddingsOnly": 11,
+      "bm25Only": 8
+    },
+    "firstAmongWithEmbeddingsOnly": 2
+  },
+  "vsFirstStage": {
+    "bright-stackoverflow": {
+      "jev": {
+        "questions": 61,
+        "kept": 7,
+        "gained": 12,
+        "lost": 15
+      },
+      "jev-per-pair": {
+        "questions": 61,
+        "kept": 7,
+        "gained": 12,
+        "lost": 15
+      },
+      "cohere-rerank-3-5": {
+        "questions": 61,
+        "kept": 3,
+        "gained": 5,
+        "lost": 19
+      },
+      "amazon-rerank-1": {
+        "questions": 61,
+        "kept": 3,
+        "gained": 7,
+        "lost": 19
+      },
+      "llama-4-maverick": {
+        "questions": 61,
+        "kept": 12,
+        "gained": 10,
+        "lost": 10
+      },
+      "nova-2-lite": {
+        "questions": 61,
+        "kept": 13,
+        "gained": 9,
+        "lost": 9
+      },
+      "claude-haiku-4-5": {
+        "questions": 61,
+        "kept": 9,
+        "gained": 11,
+        "lost": 13
+      },
+      "gpt-6-luna": {
+        "questions": 61,
+        "kept": 15,
+        "gained": 11,
+        "lost": 7
+      },
+      "gpt-6-sol": {
+        "questions": 61,
+        "kept": 8,
+        "gained": 9,
+        "lost": 14
+      },
+      "glm-5": {
+        "questions": 61,
+        "kept": 10,
+        "gained": 12,
+        "lost": 12
+      },
+      "claude-opus-5-5": {
+        "questions": 61,
+        "kept": 10,
+        "gained": 14,
+        "lost": 12
+      },
+      "qwen3-235b": {
+        "questions": 61,
+        "kept": 9,
+        "gained": 11,
+        "lost": 13
+      },
+      "claude-sonnet-5": {
+        "questions": 61,
+        "kept": 9,
+        "gained": 12,
+        "lost": 13
+      },
+      "mistral-large-3": {
+        "questions": 61,
+        "kept": 10,
+        "gained": 8,
+        "lost": 12
+      },
+      "deepseek-v3-2": {
+        "questions": 61,
+        "kept": 8,
+        "gained": 7,
+        "lost": 14
+      },
+      "minimax-m2-5": {
+        "questions": 61,
+        "kept": 11,
+        "gained": 10,
+        "lost": 11
+      },
+      "gpt-oss-120b": {
+        "questions": 61,
+        "kept": 9,
+        "gained": 6,
+        "lost": 13
+      },
+      "grok-4-6": {
+        "questions": 61,
+        "kept": 8,
+        "gained": 11,
+        "lost": 14
+      },
+      "qwen3-reranker-4b": {
+        "questions": 61,
+        "kept": 6,
+        "gained": 8,
+        "lost": 16
+      },
+      "qwen3-reranker-0-6b": {
+        "questions": 61,
+        "kept": 7,
+        "gained": 6,
+        "lost": 15
+      },
+      "kev-4b-per-pair": {
+        "questions": 61,
+        "kept": 8,
+        "gained": 11,
+        "lost": 14
+      },
+      "laya-text": {
+        "questions": 61,
+        "kept": 11,
+        "gained": 3,
+        "lost": 11
+      }
+    },
+    "bright-stackoverflow-bm25": {
+      "jev": {
+        "questions": 47,
+        "kept": 13,
+        "gained": 6,
+        "lost": 6
+      },
+      "jev-per-pair": {
+        "questions": 47,
+        "kept": 11,
+        "gained": 8,
+        "lost": 8
+      },
+      "cohere-rerank-3-5": {
+        "questions": 47,
+        "kept": 11,
+        "gained": 6,
+        "lost": 8
+      },
+      "gpt-6-sol": {
+        "questions": 47,
+        "kept": 12,
+        "gained": 11,
+        "lost": 7
+      },
+      "amazon-rerank-1": {
+        "questions": 47,
+        "kept": 10,
+        "gained": 7,
+        "lost": 9
+      },
+      "gpt-6-luna": {
+        "questions": 47,
+        "kept": 13,
+        "gained": 13,
+        "lost": 6
+      },
+      "llama-4-maverick": {
+        "questions": 47,
+        "kept": 15,
+        "gained": 7,
+        "lost": 4
+      },
+      "nova-2-lite": {
+        "questions": 47,
+        "kept": 16,
+        "gained": 6,
+        "lost": 3
+      },
+      "claude-haiku-4-5": {
+        "questions": 47,
+        "kept": 9,
+        "gained": 10,
+        "lost": 10
+      },
+      "claude-opus-5-5": {
+        "questions": 47,
+        "kept": 12,
+        "gained": 15,
+        "lost": 7
+      },
+      "glm-5": {
+        "questions": 47,
+        "kept": 11,
+        "gained": 12,
+        "lost": 8
+      },
+      "qwen3-235b": {
+        "questions": 47,
+        "kept": 13,
+        "gained": 11,
+        "lost": 6
+      },
+      "deepseek-v3-2": {
+        "questions": 47,
+        "kept": 10,
+        "gained": 8,
+        "lost": 9
+      },
+      "mistral-large-3": {
+        "questions": 47,
+        "kept": 14,
+        "gained": 4,
+        "lost": 5
+      },
+      "gpt-oss-120b": {
+        "questions": 47,
+        "kept": 10,
+        "gained": 9,
+        "lost": 9
+      },
+      "minimax-m2-5": {
+        "questions": 47,
+        "kept": 13,
+        "gained": 9,
+        "lost": 6
+      },
+      "claude-sonnet-5": {
+        "questions": 47,
+        "kept": 14,
+        "gained": 11,
+        "lost": 5
+      },
+      "grok-4-6": {
+        "questions": 47,
+        "kept": 11,
+        "gained": 11,
+        "lost": 8
+      },
+      "qwen3-reranker-4b": {
+        "questions": 47,
+        "kept": 13,
+        "gained": 6,
+        "lost": 6
+      },
+      "qwen3-reranker-0-6b": {
+        "questions": 47,
+        "kept": 11,
+        "gained": 6,
+        "lost": 8
+      },
+      "kev-4b-per-pair": {
+        "questions": 47,
+        "kept": 10,
+        "gained": 8,
+        "lost": 9
+      },
+      "laya-text": {
+        "questions": 47,
+        "kept": 9,
+        "gained": 4,
+        "lost": 10
+      }
+    }
+  },
+  "excerpt": {
+    "run": "2026-09-28-excerpt",
+    "miraclDiffers": {
+      "candidates": 0.007465277777777778,
+      "relevant": 0.0045045045045045045
+    },
+    "effect": {
+      "bright-stackoverflow": {
+        "jev": {
+          "questions": 61,
+          "start": 0.3114754098360656,
+          "excerpt": 0.47540983606557374,
+          "diff": 0.16393442622950818,
+          "ci": [
+            0.06557377049180328,
+            0.2786885245901639
+          ],
+          "ciAdjusted": [
+            0.01639344262295082,
+            0.32786885245901637
+          ]
+        },
+        "cohere-rerank-3-5": {
+          "questions": 61,
+          "start": 0.13114754098360656,
+          "excerpt": 0.22950819672131148,
+          "diff": 0.09836065573770492,
+          "ci": [
+            0,
+            0.19672131147540983
+          ],
+          "ciAdjusted": [
+            -0.04918032786885246,
+            0.26229508196721313
+          ]
+        },
+        "jev-per-pair": {
+          "questions": 61,
+          "start": 0.3114754098360656,
+          "excerpt": 0.45901639344262296,
+          "diff": 0.14754098360655737,
+          "ci": [
+            0.04918032786885246,
+            0.26229508196721313
+          ],
+          "ciAdjusted": [
+            -0.01639344262295082,
+            0.32786885245901637
+          ]
+        },
+        "amazon-rerank-1": {
+          "questions": 61,
+          "start": 0.16393442622950818,
+          "excerpt": 0.19672131147540983,
+          "diff": 0.03278688524590164,
+          "ci": [
+            -0.04918032786885246,
+            0.13114754098360656
+          ],
+          "ciAdjusted": [
+            -0.09836065573770492,
+            0.18032786885245902
+          ]
+        },
+        "llama-4-maverick": {
+          "questions": 61,
+          "start": 0.36065573770491804,
+          "excerpt": 0.4098360655737705,
+          "diff": 0.04918032786885246,
+          "ci": [
+            -0.06557377049180328,
+            0.16393442622950818
+          ],
+          "ciAdjusted": [
+            -0.13114754098360656,
+            0.22950819672131148
+          ]
+        },
+        "nova-2-lite": {
+          "questions": 61,
+          "start": 0.36065573770491804,
+          "excerpt": 0.5245901639344263,
+          "diff": 0.16393442622950818,
+          "ci": [
+            0.03278688524590164,
+            0.3114754098360656
+          ],
+          "ciAdjusted": [
+            -0.04918032786885246,
+            0.3770491803278688
+          ]
+        },
+        "claude-haiku-4-5": {
+          "questions": 61,
+          "start": 0.32786885245901637,
+          "excerpt": 0.39344262295081966,
+          "diff": 0.06557377049180328,
+          "ci": [
+            -0.03278688524590164,
+            0.18032786885245902
+          ],
+          "ciAdjusted": [
+            -0.08196721311475409,
+            0.21311475409836064
+          ]
+        },
+        "glm-5": {
+          "questions": 61,
+          "start": 0.36065573770491804,
+          "excerpt": 0.5081967213114754,
+          "diff": 0.14754098360655737,
+          "ci": [
+            0.01639344262295082,
+            0.2786885245901639
+          ],
+          "ciAdjusted": [
+            -0.06557377049180328,
+            0.36065573770491804
+          ]
+        },
+        "qwen3-235b": {
+          "questions": 61,
+          "start": 0.32786885245901637,
+          "excerpt": 0.4426229508196721,
+          "diff": 0.11475409836065574,
+          "ci": [
+            -0.01639344262295082,
+            0.2459016393442623
+          ],
+          "ciAdjusted": [
+            -0.08196721311475409,
+            0.3114754098360656
+          ]
+        },
+        "claude-sonnet-5": {
+          "questions": 61,
+          "start": 0.3442622950819672,
+          "excerpt": 0.5573770491803278,
+          "diff": 0.21311475409836064,
+          "ci": [
+            0.08196721311475409,
+            0.36065573770491804
+          ],
+          "ciAdjusted": [
+            0,
+            0.4262295081967213
+          ]
+        },
+        "claude-opus-5-5": {
+          "questions": 61,
+          "start": 0.39344262295081966,
+          "excerpt": 0.6065573770491803,
+          "diff": 0.21311475409836064,
+          "ci": [
+            0.11475409836065574,
+            0.32786885245901637
+          ],
+          "ciAdjusted": [
+            0.04918032786885246,
+            0.39344262295081966
+          ]
+        },
+        "deepseek-v3-2": {
+          "questions": 61,
+          "start": 0.2459016393442623,
+          "excerpt": 0.5409836065573771,
+          "diff": 0.29508196721311475,
+          "ci": [
+            0.17991803278688528,
+            0.4262295081967213
+          ],
+          "ciAdjusted": [
+            0.11475409836065574,
+            0.4918032786885246
+          ]
+        },
+        "mistral-large-3": {
+          "questions": 61,
+          "start": 0.29508196721311475,
+          "excerpt": 0.4426229508196721,
+          "diff": 0.14754098360655737,
+          "ci": [
+            0,
+            0.2786885245901639
+          ],
+          "ciAdjusted": [
+            -0.06557377049180328,
+            0.36065573770491804
+          ]
+        },
+        "gpt-oss-120b": {
+          "questions": 61,
+          "start": 0.2459016393442623,
+          "excerpt": 0.5081967213114754,
+          "diff": 0.26229508196721313,
+          "ci": [
+            0.13114754098360656,
+            0.4098360655737705
+          ],
+          "ciAdjusted": [
+            0.04918032786885246,
+            0.47540983606557374
+          ]
+        },
+        "minimax-m2-5": {
+          "questions": 61,
+          "start": 0.3442622950819672,
+          "excerpt": 0.4426229508196721,
+          "diff": 0.09836065573770492,
+          "ci": [
+            -0.06557377049180328,
+            0.26229508196721313
+          ],
+          "ciAdjusted": [
+            -0.14754098360655737,
+            0.3442622950819672
+          ]
+        },
+        "grok-4-6": {
+          "questions": 61,
+          "start": 0.3114754098360656,
+          "excerpt": 0.5573770491803278,
+          "diff": 0.2459016393442623,
+          "ci": [
+            0.13114754098360656,
+            0.3770491803278688
+          ],
+          "ciAdjusted": [
+            0.061084202682563406,
+            0.4426229508196721
+          ]
+        },
+        "gpt-6-luna": {
+          "questions": 61,
+          "start": 0.4262295081967213,
+          "excerpt": 0.5081967213114754,
+          "diff": 0.08196721311475409,
+          "ci": [
+            -0.06557377049180328,
+            0.22991803278688303
+          ],
+          "ciAdjusted": [
+            -0.14754098360655737,
+            0.29957153502237205
+          ]
+        },
+        "gpt-6-sol": {
+          "questions": 61,
+          "start": 0.2786885245901639,
+          "excerpt": 0.4918032786885246,
+          "diff": 0.21311475409836064,
+          "ci": [
+            0.09836065573770492,
+            0.32786885245901637
+          ],
+          "ciAdjusted": [
+            0.04918032786885246,
+            0.39344262295081966
+          ]
+        },
+        "qwen3-reranker-4b": {
+          "questions": 61,
+          "start": 0.22950819672131148,
+          "excerpt": 0.22950819672131148,
+          "diff": 0,
+          "ci": [
+            -0.11475409836065574,
+            0.11475409836065574
+          ],
+          "ciAdjusted": [
+            -0.18032786885245902,
+            0.18032786885245902
+          ]
+        },
+        "qwen3-reranker-0-6b": {
+          "questions": 61,
+          "start": 0.21311475409836064,
+          "excerpt": 0.2786885245901639,
+          "diff": 0.06557377049180328,
+          "ci": [
+            -0.03278688524590164,
+            0.16393442622950818
+          ],
+          "ciAdjusted": [
+            -0.08196721311475409,
+            0.22950819672131148
+          ]
+        },
+        "kev-4b-per-pair": {
+          "questions": 61,
+          "start": 0.3114754098360656,
+          "excerpt": 0.29508196721311475,
+          "diff": -0.01639344262295082,
+          "ci": [
+            -0.13114754098360656,
+            0.08196721311475409
+          ],
+          "ciAdjusted": [
+            -0.18032786885245902,
+            0.14754098360655737
+          ]
+        },
+        "laya-text": {
+          "questions": 61,
+          "start": 0.22950819672131148,
+          "excerpt": 0.16393442622950818,
+          "diff": -0.06557377049180328,
+          "ci": [
+            -0.14754098360655737,
+            0.01639344262295082
+          ],
+          "ciAdjusted": [
+            -0.21311475409836064,
+            0.06557377049180328
+          ]
+        }
+      },
+      "bright-stackoverflow-bm25": {
+        "jev": {
+          "questions": 47,
+          "start": 0.40425531914893614,
+          "excerpt": 0.5957446808510638,
+          "diff": 0.19148936170212766,
+          "ci": [
+            0.06329787234042555,
+            0.3404255319148936
+          ],
+          "ciAdjusted": [
+            -0.02127659574468085,
+            0.425531914893617
+          ]
+        },
+        "cohere-rerank-3-5": {
+          "questions": 47,
+          "start": 0.3617021276595745,
+          "excerpt": 0.5106382978723404,
+          "diff": 0.14893617021276595,
+          "ci": [
+            0.02127659574468085,
+            0.2765957446808511
+          ],
+          "ciAdjusted": [
+            -0.04838007736943899,
+            0.3617021276595745
+          ]
+        },
+        "jev-per-pair": {
+          "questions": 47,
+          "start": 0.40425531914893614,
+          "excerpt": 0.574468085106383,
+          "diff": 0.1702127659574468,
+          "ci": [
+            0.02127659574468085,
+            0.3191489361702128
+          ],
+          "ciAdjusted": [
+            -0.0425531914893617,
+            0.3829787234042553
+          ]
+        },
+        "amazon-rerank-1": {
+          "questions": 47,
+          "start": 0.3617021276595745,
+          "excerpt": 0.44680851063829785,
+          "diff": 0.0851063829787234,
+          "ci": [
+            -0.0425531914893617,
+            0.2127659574468085
+          ],
+          "ciAdjusted": [
+            -0.10638297872340426,
+            0.2978723404255319
+          ]
+        },
+        "llama-4-maverick": {
+          "questions": 47,
+          "start": 0.46808510638297873,
+          "excerpt": 0.48936170212765956,
+          "diff": 0.02127659574468085,
+          "ci": [
+            -0.10638297872340426,
+            0.14893617021276595
+          ],
+          "ciAdjusted": [
+            -0.1702127659574468,
+            0.2127659574468085
+          ]
+        },
+        "nova-2-lite": {
+          "questions": 47,
+          "start": 0.46808510638297873,
+          "excerpt": 0.5106382978723404,
+          "diff": 0.0425531914893617,
+          "ci": [
+            -0.0851063829787234,
+            0.14946808510638007
+          ],
+          "ciAdjusted": [
+            -0.1276595744680851,
+            0.23404255319148937
+          ]
+        },
+        "claude-haiku-4-5": {
+          "questions": 47,
+          "start": 0.40425531914893614,
+          "excerpt": 0.5957446808510638,
+          "diff": 0.19148936170212766,
+          "ci": [
+            0.0425531914893617,
+            0.3404255319148936
+          ],
+          "ciAdjusted": [
+            -0.0425531914893617,
+            0.425531914893617
+          ]
+        },
+        "glm-5": {
+          "questions": 47,
+          "start": 0.48936170212765956,
+          "excerpt": 0.6808510638297872,
+          "diff": 0.19148936170212766,
+          "ci": [
+            0.0425531914893617,
+            0.3404255319148936
+          ],
+          "ciAdjusted": [
+            -0.0425531914893617,
+            0.425531914893617
+          ]
+        },
+        "qwen3-235b": {
+          "questions": 47,
+          "start": 0.5106382978723404,
+          "excerpt": 0.5957446808510638,
+          "diff": 0.0851063829787234,
+          "ci": [
+            -0.06382978723404255,
+            0.23404255319148937
+          ],
+          "ciAdjusted": [
+            -0.1276595744680851,
+            0.3191489361702128
+          ]
+        },
+        "claude-opus-5-5": {
+          "questions": 47,
+          "start": 0.574468085106383,
+          "excerpt": 0.723404255319149,
+          "diff": 0.14893617021276595,
+          "ci": [
+            0,
+            0.2978723404255319
+          ],
+          "ciAdjusted": [
+            -0.0851063829787234,
+            0.3829787234042553
+          ]
+        },
+        "deepseek-v3-2": {
+          "questions": 47,
+          "start": 0.3829787234042553,
+          "excerpt": 0.5957446808510638,
+          "diff": 0.2127659574468085,
+          "ci": [
+            0.06382978723404255,
+            0.3617021276595745
+          ],
+          "ciAdjusted": [
+            -0.02127659574468085,
+            0.44680851063829785
+          ]
+        },
+        "mistral-large-3": {
+          "questions": 47,
+          "start": 0.3829787234042553,
+          "excerpt": 0.425531914893617,
+          "diff": 0.0425531914893617,
+          "ci": [
+            -0.10638297872340426,
+            0.19148936170212766
+          ],
+          "ciAdjusted": [
+            -0.1702127659574468,
+            0.2765957446808511
+          ]
+        },
+        "minimax-m2-5": {
+          "questions": 47,
+          "start": 0.46808510638297873,
+          "excerpt": 0.6808510638297872,
+          "diff": 0.2127659574468085,
+          "ci": [
+            0.06382978723404255,
+            0.3617021276595745
+          ],
+          "ciAdjusted": [
+            -0.0425531914893617,
+            0.44680851063829785
+          ]
+        },
+        "gpt-oss-120b": {
+          "questions": 47,
+          "start": 0.40425531914893614,
+          "excerpt": 0.574468085106383,
+          "diff": 0.1702127659574468,
+          "ci": [
+            0.02127659574468085,
+            0.3191489361702128
+          ],
+          "ciAdjusted": [
+            -0.0851063829787234,
+            0.40425531914893614
+          ]
+        },
+        "claude-sonnet-5": {
+          "questions": 47,
+          "start": 0.5319148936170213,
+          "excerpt": 0.6595744680851063,
+          "diff": 0.1276595744680851,
+          "ci": [
+            -0.02127659574468085,
+            0.2553191489361702
+          ],
+          "ciAdjusted": [
+            -0.0851063829787234,
+            0.3404255319148936
+          ]
+        },
+        "grok-4-6": {
+          "questions": 47,
+          "start": 0.46808510638297873,
+          "excerpt": 0.6595744680851063,
+          "diff": 0.19148936170212766,
+          "ci": [
+            0.02127659574468085,
+            0.3617021276595745
+          ],
+          "ciAdjusted": [
+            -0.06382978723404255,
+            0.425531914893617
+          ]
+        },
+        "gpt-6-luna": {
+          "questions": 47,
+          "start": 0.5531914893617021,
+          "excerpt": 0.6382978723404256,
+          "diff": 0.0851063829787234,
+          "ci": [
+            -0.06382978723404255,
+            0.23404255319148937
+          ],
+          "ciAdjusted": [
+            -0.1276595744680851,
+            0.2978723404255319
+          ]
+        },
+        "gpt-6-sol": {
+          "questions": 47,
+          "start": 0.48936170212765956,
+          "excerpt": 0.6382978723404256,
+          "diff": 0.14893617021276595,
+          "ci": [
+            0,
+            0.2978723404255319
+          ],
+          "ciAdjusted": [
+            -0.0851063829787234,
+            0.3829787234042553
+          ]
+        },
+        "qwen3-reranker-4b": {
+          "questions": 47,
+          "start": 0.40425531914893614,
+          "excerpt": 0.46808510638297873,
+          "diff": 0.06382978723404255,
+          "ci": [
+            -0.06382978723404255,
+            0.2127659574468085
+          ],
+          "ciAdjusted": [
+            -0.14893617021276595,
+            0.2765957446808511
+          ]
+        },
+        "qwen3-reranker-0-6b": {
+          "questions": 47,
+          "start": 0.3617021276595745,
+          "excerpt": 0.44680851063829785,
+          "diff": 0.0851063829787234,
+          "ci": [
+            -0.02127659574468085,
+            0.2127659574468085
+          ],
+          "ciAdjusted": [
+            -0.0851063829787234,
+            0.2765957446808511
+          ]
+        },
+        "kev-4b-per-pair": {
+          "questions": 47,
+          "start": 0.3829787234042553,
+          "excerpt": 0.46808510638297873,
+          "diff": 0.0851063829787234,
+          "ci": [
+            -0.02127659574468085,
+            0.19148936170212766
+          ],
+          "ciAdjusted": [
+            -0.0851063829787234,
+            0.2765957446808511
+          ]
+        },
+        "laya-text": {
+          "questions": 47,
+          "start": 0.2765957446808511,
+          "excerpt": 0.23404255319148937,
+          "diff": -0.0425531914893617,
+          "ci": [
+            -0.14893617021276595,
+            0.06382978723404255
+          ],
+          "ciAdjusted": [
+            -0.2127659574468085,
+            0.10638297872340426
+          ]
+        }
+      }
+    },
+    "vsFirstStage": {
+      "bright-stackoverflow": {
+        "jev": {
+          "questions": 61,
+          "kept": 12,
+          "gained": 17,
+          "lost": 10
+        },
+        "cohere-rerank-3-5": {
+          "questions": 61,
+          "kept": 6,
+          "gained": 8,
+          "lost": 16
+        },
+        "jev-per-pair": {
+          "questions": 61,
+          "kept": 13,
+          "gained": 15,
+          "lost": 9
+        },
+        "amazon-rerank-1": {
+          "questions": 61,
+          "kept": 5,
+          "gained": 7,
+          "lost": 17
+        },
+        "llama-4-maverick": {
+          "questions": 61,
+          "kept": 14,
+          "gained": 11,
+          "lost": 8
+        },
+        "nova-2-lite": {
+          "questions": 61,
+          "kept": 20,
+          "gained": 12,
+          "lost": 2
+        },
+        "claude-haiku-4-5": {
+          "questions": 61,
+          "kept": 12,
+          "gained": 12,
+          "lost": 10
+        },
+        "glm-5": {
+          "questions": 61,
+          "kept": 16,
+          "gained": 15,
+          "lost": 6
+        },
+        "qwen3-235b": {
+          "questions": 61,
+          "kept": 15,
+          "gained": 12,
+          "lost": 7
+        },
+        "claude-sonnet-5": {
+          "questions": 61,
+          "kept": 16,
+          "gained": 18,
+          "lost": 6
+        },
+        "claude-opus-5-5": {
+          "questions": 61,
+          "kept": 17,
+          "gained": 20,
+          "lost": 5
+        },
+        "deepseek-v3-2": {
+          "questions": 61,
+          "kept": 16,
+          "gained": 17,
+          "lost": 6
+        },
+        "mistral-large-3": {
+          "questions": 61,
+          "kept": 16,
+          "gained": 11,
+          "lost": 6
+        },
+        "gpt-oss-120b": {
+          "questions": 61,
+          "kept": 14,
+          "gained": 17,
+          "lost": 8
+        },
+        "minimax-m2-5": {
+          "questions": 61,
+          "kept": 10,
+          "gained": 17,
+          "lost": 12
+        },
+        "grok-4-6": {
+          "questions": 61,
+          "kept": 12,
+          "gained": 22,
+          "lost": 10
+        },
+        "gpt-6-luna": {
+          "questions": 61,
+          "kept": 16,
+          "gained": 15,
+          "lost": 6
+        },
+        "gpt-6-sol": {
+          "questions": 61,
+          "kept": 15,
+          "gained": 15,
+          "lost": 7
+        },
+        "qwen3-reranker-4b": {
+          "questions": 61,
+          "kept": 4,
+          "gained": 10,
+          "lost": 18
+        },
+        "qwen3-reranker-0-6b": {
+          "questions": 61,
+          "kept": 9,
+          "gained": 8,
+          "lost": 13
+        },
+        "kev-4b-per-pair": {
+          "questions": 61,
+          "kept": 11,
+          "gained": 7,
+          "lost": 11
+        },
+        "laya-text": {
+          "questions": 61,
+          "kept": 8,
+          "gained": 2,
+          "lost": 14
+        }
+      },
+      "bright-stackoverflow-bm25": {
+        "jev": {
+          "questions": 47,
+          "kept": 13,
+          "gained": 15,
+          "lost": 6
+        },
+        "cohere-rerank-3-5": {
+          "questions": 47,
+          "kept": 14,
+          "gained": 10,
+          "lost": 5
+        },
+        "jev-per-pair": {
+          "questions": 47,
+          "kept": 14,
+          "gained": 13,
+          "lost": 5
+        },
+        "amazon-rerank-1": {
+          "questions": 47,
+          "kept": 12,
+          "gained": 9,
+          "lost": 7
+        },
+        "llama-4-maverick": {
+          "questions": 47,
+          "kept": 11,
+          "gained": 12,
+          "lost": 8
+        },
+        "nova-2-lite": {
+          "questions": 47,
+          "kept": 16,
+          "gained": 8,
+          "lost": 3
+        },
+        "claude-haiku-4-5": {
+          "questions": 47,
+          "kept": 14,
+          "gained": 14,
+          "lost": 5
+        },
+        "glm-5": {
+          "questions": 47,
+          "kept": 14,
+          "gained": 18,
+          "lost": 5
+        },
+        "qwen3-235b": {
+          "questions": 47,
+          "kept": 13,
+          "gained": 15,
+          "lost": 6
+        },
+        "claude-opus-5-5": {
+          "questions": 47,
+          "kept": 15,
+          "gained": 19,
+          "lost": 4
+        },
+        "deepseek-v3-2": {
+          "questions": 47,
+          "kept": 14,
+          "gained": 14,
+          "lost": 5
+        },
+        "mistral-large-3": {
+          "questions": 47,
+          "kept": 13,
+          "gained": 7,
+          "lost": 6
+        },
+        "minimax-m2-5": {
+          "questions": 47,
+          "kept": 16,
+          "gained": 16,
+          "lost": 3
+        },
+        "gpt-oss-120b": {
+          "questions": 47,
+          "kept": 14,
+          "gained": 13,
+          "lost": 5
+        },
+        "claude-sonnet-5": {
+          "questions": 47,
+          "kept": 15,
+          "gained": 16,
+          "lost": 4
+        },
+        "grok-4-6": {
+          "questions": 47,
+          "kept": 13,
+          "gained": 18,
+          "lost": 6
+        },
+        "gpt-6-luna": {
+          "questions": 47,
+          "kept": 14,
+          "gained": 16,
+          "lost": 5
+        },
+        "gpt-6-sol": {
+          "questions": 47,
+          "kept": 13,
+          "gained": 17,
+          "lost": 6
+        },
+        "qwen3-reranker-4b": {
+          "questions": 47,
+          "kept": 14,
+          "gained": 8,
+          "lost": 5
+        },
+        "qwen3-reranker-0-6b": {
+          "questions": 47,
+          "kept": 14,
+          "gained": 7,
+          "lost": 5
+        },
+        "kev-4b-per-pair": {
+          "questions": 47,
+          "kept": 13,
+          "gained": 9,
+          "lost": 6
+        },
+        "laya-text": {
+          "questions": 47,
+          "kept": 9,
+          "gained": 2,
+          "lost": 10
+        }
+      }
+    }
+  }
+}

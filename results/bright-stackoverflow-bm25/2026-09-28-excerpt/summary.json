@@ -1,0 +1,1579 @@
+{
+  "set": "bright-stackoverflow-bm25",
+  "dir": "results/bright-stackoverflow-bm25/2026-09-28-excerpt",
+  "questions": 117,
+  "rankable": 47,
+  "candidateRecall": 0.4017094017094017,
+  "retrievalMisses": [
+    "so-0",
+    "so-1",
+    "so-2",
+    "so-4",
+    "so-5",
+    "so-6",
+    "so-7",
+    "so-9",
+    "so-11",
+    "so-13",
+    "so-14",
+    "so-15",
+    "so-17",
+    "so-19",
+    "so-20",
+    "so-22",
+    "so-23",
+    "so-24",
+    "so-25",
+    "so-26",
+    "so-27",
+    "so-28",
+    "so-29",
+    "so-32",
+    "so-33",
+    "so-35",
+    "so-36",
+    "so-37",
+    "so-40",
+    "so-46",
+    "so-48",
+    "so-51",
+    "so-54",
+    "so-55",
+    "so-57",
+    "so-58",
+    "so-59",
+    "so-60",
+    "so-61",
+    "so-62",
+    "so-64",
+    "so-65",
+    "so-66",
+    "so-67",
+    "so-68",
+    "so-69",
+    "so-70",
+    "so-71",
+    "so-73",
+    "so-74",
+    "so-76",
+    "so-78",
+    "so-81",
+    "so-83",
+    "so-86",
+    "so-87",
+    "so-89",
+    "so-90",
+    "so-91",
+    "so-92",
+    "so-93",
+    "so-94",
+    "so-95",
+    "so-97",
+    "so-101",
+    "so-109",
+    "so-110",
+    "so-113",
+    "so-115",
+    "so-116"
+  ],
+  "rankers": [
+    {
+      "id": "claude-opus-5-5",
+      "label": "Claude Opus 5.5",
+      "kind": "llm",
+      "via": "Bedrock us-west-2",
+      "released": "2026-09-22",
+      "models": [
+        "us.anthropic.claude-opus-5-5"
+      ],
+      "repeats": 1,
+      "calls": 47,
+      "failures": 0,
+      "hit1": 0.723404255319149,
+      "hit1Ci": [
+        0.5957446808510638,
+        0.851063829787234
+      ],
+      "recall8": 1,
+      "mrr": 0.8213272543059777,
+      "mrrCi": [
+        0.7363677811550153,
+        0.9009245187436677
+      ],
+      "ndcg10": 0.8195950998534736,
+      "latencyP50": 4363.198916500005,
+      "latencyP95": 5715.124478999998,
+      "costPer1k": 68.78889319148935,
+      "inputTokens": 11662,
+      "outputTokens": 272,
+      "stability": null,
+      "topTieRate": 0.23404255319148937,
+      "reasoningRate": 0,
+      "byCategory": {
+        "stackoverflow": {
+          "n": 47,
+          "hit1": 0.723404255319149,
+          "mrr": 0.8213272543059777
+        }
+      },
+      "hit1All": 0.2905982905982906,
+      "vsJev": {
+        "diff": 0.1276595744680851,
+        "ci": [
+          0,
+          0.2553191489361702
+        ],
+        "ciAdjusted": [
+          -0.06382978723404255,
+          0.3404255319148936
+        ]
+      },
+      "vsFirstStage": {
+        "diff": 0.3191489361702128,
+        "ci": [
+          0.14893617021276595,
+          0.48936170212765956
+        ],
+        "ciAdjusted": [
+          0.0425531914893617,
+          0.5957446808510638
+        ]
+      },
+      "fullCoverage": 1,
+      "coverageRecorded": 47,
+      "untimedRetries": 0
+    },
+    {
+      "id": "glm-5",
+      "label": "GLM-5",
+      "kind": "llm",
+      "via": "Bedrock us-west-2",
+      "released": "2026-02-11",
+      "models": [
+        "zai.glm-5"
+      ],
+      "repeats": 1,
+      "calls": 47,
+      "failures": 0,
+      "hit1": 0.6808510638297872,
+      "hit1Ci": [
+        0.5319148936170213,
+        0.8085106382978723
+      ],
+      "recall8": 0.9787234042553191,
+      "mrr": 0.7916160081053698,
+      "mrrCi": [
+        0.6994072948328267,
+        0.8810315349544072
+      ],
+      "ndcg10": 0.7981902262502667,
+      "latencyP50": 3165.050083000009,
+      "latencyP95": 12022.780137399985,
+      "costPer1k": 8.462148936170214,
+      "inputTokens": 7722,
+      "outputTokens": 231,
+      "stability": null,
+      "topTieRate": 0.2127659574468085,
+      "reasoningRate": 0,
+      "byCategory": {
+        "stackoverflow": {
+          "n": 47,
+          "hit1": 0.6808510638297872,
+          "mrr": 0.7916160081053698
+        }
+      },
+      "hit1All": 0.27350427350427353,
+      "vsJev": {
+        "diff": 0.0851063829787234,
+        "ci": [
+          0,
+          0.19148936170212766
+        ],
+        "ciAdjusted": [
+          -0.06382978723404255,
+          0.2553191489361702
+        ]
+      },
+      "vsFirstStage": {
+        "diff": 0.2765957446808511,
+        "ci": [
+          0.0851063829787234,
+          0.46808510638297873
+        ],
+        "ciAdjusted": [
+          0,
+          0.5531914893617021
+        ]
+      },
+      "fullCoverage": 0.9787234042553191,
+      "coverageRecorded": 47,
+      "untimedRetries": 0
+    },
+    {
+      "id": "minimax-m2-5",
+      "label": "MiniMax M2.5",
+      "kind": "llm",
+      "via": "Bedrock us-west-2",
+      "released": "2026-02-12",
+      "models": [
+        "minimax.minimax-m2.5"
+      ],
+      "repeats": 1,
+      "calls": 47,
+      "failures": 0,
+      "hit1": 0.6808510638297872,
+      "hit1Ci": [
+        0.5531914893617021,
+        0.8085106382978723
+      ],
+      "recall8": 0.9574468085106383,
+      "mrr": 0.7909827760891591,
+      "mrrCi": [
+        0.6991172745694022,
+        0.8794326241134752
+      ],
+      "ndcg10": 0.7878353142615456,
+      "latencyP50": 8262.820125000027,
+      "latencyP95": 11983.342024799997,
+      "costPer1k": 3.4003659574468097,
+      "inputTokens": 7754,
+      "outputTokens": 895,
+      "stability": null,
+      "topTieRate": 0.3191489361702128,
+      "reasoningRate": 0,
+      "byCategory": {
+        "stackoverflow": {
+          "n": 47,
+          "hit1": 0.6808510638297872,
+          "mrr": 0.7909827760891591
+        }
+      },
+      "hit1All": 0.27350427350427353,
+      "vsJev": {
+        "diff": 0.0851063829787234,
+        "ci": [
+          -0.0425531914893617,
+          0.2127659574468085
+        ],
+        "ciAdjusted": [
+          -0.10638297872340426,
+          0.2978723404255319
+        ]
+      },
+      "vsFirstStage": {
+        "diff": 0.2765957446808511,
+        "ci": [
+          0.12712765957446812,
+          0.44680851063829785
+        ],
+        "ciAdjusted": [
+          0.02127659574468085,
+          0.5319148936170213
+        ]
+      },
+      "fullCoverage": 0.9148936170212766,
+      "coverageRecorded": 47,
+      "untimedRetries": 0
+    },
+    {
+      "id": "grok-4-6",
+      "label": "Grok 4.6",
+      "kind": "llm",
+      "via": "Bedrock us-west-2",
+      "released": "2026-08-12",
+      "models": [
+        "us.xai.grok-4.6"
+      ],
+      "repeats": 1,
+      "calls": 47,
+      "failures": 0,
+      "hit1": 0.6595744680851063,
+      "hit1Ci": [
+        0.5106382978723404,
+        0.7872340425531915
+      ],
+      "recall8": 1,
+      "mrr": 0.7737841945288755,
+      "mrrCi": [
+        0.6761835106382978,
+        0.8656028368794325
+      ],
+      "ndcg10": 0.801832167603175,
+      "latencyP50": 11215.345417000004,
+      "latencyP95": 19737.728300199993,
+      "costPer1k": 29.200459574468084,
+      "inputTokens": 8222,
+      "outputTokens": 1728,
+      "stability": null,
+      "topTieRate": 0.1702127659574468,
+      "reasoningRate": 0,
+      "byCategory": {
+        "stackoverflow": {
+          "n": 47,
+          "hit1": 0.6595744680851063,
+          "mrr": 0.7737841945288755
+        }
+      },
+      "hit1All": 0.26495726495726496,
+      "vsJev": {
+        "diff": 0.06382978723404255,
+        "ci": [
+          -0.0425531914893617,
+          0.1702127659574468
+        ],
+        "ciAdjusted": [
+          -0.10638297872340426,
+          0.23404255319148937
+        ]
+      },
+      "vsFirstStage": {
+        "diff": 0.2553191489361702,
+        "ci": [
+          0.06382978723404255,
+          0.44680851063829785
+        ],
+        "ciAdjusted": [
+          -0.0425531914893617,
+          0.5531914893617021
+        ]
+      },
+      "fullCoverage": 1,
+      "coverageRecorded": 47,
+      "untimedRetries": 0
+    },
+    {
+      "id": "gpt-6-sol",
+      "label": "GPT-6 Sol",
+      "kind": "llm",
+      "via": "Bedrock us-west-2",
+      "released": "2026-09-14",
+      "models": [
+        "us.openai.gpt-6-sol"
+      ],
+      "repeats": 1,
+      "calls": 47,
+      "failures": 0,
+      "hit1": 0.6382978723404256,
+      "hit1Ci": [
+        0.5106382978723404,
+        0.7659574468085106
+      ],
+      "recall8": 0.9787234042553191,
+      "mrr": 0.7631868131868131,
+      "mrrCi": [
+        0.6711988543371521,
+        0.8576882160392798
+      ],
+      "ndcg10": 0.7751221995195285,
+      "latencyP50": 1384.477438,
+      "latencyP95": 3178.922708749995,
+      "costPer1k": 23.036335744680855,
+      "inputTokens": 7754,
+      "outputTokens": 198,
+      "stability": null,
+      "topTieRate": 0.2553191489361702,
+      "reasoningRate": 0,
+      "byCategory": {
+        "stackoverflow": {
+          "n": 47,
+          "hit1": 0.6382978723404256,
+          "mrr": 0.7631868131868131
+        }
+      },
+      "hit1All": 0.2564102564102564,
+      "vsJev": {
+        "diff": 0.0425531914893617,
+        "ci": [
+          -0.0856382978723404,
+          0.19148936170212766
+        ],
+        "ciAdjusted": [
+          -0.19148936170212766,
+          0.2553191489361702
+        ]
+      },
+      "vsFirstStage": {
+        "diff": 0.23404255319148937,
+        "ci": [
+          0.0425531914893617,
+          0.425531914893617
+        ],
+        "ciAdjusted": [
+          -0.06382978723404255,
+          0.5106382978723404
+        ]
+      },
+      "fullCoverage": 1,
+      "coverageRecorded": 47,
+      "untimedRetries": 0
+    },
+    {
+      "id": "claude-sonnet-5",
+      "label": "Claude Sonnet 5",
+      "kind": "llm",
+      "via": "Bedrock us-west-2",
+      "released": "2026-06-30",
+      "models": [
+        "us.anthropic.claude-sonnet-5"
+      ],
+      "repeats": 1,
+      "calls": 47,
+      "failures": 0,
+      "hit1": 0.6595744680851063,
+      "hit1Ci": [
+        0.5319148936170213,
+        0.7872340425531915
+      ],
+      "recall8": 0.9787234042553191,
+      "mrr": 0.762173641960876,
+      "mrrCi": [
+        0.6632315291091886,
+        0.8553942599953237
+      ],
+      "ndcg10": 0.7815121559026694,
+      "latencyP50": 3824.722063000001,
+      "latencyP95": 6168.169187249998,
+      "costPer1k": 34.733794255319154,
+      "inputTokens": 11660,
+      "outputTokens": 300,
+      "stability": null,
+      "topTieRate": 0.3404255319148936,
+      "reasoningRate": 0,
+      "byCategory": {
+        "stackoverflow": {
+          "n": 47,
+          "hit1": 0.6595744680851063,
+          "mrr": 0.762173641960876
+        }
+      },
+      "hit1All": 0.26495726495726496,
+      "vsJev": {
+        "diff": 0.06382978723404255,
+        "ci": [
+          -0.0851063829787234,
+          0.2127659574468085
+        ],
+        "ciAdjusted": [
+          -0.1702127659574468,
+          0.2978723404255319
+        ]
+      },
+      "vsFirstStage": {
+        "diff": 0.2553191489361702,
+        "ci": [
+          0.0851063829787234,
+          0.425531914893617
+        ],
+        "ciAdjusted": [
+          -0.02127659574468085,
+          0.5106382978723404
+        ]
+      },
+      "fullCoverage": 1,
+      "coverageRecorded": 47,
+      "untimedRetries": 0
+    },
+    {
+      "id": "gpt-6-luna",
+      "label": "GPT-6 Luna",
+      "kind": "llm",
+      "via": "Bedrock us-west-2",
+      "released": "2026-09-14",
+      "models": [
+        "us.openai.gpt-6-luna"
+      ],
+      "repeats": 1,
+      "calls": 47,
+      "failures": 0,
+      "hit1": 0.6382978723404256,
+      "hit1Ci": [
+        0.5106382978723404,
+        0.7659574468085106
+      ],
+      "recall8": 0.9787234042553191,
+      "mrr": 0.7513255656872678,
+      "mrrCi": [
+        0.6536828774062816,
+        0.8497044917257683
+      ],
+      "ndcg10": 0.7594495252588407,
+      "latencyP50": 1298.3763329999983,
+      "latencyP95": 2458.511479249999,
+      "costPer1k": 1.1532093404255321,
+      "inputTokens": 7754,
+      "outputTokens": 201,
+      "stability": null,
+      "topTieRate": 0.19148936170212766,
+      "reasoningRate": 0,
+      "byCategory": {
+        "stackoverflow": {
+          "n": 47,
+          "hit1": 0.6382978723404256,
+          "mrr": 0.7513255656872678
+        }
+      },
+      "hit1All": 0.2564102564102564,
+      "vsJev": {
+        "diff": 0.0425531914893617,
+        "ci": [
+          -0.0851063829787234,
+          0.1702127659574468
+        ],
+        "ciAdjusted": [
+          -0.14893617021276595,
+          0.2553191489361702
+        ]
+      },
+      "vsFirstStage": {
+        "diff": 0.23404255319148937,
+        "ci": [
+          0.06382978723404255,
+          0.40425531914893614
+        ],
+        "ciAdjusted": [
+          -0.0425531914893617,
+          0.5106382978723404
+        ]
+      },
+      "fullCoverage": 1,
+      "coverageRecorded": 47,
+      "untimedRetries": 0
+    },
+    {
+      "id": "jev",
+      "label": "Jev",
+      "kind": "classifier",
+      "via": "TypeSafe API",
+      "released": "2026-09-15",
+      "models": [
+        "jev-1.13.0"
+      ],
+      "repeats": 1,
+      "calls": 47,
+      "failures": 0,
+      "hit1": 0.5957446808510638,
+      "hit1Ci": [
+        0.44680851063829785,
+        0.7239361702127631
+      ],
+      "recall8": 0.9787234042553191,
+      "mrr": 0.7449244018392955,
+      "mrrCi": [
+        0.6536089353908502,
+        0.8367464539007093
+      ],
+      "ndcg10": 0.7726782321554617,
+      "latencyP50": 139.6869999999999,
+      "latencyP95": 183.6948250999999,
+      "costPer1k": 0.44957961702127663,
+      "inputTokens": 10704,
+      "outputTokens": 426,
+      "stability": null,
+      "topTieRate": 0.0425531914893617,
+      "reasoningRate": 0,
+      "byCategory": {
+        "stackoverflow": {
+          "n": 47,
+          "hit1": 0.5957446808510638,
+          "mrr": 0.7449244018392955
+        }
+      },
+      "hit1All": 0.23931623931623933,
+      "vsJev": null,
+      "vsFirstStage": {
+        "diff": 0.19148936170212766,
+        "ci": [
+          0,
+          0.3829787234042553
+        ],
+        "ciAdjusted": [
+          -0.10638297872340426,
+          0.46808510638297873
+        ]
+      },
+      "fullCoverage": null,
+      "coverageRecorded": 0,
+      "untimedRetries": 0
+    },
+    {
+      "id": "claude-haiku-4-5",
+      "label": "Claude Haiku 4.5",
+      "kind": "llm",
+      "via": "Bedrock us-west-2",
+      "released": "2025-10-15",
+      "models": [
+        "us.anthropic.claude-haiku-4-5-20251001-v1:0"
+      ],
+      "repeats": 1,
+      "calls": 47,
+      "failures": 0,
+      "hit1": 0.5957446808510638,
+      "hit1Ci": [
+        0.44680851063829785,
+        0.7446808510638298
+      ],
+      "recall8": 1,
+      "mrr": 0.7189969604863223,
+      "mrrCi": [
+        0.6181053698074974,
+        0.8176051165146908
+      ],
+      "ndcg10": 0.7564640528316153,
+      "latencyP50": 2055.083812500001,
+      "latencyP95": 2236.8758335,
+      "costPer1k": 14.095959361702125,
+      "inputTokens": 9055,
+      "outputTokens": 344,
+      "stability": null,
+      "topTieRate": 0.2127659574468085,
+      "reasoningRate": 0,
+      "byCategory": {
+        "stackoverflow": {
+          "n": 47,
+          "hit1": 0.5957446808510638,
+          "mrr": 0.7189969604863223
+        }
+      },
+      "hit1All": 0.23931623931623933,
+      "vsJev": {
+        "diff": 0,
+        "ci": [
+          -0.1276595744680851,
+          0.1276595744680851
+        ],
+        "ciAdjusted": [
+          -0.2127659574468085,
+          0.1955673758865042
+        ]
+      },
+      "vsFirstStage": {
+        "diff": 0.19148936170212766,
+        "ci": [
+          0.02127659574468085,
+          0.3617021276595745
+        ],
+        "ciAdjusted": [
+          -0.06965667311411983,
+          0.44680851063829785
+        ]
+      },
+      "fullCoverage": 1,
+      "coverageRecorded": 47,
+      "untimedRetries": 0
+    },
+    {
+      "id": "gpt-oss-120b",
+      "label": "gpt-oss-120b",
+      "kind": "llm",
+      "via": "Bedrock us-west-2",
+      "released": "2025-08-05",
+      "models": [
+        "openai.gpt-oss-120b-1:0"
+      ],
+      "repeats": 1,
+      "calls": 47,
+      "failures": 0,
+      "hit1": 0.574468085106383,
+      "hit1Ci": [
+        0.425531914893617,
+        0.723404255319149
+      ],
+      "recall8": 1,
+      "mrr": 0.7124366767983791,
+      "mrrCi": [
+        0.6110891590678824,
+        0.8134884751773049
+      ],
+      "ndcg10": 0.7291734979469369,
+      "latencyP50": 7214.05475000001,
+      "latencyP95": 13065.677620599998,
+      "costPer1k": 1.6791606382978719,
+      "inputTokens": 7815,
+      "outputTokens": 845,
+      "stability": null,
+      "topTieRate": 0.2978723404255319,
+      "reasoningRate": 0,
+      "byCategory": {
+        "stackoverflow": {
+          "n": 47,
+          "hit1": 0.574468085106383,
+          "mrr": 0.7124366767983791
+        }
+      },
+      "hit1All": 0.23076923076923078,
+      "vsJev": {
+        "diff": -0.02127659574468085,
+        "ci": [
+          -0.14893617021276595,
+          0.10638297872340426
+        ],
+        "ciAdjusted": [
+          -0.2127659574468085,
+          0.1702127659574468
+        ]
+      },
+      "vsFirstStage": {
+        "diff": 0.1702127659574468,
+        "ci": [
+          0,
+          0.3404255319148936
+        ],
+        "ciAdjusted": [
+          -0.0851063829787234,
+          0.425531914893617
+        ]
+      },
+      "fullCoverage": 1,
+      "coverageRecorded": 47,
+      "untimedRetries": 0
+    },
+    {
+      "id": "qwen3-235b",
+      "label": "Qwen3 235B A22B 2507",
+      "kind": "llm",
+      "via": "Bedrock us-west-2",
+      "released": "2025-07-21",
+      "models": [
+        "qwen.qwen3-235b-a22b-2507-v1:0"
+      ],
+      "repeats": 1,
+      "calls": 47,
+      "failures": 0,
+      "hit1": 0.5957446808510638,
+      "hit1Ci": [
+        0.44680851063829785,
+        0.7446808510638298
+      ],
+      "recall8": 0.9787234042553191,
+      "mrr": 0.7071175278622088,
+      "mrrCi": [
+        0.6009859422492401,
+        0.8126019503546099
+      ],
+      "ndcg10": 0.73803525485733,
+      "latencyP50": 3633.6596670000145,
+      "latencyP95": 4573.7828917,
+      "costPer1k": 1.9269004255319149,
+      "inputTokens": 7919,
+      "outputTokens": 210,
+      "stability": null,
+      "topTieRate": 0.2765957446808511,
+      "reasoningRate": 0,
+      "byCategory": {
+        "stackoverflow": {
+          "n": 47,
+          "hit1": 0.5957446808510638,
+          "mrr": 0.7071175278622088
+        }
+      },
+      "hit1All": 0.23931623931623933,
+      "vsJev": {
+        "diff": 0,
+        "ci": [
+          -0.10638297872340426,
+          0.10638297872340426
+        ],
+        "ciAdjusted": [
+          -0.1702127659574468,
+          0.19148936170212766
+        ]
+      },
+      "vsFirstStage": {
+        "diff": 0.19148936170212766,
+        "ci": [
+          0.02127659574468085,
+          0.3829787234042553
+        ],
+        "ciAdjusted": [
+          -0.0851063829787234,
+          0.46808510638297873
+        ]
+      },
+      "fullCoverage": 0.9787234042553191,
+      "coverageRecorded": 47,
+      "untimedRetries": 0
+    },
+    {
+      "id": "jev-per-pair",
+      "label": "Jev, one request per passage",
+      "kind": "classifier",
+      "via": "TypeSafe API",
+      "released": "2026-09-15",
+      "models": [
+        "jev-1.13.0"
+      ],
+      "repeats": 1,
+      "calls": 47,
+      "failures": 0,
+      "hit1": 0.574468085106383,
+      "hit1Ci": [
+        0.425531914893617,
+        0.723404255319149
+      ],
+      "recall8": 0.9787234042553191,
+      "mrr": 0.704660587639311,
+      "mrrCi": [
+        0.6010448328267477,
+        0.8044579533941236
+      ],
+      "ndcg10": 0.7455219686549495,
+      "latencyP50": 198.0015830000002,
+      "latencyP95": 342.0649660999997,
+      "costPer1k": 1.0396912340425533,
+      "inputTokens": 24755,
+      "outputTokens": 528,
+      "stability": null,
+      "topTieRate": 0.0425531914893617,
+      "reasoningRate": 0,
+      "byCategory": {
+        "stackoverflow": {
+          "n": 47,
+          "hit1": 0.574468085106383,
+          "mrr": 0.704660587639311
+        }
+      },
+      "hit1All": 0.23076923076923078,
+      "vsJev": {
+        "diff": -0.02127659574468085,
+        "ci": [
+          -0.1276595744680851,
+          0.0851063829787234
+        ],
+        "ciAdjusted": [
+          -0.19148936170212766,
+          0.14893617021276595
+        ]
+      },
+      "vsFirstStage": {
+        "diff": 0.1702127659574468,
+        "ci": [
+          0,
+          0.3404255319148936
+        ],
+        "ciAdjusted": [
+          -0.0851063829787234,
+          0.425531914893617
+        ]
+      },
+      "fullCoverage": null,
+      "coverageRecorded": 0,
+      "untimedRetries": 0
+    },
+    {
+      "id": "deepseek-v3-2",
+      "label": "DeepSeek V3.2",
+      "kind": "llm",
+      "via": "Bedrock us-west-2",
+      "released": "2025-12-01",
+      "models": [
+        "deepseek.v3.2"
+      ],
+      "repeats": 1,
+      "calls": 47,
+      "failures": 1,
+      "hit1": 0.5957446808510638,
+      "hit1Ci": [
+        0.44680851063829785,
+        0.7446808510638298
+      ],
+      "recall8": 0.9787234042553191,
+      "mrr": 0.7028460900801325,
+      "mrrCi": [
+        0.5990575204936905,
+        0.8104901215805472
+      ],
+      "ndcg10": 0.7212664336026382,
+      "latencyP50": 6180.020708000004,
+      "latencyP95": 9886.006967099993,
+      "costPer1k": 5.526475319148935,
+      "inputTokens": 7975,
+      "outputTokens": 315,
+      "stability": null,
+      "topTieRate": 0.30434782608695654,
+      "reasoningRate": 0,
+      "byCategory": {
+        "stackoverflow": {
+          "n": 47,
+          "hit1": 0.5957446808510638,
+          "mrr": 0.7028460900801325
+        }
+      },
+      "hit1All": 0.23931623931623933,
+      "vsJev": {
+        "diff": 0,
+        "ci": [
+          -0.1702127659574468,
+          0.14893617021276595
+        ],
+        "ciAdjusted": [
+          -0.23404255319148937,
+          0.2553191489361702
+        ]
+      },
+      "vsFirstStage": {
+        "diff": 0.19148936170212766,
+        "ci": [
+          0.02127659574468085,
+          0.3617021276595745
+        ],
+        "ciAdjusted": [
+          -0.0851063829787234,
+          0.46808510638297873
+        ]
+      },
+      "fullCoverage": 0.8913043478260869,
+      "coverageRecorded": 46,
+      "untimedRetries": 0
+    },
+    {
+      "id": "llama-4-maverick",
+      "label": "Llama 4 Maverick",
+      "kind": "llm",
+      "via": "Bedrock us-west-2",
+      "released": "2025-04-05",
+      "models": [
+        "us.meta.llama4-maverick-17b-instruct-v1:0"
+      ],
+      "repeats": 1,
+      "calls": 47,
+      "failures": 0,
+      "hit1": 0.48936170212765956,
+      "hit1Ci": [
+        0.3404255319148936,
+        0.6382978723404256
+      ],
+      "recall8": 0.9787234042553191,
+      "mrr": 0.6713825181910288,
+      "mrrCi": [
+        0.5716125541125541,
+        0.7732320162107397
+      ],
+      "ndcg10": 0.6900952478393712,
+      "latencyP50": 1083.7787920000046,
+      "latencyP95": 1306.4232538999997,
+      "costPer1k": 2.0354234042553188,
+      "inputTokens": 7697,
+      "outputTokens": 194,
+      "stability": null,
+      "topTieRate": 0.3829787234042553,
+      "reasoningRate": 0,
+      "byCategory": {
+        "stackoverflow": {
+          "n": 47,
+          "hit1": 0.48936170212765956,
+          "mrr": 0.6713825181910288
+        }
+      },
+      "hit1All": 0.19658119658119658,
+      "vsJev": {
+        "diff": -0.10638297872340426,
+        "ci": [
+          -0.2553191489361702,
+          0.06382978723404255
+        ],
+        "ciAdjusted": [
+          -0.3617021276595745,
+          0.1276595744680851
+        ]
+      },
+      "vsFirstStage": {
+        "diff": 0.0851063829787234,
+        "ci": [
+          -0.0851063829787234,
+          0.2765957446808511
+        ],
+        "ciAdjusted": [
+          -0.19148936170212766,
+          0.3617021276595745
+        ]
+      },
+      "fullCoverage": 0.9787234042553191,
+      "coverageRecorded": 47,
+      "untimedRetries": 0
+    },
+    {
+      "id": "nova-2-lite",
+      "label": "Amazon Nova 2 Lite",
+      "kind": "llm",
+      "via": "Bedrock us-west-2",
+      "released": "2025-12-02",
+      "models": [
+        "us.amazon.nova-2-lite-v1:0"
+      ],
+      "repeats": 1,
+      "calls": 47,
+      "failures": 2,
+      "hit1": 0.5106382978723404,
+      "hit1Ci": [
+        0.3617021276595745,
+        0.6595744680851063
+      ],
+      "recall8": 0.8723404255319149,
+      "mrr": 0.6428621319578766,
+      "mrrCi": [
+        0.5314076939608854,
+        0.7573346496883729
+      ],
+      "ndcg10": 0.6511688744449129,
+      "latencyP50": 1330.3981249999997,
+      "latencyP95": 1551.2019374999993,
+      "costPer1k": 3.2240648936170206,
+      "inputTokens": 7625,
+      "outputTokens": 257,
+      "stability": null,
+      "topTieRate": 0.6222222222222222,
+      "reasoningRate": 0,
+      "byCategory": {
+        "stackoverflow": {
+          "n": 47,
+          "hit1": 0.5106382978723404,
+          "mrr": 0.6428621319578766
+        }
+      },
+      "hit1All": 0.20512820512820512,
+      "vsJev": {
+        "diff": -0.0851063829787234,
+        "ci": [
+          -0.23404255319148937,
+          0.06382978723404255
+        ],
+        "ciAdjusted": [
+          -0.3404255319148936,
+          0.14893617021276595
+        ]
+      },
+      "vsFirstStage": {
+        "diff": 0.10638297872340426,
+        "ci": [
+          -0.02127659574468085,
+          0.23404255319148937
+        ],
+        "ciAdjusted": [
+          -0.10638297872340426,
+          0.3191489361702128
+        ]
+      },
+      "fullCoverage": 0.9111111111111111,
+      "coverageRecorded": 45,
+      "untimedRetries": 0
+    },
+    {
+      "id": "cohere-rerank-3-5",
+      "label": "Cohere Rerank 3.5",
+      "kind": "reranker",
+      "via": "Bedrock us-west-2",
+      "released": "2024-12-01",
+      "models": [
+        "cohere.rerank-v3-5:0"
+      ],
+      "repeats": 1,
+      "calls": 47,
+      "failures": 0,
+      "hit1": 0.5106382978723404,
+      "hit1Ci": [
+        0.3617021276595745,
+        0.6595744680851063
+      ],
+      "recall8": 0.9148936170212766,
+      "mrr": 0.6410714285714285,
+      "mrrCi": [
+        0.5255121791624452,
+        0.7471655479567714
+      ],
+      "ndcg10": 0.6705449829729144,
+      "latencyP50": 251.29829199999972,
+      "latencyP95": 434.6812916999998,
+      "costPer1k": 2.0000000000000013,
+      "inputTokens": 0,
+      "outputTokens": 0,
+      "stability": null,
+      "topTieRate": 0,
+      "reasoningRate": 0,
+      "byCategory": {
+        "stackoverflow": {
+          "n": 47,
+          "hit1": 0.5106382978723404,
+          "mrr": 0.6410714285714285
+        }
+      },
+      "hit1All": 0.20512820512820512,
+      "vsJev": {
+        "diff": -0.0851063829787234,
+        "ci": [
+          -0.2127659574468085,
+          0.0425531914893617
+        ],
+        "ciAdjusted": [
+          -0.2978723404255319,
+          0.10638297872340426
+        ]
+      },
+      "vsFirstStage": {
+        "diff": 0.10638297872340426,
+        "ci": [
+          -0.04308510638297869,
+          0.2765957446808511
+        ],
+        "ciAdjusted": [
+          -0.14893617021276595,
+          0.3617021276595745
+        ]
+      },
+      "fullCoverage": null,
+      "coverageRecorded": 0,
+      "untimedRetries": 0
+    },
+    {
+      "id": "qwen3-reranker-4b",
+      "label": "Qwen3-Reranker 4B (local)",
+      "kind": "reranker",
+      "via": "llama.cpp on this machine",
+      "released": "2025-06-03",
+      "models": [
+        "qwen3-reranker-4b"
+      ],
+      "repeats": 1,
+      "calls": 47,
+      "failures": 0,
+      "hit1": 0.46808510638297873,
+      "hit1Ci": [
+        0.3191489361702128,
+        0.6170212765957447
+      ],
+      "recall8": 0.9148936170212766,
+      "mrr": 0.6349214024745939,
+      "mrrCi": [
+        0.532879536243898,
+        0.7447815349544074
+      ],
+      "ndcg10": 0.6705179585572074,
+      "latencyP50": 12594.734625000041,
+      "latencyP95": 27324.322383000013,
+      "costPer1k": 0,
+      "inputTokens": 0,
+      "outputTokens": 0,
+      "stability": null,
+      "topTieRate": 0,
+      "reasoningRate": 0,
+      "byCategory": {
+        "stackoverflow": {
+          "n": 47,
+          "hit1": 0.46808510638297873,
+          "mrr": 0.6349214024745939
+        }
+      },
+      "hit1All": 0.18803418803418803,
+      "vsJev": {
+        "diff": -0.1276595744680851,
+        "ci": [
+          -0.2553191489361702,
+          0
+        ],
+        "ciAdjusted": [
+          -0.3191489361702128,
+          0.06382978723404255
+        ]
+      },
+      "vsFirstStage": {
+        "diff": 0.06382978723404255,
+        "ci": [
+          -0.0851063829787234,
+          0.2127659574468085
+        ],
+        "ciAdjusted": [
+          -0.1702127659574468,
+          0.2978723404255319
+        ]
+      },
+      "fullCoverage": null,
+      "coverageRecorded": 0,
+      "untimedRetries": 0
+    },
+    {
+      "id": "kev-4b-per-pair",
+      "label": "Kev-4B (local)",
+      "kind": "classifier",
+      "via": "this machine",
+      "released": "2026-09-19",
+      "models": [
+        "kev-4b"
+      ],
+      "repeats": 1,
+      "calls": 47,
+      "failures": 0,
+      "hit1": 0.46808510638297873,
+      "hit1Ci": [
+        0.33989361702127663,
+        0.6170212765957447
+      ],
+      "recall8": 0.9574468085106383,
+      "mrr": 0.6233789260385004,
+      "mrrCi": [
+        0.517851443768997,
+        0.7301785714285712
+      ],
+      "ndcg10": 0.6628263291122293,
+      "latencyP50": 10137.622541999968,
+      "latencyP95": 18908.244371199995,
+      "costPer1k": 0,
+      "inputTokens": 17305,
+      "outputTokens": 525,
+      "stability": null,
+      "topTieRate": 0,
+      "reasoningRate": 0,
+      "byCategory": {
+        "stackoverflow": {
+          "n": 47,
+          "hit1": 0.46808510638297873,
+          "mrr": 0.6233789260385004
+        }
+      },
+      "hit1All": 0.18803418803418803,
+      "vsJev": {
+        "diff": -0.1276595744680851,
+        "ci": [
+          -0.23404255319148937,
+          -0.02127659574468085
+        ],
+        "ciAdjusted": [
+          -0.3191489361702128,
+          0.0425531914893617
+        ]
+      },
+      "vsFirstStage": {
+        "diff": 0.06382978723404255,
+        "ci": [
+          -0.0851063829787234,
+          0.23404255319148937
+        ],
+        "ciAdjusted": [
+          -0.19148936170212766,
+          0.3191489361702128
+        ]
+      },
+      "fullCoverage": null,
+      "coverageRecorded": 0,
+      "untimedRetries": 0
+    },
+    {
+      "id": "mistral-large-3",
+      "label": "Mistral Large 3",
+      "kind": "llm",
+      "via": "Bedrock us-west-2",
+      "released": "2025-12-01",
+      "models": [
+        "mistral.mistral-large-3-675b-instruct"
+      ],
+      "repeats": 1,
+      "calls": 47,
+      "failures": 2,
+      "hit1": 0.425531914893617,
+      "hit1Ci": [
+        0.2978723404255319,
+        0.574468085106383
+      ],
+      "recall8": 0.9361702127659575,
+      "mrr": 0.615291209972061,
+      "mrrCi": [
+        0.5123549323017408,
+        0.7177349290780142
+      ],
+      "ndcg10": 0.6195285421128565,
+      "latencyP50": 6972.601624999952,
+      "latencyP95": 7506.155366199999,
+      "costPer1k": 5.169680851063828,
+      "inputTokens": 8340,
+      "outputTokens": 667,
+      "stability": null,
+      "topTieRate": 0.15555555555555556,
+      "reasoningRate": 0,
+      "byCategory": {
+        "stackoverflow": {
+          "n": 47,
+          "hit1": 0.425531914893617,
+          "mrr": 0.615291209972061
+        }
+      },
+      "hit1All": 0.17094017094017094,
+      "vsJev": {
+        "diff": -0.1702127659574468,
+        "ci": [
+          -0.3404255319148936,
+          0
+        ],
+        "ciAdjusted": [
+          -0.425531914893617,
+          0.0851063829787234
+        ]
+      },
+      "vsFirstStage": {
+        "diff": 0.02127659574468085,
+        "ci": [
+          -0.1276595744680851,
+          0.1702127659574468
+        ],
+        "ciAdjusted": [
+          -0.2127659574468085,
+          0.2553191489361702
+        ]
+      },
+      "fullCoverage": 0.9555555555555556,
+      "coverageRecorded": 45,
+      "untimedRetries": 0
+    },
+    {
+      "id": "qwen3-reranker-0-6b",
+      "label": "Qwen3-Reranker 0.6B (local)",
+      "kind": "reranker",
+      "via": "llama.cpp on this machine",
+      "released": "2025-05-29",
+      "models": [
+        "qwen3-reranker-0-6b"
+      ],
+      "repeats": 1,
+      "calls": 47,
+      "failures": 0,
+      "hit1": 0.44680851063829785,
+      "hit1Ci": [
+        0.2978723404255319,
+        0.5957446808510638
+      ],
+      "recall8": 0.9361702127659575,
+      "mrr": 0.6140408645727794,
+      "mrrCi": [
+        0.5067660840932117,
+        0.7196981594056061
+      ],
+      "ndcg10": 0.6526857037632128,
+      "latencyP50": 2375.059249999991,
+      "latencyP95": 5727.709596399998,
+      "costPer1k": 0,
+      "inputTokens": 0,
+      "outputTokens": 0,
+      "stability": null,
+      "topTieRate": 0,
+      "reasoningRate": 0,
+      "byCategory": {
+        "stackoverflow": {
+          "n": 47,
+          "hit1": 0.44680851063829785,
+          "mrr": 0.6140408645727794
+        }
+      },
+      "hit1All": 0.1794871794871795,
+      "vsJev": {
+        "diff": -0.14893617021276595,
+        "ci": [
+          -0.2978723404255319,
+          -0.02127659574468085
+        ],
+        "ciAdjusted": [
+          -0.3617021276595745,
+          0.0425531914893617
+        ]
+      },
+      "vsFirstStage": {
+        "diff": 0.0425531914893617,
+        "ci": [
+          -0.10638297872340426,
+          0.19148936170212766
+        ],
+        "ciAdjusted": [
+          -0.1702127659574468,
+          0.2765957446808511
+        ]
+      },
+      "fullCoverage": null,
+      "coverageRecorded": 0,
+      "untimedRetries": 0
+    },
+    {
+      "id": "amazon-rerank-1",
+      "label": "Amazon Rerank 1.0",
+      "kind": "reranker",
+      "via": "Bedrock us-west-2",
+      "released": "2024-12-01",
+      "models": [
+        "amazon.rerank-v1:0"
+      ],
+      "repeats": 1,
+      "calls": 47,
+      "failures": 0,
+      "hit1": 0.44680851063829785,
+      "hit1Ci": [
+        0.2978723404255319,
+        0.5957446808510638
+      ],
+      "recall8": 0.9574468085106383,
+      "mrr": 0.6018490374873352,
+      "mrrCi": [
+        0.49389184397163116,
+        0.7081190898345154
+      ],
+      "ndcg10": 0.6290623964292241,
+      "latencyP50": 619.3043340000004,
+      "latencyP95": 720.4855247999999,
+      "costPer1k": null,
+      "inputTokens": 0,
+      "outputTokens": 0,
+      "stability": null,
+      "topTieRate": 0,
+      "reasoningRate": 0,
+      "byCategory": {
+        "stackoverflow": {
+          "n": 47,
+          "hit1": 0.44680851063829785,
+          "mrr": 0.6018490374873352
+        }
+      },
+      "hit1All": 0.1794871794871795,
+      "vsJev": {
+        "diff": -0.14893617021276595,
+        "ci": [
+          -0.2765957446808511,
+          -0.02127659574468085
+        ],
+        "ciAdjusted": [
+          -0.3617021276595745,
+          0.0425531914893617
+        ]
+      },
+      "vsFirstStage": {
+        "diff": 0.0425531914893617,
+        "ci": [
+          -0.1276595744680851,
+          0.2127659574468085
+        ],
+        "ciAdjusted": [
+          -0.2127659574468085,
+          0.2978723404255319
+        ]
+      },
+      "fullCoverage": null,
+      "coverageRecorded": 0,
+      "untimedRetries": 0
+    },
+    {
+      "id": "fusion",
+      "label": "No reranker (first-stage order)",
+      "kind": "baseline",
+      "via": "the set's first stage",
+      "released": null,
+      "models": [
+        "first stage"
+      ],
+      "repeats": 1,
+      "calls": 47,
+      "failures": 0,
+      "hit1": 0.40425531914893614,
+      "hit1Ci": [
+        0.2553191489361702,
+        0.5319148936170213
+      ],
+      "recall8": 0.8085106382978723,
+      "mrr": 0.5373184734886861,
+      "mrrCi": [
+        0.422591396487673,
+        0.6460184481594053
+      ],
+      "ndcg10": 0.5249709842586195,
+      "latencyP50": 0,
+      "latencyP95": 0,
+      "costPer1k": 0,
+      "inputTokens": 0,
+      "outputTokens": 0,
+      "stability": null,
+      "topTieRate": 0,
+      "reasoningRate": 0,
+      "byCategory": {
+        "stackoverflow": {
+          "n": 47,
+          "hit1": 0.40425531914893614,
+          "mrr": 0.5373184734886861
+        }
+      },
+      "hit1All": 0.1623931623931624,
+      "vsJev": {
+        "diff": -0.19148936170212766,
+        "ci": [
+          -0.3829787234042553,
+          0
+        ],
+        "ciAdjusted": [
+          -0.46808510638297873,
+          0.08918439716309992
+        ]
+      },
+      "vsFirstStage": null,
+      "fullCoverage": null,
+      "coverageRecorded": 0,
+      "untimedRetries": 0
+    },
+    {
+      "id": "laya-text",
+      "label": "Laya (local)",
+      "kind": "classifier",
+      "via": "this machine",
+      "released": "2026-09-18",
+      "models": [
+        "laya-rl-agent"
+      ],
+      "repeats": 1,
+      "calls": 47,
+      "failures": 0,
+      "hit1": 0.23404255319148937,
+      "hit1Ci": [
+        0.1276595744680851,
+        0.3617021276595745
+      ],
+      "recall8": 0.5957446808510638,
+      "mrr": 0.38640851712568935,
+      "mrrCi": [
+        0.28427627773941494,
+        0.49214185093244434
+      ],
+      "ndcg10": 0.3392331494505807,
+      "latencyP50": 2666.749791,
+      "latencyP95": 2688.308141800003,
+      "costPer1k": 0,
+      "inputTokens": 12070,
+      "outputTokens": 0,
+      "stability": null,
+      "topTieRate": 0.2553191489361702,
+      "reasoningRate": 0,
+      "byCategory": {
+        "stackoverflow": {
+          "n": 47,
+          "hit1": 0.23404255319148937,
+          "mrr": 0.38640851712568935
+        }
+      },
+      "hit1All": 0.09401709401709402,
+      "vsJev": {
+        "diff": -0.3617021276595745,
+        "ci": [
+          -0.5106382978723404,
+          -0.19148936170212766
+        ],
+        "ciAdjusted": [
+          -0.6170212765957447,
+          -0.10638297872340426
+        ]
+      },
+      "vsFirstStage": {
+        "diff": -0.1702127659574468,
+        "ci": [
+          -0.2978723404255319,
+          -0.0425531914893617
+        ],
+        "ciAdjusted": [
+          -0.3829787234042553,
+          0.0425531914893617
+        ]
+      },
+      "fullCoverage": null,
+      "coverageRecorded": 0,
+      "untimedRetries": 0
+    }
+  ]
+}

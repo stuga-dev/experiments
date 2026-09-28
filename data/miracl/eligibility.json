@@ -1,0 +1,26 @@
+{
+  "en": {
+    "dev": 787,
+    "eligible": 607
+  },
+  "zh": {
+    "dev": 391,
+    "eligible": 206
+  },
+  "ja": {
+    "dev": 797,
+    "eligible": 605
+  },
+  "ko": {
+    "dev": 213,
+    "eligible": 164
+  },
+  "ar": {
+    "dev": 2896,
+    "eligible": 2435
+  },
+  "th": {
+    "dev": 730,
+    "eligible": 601
+  }
+}

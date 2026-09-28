@@ -1,0 +1,87 @@
+{
+  "_about": "First public release of each model tested: the vendor's own date where it gives one, otherwise its first listing on OpenRouter or Hugging Face. Checked 2026-09-27.",
+  "jev": {
+    "released": "2026-09-15",
+    "source": "https://typesafe.ai/blog/introducing-system-one-models-and-jev"
+  },
+  "gpt-6-sol": {
+    "released": "2026-09-14",
+    "source": "OpenAI API /v1/models, created"
+  },
+  "gpt-6-luna": {
+    "released": "2026-09-14",
+    "source": "OpenAI API /v1/models, created"
+  },
+  "claude-opus-5-5": {
+    "released": "2026-09-22",
+    "source": "https://openrouter.ai/anthropic/claude-opus-5.5"
+  },
+  "claude-sonnet-5": {
+    "released": "2026-06-30",
+    "source": "https://openrouter.ai/anthropic/claude-sonnet-5"
+  },
+  "claude-haiku-4-5": {
+    "released": "2025-10-15",
+    "source": "https://openrouter.ai/anthropic/claude-haiku-4.5"
+  },
+  "grok-4-6": {
+    "released": "2026-08-12",
+    "source": "https://openrouter.ai/x-ai/grok-4.6"
+  },
+  "nova-2-lite": {
+    "released": "2025-12-02",
+    "source": "https://openrouter.ai/amazon/nova-2-lite-v1"
+  },
+  "deepseek-v3-2": {
+    "released": "2025-12-01",
+    "source": "https://openrouter.ai/deepseek/deepseek-v3.2"
+  },
+  "qwen3-235b": {
+    "released": "2025-07-21",
+    "source": "https://openrouter.ai/qwen/qwen3-235b-a22b-2507"
+  },
+  "mistral-large-3": {
+    "released": "2025-12-01",
+    "source": "https://openrouter.ai/mistralai/mistral-large-2512"
+  },
+  "llama-4-maverick": {
+    "released": "2025-04-05",
+    "source": "https://openrouter.ai/meta-llama/llama-4-maverick"
+  },
+  "gpt-oss-120b": {
+    "released": "2025-08-05",
+    "source": "https://openrouter.ai/openai/gpt-oss-120b"
+  },
+  "glm-5": {
+    "released": "2026-02-11",
+    "source": "https://openrouter.ai/z-ai/glm-5"
+  },
+  "minimax-m2-5": {
+    "released": "2026-02-12",
+    "source": "https://openrouter.ai/minimax/minimax-m2.5"
+  },
+  "cohere-rerank-3-5": {
+    "released": "2024-12-01",
+    "source": "https://aws.amazon.com/about-aws/whats-new/2024/12/amazon-bedrock-rerank-api-accuracy-rag-applications"
+  },
+  "amazon-rerank-1": {
+    "released": "2024-12-01",
+    "source": "https://aws.amazon.com/about-aws/whats-new/2024/12/amazon-bedrock-rerank-api-accuracy-rag-applications"
+  },
+  "qwen3-reranker-4b": {
+    "released": "2025-06-03",
+    "source": "https://huggingface.co/Qwen/Qwen3-Reranker-4B"
+  },
+  "qwen3-reranker-0-6b": {
+    "released": "2025-05-29",
+    "source": "https://huggingface.co/Qwen/Qwen3-Reranker-0.6B"
+  },
+  "kev-4b": {
+    "released": "2026-09-19",
+    "source": "https://huggingface.co/jaredpalmer/kev-4b"
+  },
+  "laya": {
+    "released": "2026-09-18",
+    "source": "https://huggingface.co/convaiinnovations/laya"
+  }
+}

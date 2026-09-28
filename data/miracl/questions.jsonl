@@ -1,0 +1,240 @@
+{"id":"en-572","sample":"en","q":"What goes into bibimbap?","category":"en","goldIds":["en/candidate_dev_query572_00002","en/candidate_dev_query572_00009"]}
+{"id":"en-624","sample":"en","q":"When was the first Battlestar Galactica aired?","category":"en","goldIds":["en/candidate_dev_query624_00001","en/candidate_dev_query624_00002","en/candidate_dev_query624_00005","en/candidate_dev_query624_00016"]}
+{"id":"en-267","sample":"en","q":"What is the origin of the name of the weather phenomenon El Nino?","category":"en","goldIds":["en/candidate_dev_query267_00003","en/candidate_dev_query267_00006","en/candidate_dev_query267_00007"]}
+{"id":"en-317","sample":"en","q":"When was Leif Erikson born?","category":"en","goldIds":["en/candidate_dev_query317_00019","en/candidate_dev_query317_00022"]}
+{"id":"en-169","sample":"en","q":"What is the Christian population of Israel?","category":"en","goldIds":["en/candidate_dev_query169_00002","en/candidate_dev_query169_00004"]}
+{"id":"en-561","sample":"en","q":"What is a Junta government?","category":"en","goldIds":["en/candidate_dev_query561_00011","en/candidate_dev_query561_00023"]}
+{"id":"en-350","sample":"en","q":"Can medications cause Long QT?","category":"en","goldIds":["en/candidate_dev_query350_00001","en/candidate_dev_query350_00002","en/candidate_dev_query350_00004","en/candidate_dev_query350_00005"]}
+{"id":"en-343","sample":"en","q":"How many members of the the United Democrats of Hong Kong are there?","category":"en","goldIds":["en/candidate_dev_query343_00006","en/candidate_dev_query343_00015","en/candidate_dev_query343_00022"]}
+{"id":"en-534","sample":"en","q":"When was the town of Simcoe, Ontario founded?","category":"en","goldIds":["en/candidate_dev_query534_00021"]}
+{"id":"en-481","sample":"en","q":"What is the seating capacity of the Los Angeles Rams stadium?","category":"en","goldIds":["en/candidate_dev_query481_00000","en/candidate_dev_query481_00004","en/candidate_dev_query481_00012"]}
+{"id":"en-186","sample":"en","q":"What is the national dish of Brazil?","category":"en","goldIds":["en/candidate_dev_query186_00000","en/candidate_dev_query186_00002","en/candidate_dev_query186_00011","en/candidate_dev_query186_00023"]}
+{"id":"en-321","sample":"en","q":"Is common law the most common legal system in the world?","category":"en","goldIds":["en/candidate_dev_query321_00001","en/candidate_dev_query321_00002","en/candidate_dev_query321_00003","en/candidate_dev_query321_00013"]}
+{"id":"en-370","sample":"en","q":"When was the Montana Vigilantes formed?","category":"en","goldIds":["en/candidate_dev_query370_00002"]}
+{"id":"en-754","sample":"en","q":"What is the dominate religion in Pristina?","category":"en","goldIds":["en/candidate_dev_query754_00001","en/candidate_dev_query754_00010"]}
+{"id":"en-50","sample":"en","q":"What does ductile mean?","category":"en","goldIds":["en/candidate_dev_query50_00017"]}
+{"id":"en-442","sample":"en","q":"How large is Antarctica by area?","category":"en","goldIds":["en/candidate_dev_query442_00011"]}
+{"id":"en-772","sample":"en","q":"What was Frances greatest victory?","category":"en","goldIds":["en/candidate_dev_query772_00010"]}
+{"id":"en-337","sample":"en","q":"When did the Smilodon live?","category":"en","goldIds":["en/candidate_dev_query337_00004","en/candidate_dev_query337_00006"]}
+{"id":"en-319","sample":"en","q":"What unit is used to measure mass?","category":"en","goldIds":["en/candidate_dev_query319_00002","en/candidate_dev_query319_00010"]}
+{"id":"en-174","sample":"en","q":"Can you vote at 16 years in Argentina?","category":"en","goldIds":["en/candidate_dev_query174_00000","en/candidate_dev_query174_00002","en/candidate_dev_query174_00003","en/candidate_dev_query174_00005","en/candidate_dev_query174_00016"]}
+{"id":"en-305","sample":"en","q":"When did Xenoblade Chronicles 2 release?","category":"en","goldIds":["en/candidate_dev_query305_00000","en/candidate_dev_query305_00001","en/candidate_dev_query305_00005"]}
+{"id":"en-571","sample":"en","q":"When was Cho Namchul born?","category":"en","goldIds":["en/candidate_dev_query571_00000"]}
+{"id":"en-729","sample":"en","q":"What kind of government does Laos have?","category":"en","goldIds":["en/candidate_dev_query729_00018"]}
+{"id":"en-516","sample":"en","q":"How did right-wing authoritarianism come to be?","category":"en","goldIds":["en/candidate_dev_query516_00002","en/candidate_dev_query516_00008","en/candidate_dev_query516_00009","en/candidate_dev_query516_00012","en/candidate_dev_query516_00016","en/candidate_dev_query516_00018"]}
+{"id":"en-489","sample":"en","q":"What kind of colony was New Zealand?","category":"en","goldIds":["en/candidate_dev_query489_00007","en/candidate_dev_query489_00010","en/candidate_dev_query489_00012","en/candidate_dev_query489_00017","en/candidate_dev_query489_00020"]}
+{"id":"en-440","sample":"en","q":"When did the Royal Australian Air Force begin?","category":"en","goldIds":["en/candidate_dev_query440_00001","en/candidate_dev_query440_00003","en/candidate_dev_query440_00018"]}
+{"id":"en-436","sample":"en","q":"How many Jehovah's Witnesses were sent to concentration camps?","category":"en","goldIds":["en/candidate_dev_query436_00001","en/candidate_dev_query436_00002","en/candidate_dev_query436_00003","en/candidate_dev_query436_00006"]}
+{"id":"en-535","sample":"en","q":"Do you need to go to a four-year university to be a pharmacy tech?","category":"en","goldIds":["en/candidate_dev_query535_00010"]}
+{"id":"en-287","sample":"en","q":"What was Reginald Aubrey Fessenden's first patented invention?","category":"en","goldIds":["en/candidate_dev_query287_00002"]}
+{"id":"en-634","sample":"en","q":"Is Welsh a dialect of English?","category":"en","goldIds":["en/candidate_dev_query634_00000","en/candidate_dev_query634_00004","en/candidate_dev_query634_00005","en/candidate_dev_query634_00011","en/candidate_dev_query634_00014","en/candidate_dev_query634_00019","en/candidate_dev_query634_00022"]}
+{"id":"en-376","sample":"en","q":"When did Amsterdam become the capital of the Netherlands?","category":"en","goldIds":["en/candidate_dev_query376_00003"]}
+{"id":"en-93","sample":"en","q":"Is Pearl beer still in production?","category":"en","goldIds":["en/candidate_dev_query93_00002"]}
+{"id":"en-399","sample":"en","q":"When was Lieutenant Colonel Sir Michael Frederick Bruxner born?","category":"en","goldIds":["en/candidate_dev_query399_00000"]}
+{"id":"en-177","sample":"en","q":"Who is the CEO of the WWE?","category":"en","goldIds":["en/candidate_dev_query177_00020"]}
+{"id":"en-547","sample":"en","q":"Where was Bonanza filmed?","category":"en","goldIds":["en/candidate_dev_query547_00002","en/candidate_dev_query547_00010","en/candidate_dev_query547_00015"]}
+{"id":"en-448","sample":"en","q":"Are verbal contracts binding?","category":"en","goldIds":["en/candidate_dev_query448_00017"]}
+{"id":"en-529","sample":"en","q":"Is the bystander effect the same as pluralistic ignorance?","category":"en","goldIds":["en/candidate_dev_query529_00000","en/candidate_dev_query529_00003","en/candidate_dev_query529_00005","en/candidate_dev_query529_00007"]}
+{"id":"en-694","sample":"en","q":"When was the book The Secret of NIMH first published?","category":"en","goldIds":["en/candidate_dev_query694_00000","en/candidate_dev_query694_00001","en/candidate_dev_query694_00002"]}
+{"id":"en-476","sample":"en","q":"What do airsoft guns shoot?","category":"en","goldIds":["en/candidate_dev_query476_00003","en/candidate_dev_query476_00006","en/candidate_dev_query476_00010"]}
+{"id":"en-667","sample":"en","q":"How long is Navy boot camp?","category":"en","goldIds":["en/candidate_dev_query667_00003"]}
+{"id":"zh-154","sample":"zh","q":"法国最大的市镇位于哪里？","category":"zh","goldIds":["zh/candidate_dev_query154_00017"]}
+{"id":"zh-196","sample":"zh","q":"澳大利亚国土面积多大？","category":"zh","goldIds":["zh/candidate_dev_query196_00001"]}
+{"id":"zh-205","sample":"zh","q":"王者荣耀是哪个公司的游戏？","category":"zh","goldIds":["zh/candidate_dev_query205_00006","zh/candidate_dev_query205_00011"]}
+{"id":"zh-160","sample":"zh","q":"有哪些工作犬种类？","category":"zh","goldIds":["zh/candidate_dev_query160_00006"]}
+{"id":"zh-293","sample":"zh","q":"印度宗教有哪些分支？","category":"zh","goldIds":["zh/candidate_dev_query293_00003"]}
+{"id":"zh-264","sample":"zh","q":"肯尼亚总统是谁？","category":"zh","goldIds":["zh/candidate_dev_query264_00012"]}
+{"id":"zh-58","sample":"zh","q":"世界上有哪些俄语国家？","category":"zh","goldIds":["zh/candidate_dev_query58_00004"]}
+{"id":"zh-342","sample":"zh","q":"明朝的开国皇帝是谁？","category":"zh","goldIds":["zh/candidate_dev_query342_00008"]}
+{"id":"zh-367","sample":"zh","q":"《哈利波特》的作者是谁？","category":"zh","goldIds":["zh/candidate_dev_query367_00004","zh/candidate_dev_query367_00005"]}
+{"id":"zh-16","sample":"zh","q":"武汉有哪些著名小吃？","category":"zh","goldIds":["zh/candidate_dev_query16_00002"]}
+{"id":"zh-290","sample":"zh","q":"明治维新实施时间？","category":"zh","goldIds":["zh/candidate_dev_query290_00018"]}
+{"id":"zh-6","sample":"zh","q":"联合国有多少成员国？","category":"zh","goldIds":["zh/candidate_dev_query6_00002","zh/candidate_dev_query6_00011"]}
+{"id":"zh-172","sample":"zh","q":"莱布尼茨手稿在那一博物馆？","category":"zh","goldIds":["zh/candidate_dev_query172_00000"]}
+{"id":"zh-325","sample":"zh","q":"瑞士的国歌是什么？","category":"zh","goldIds":["zh/candidate_dev_query325_00017"]}
+{"id":"zh-210","sample":"zh","q":"香奈儿品牌哪一年创立？","category":"zh","goldIds":["zh/candidate_dev_query210_00014"]}
+{"id":"zh-337","sample":"zh","q":"无机化合物分为哪几类？","category":"zh","goldIds":["zh/candidate_dev_query337_00023"]}
+{"id":"zh-84","sample":"zh","q":"西班牙足球获得过几次欧洲杯冠军？","category":"zh","goldIds":["zh/candidate_dev_query84_00000","zh/candidate_dev_query84_00007"]}
+{"id":"zh-89","sample":"zh","q":"山东有哪些足球队？","category":"zh","goldIds":["zh/candidate_dev_query89_00003"]}
+{"id":"zh-379","sample":"zh","q":"中国有哪些证券交易所？","category":"zh","goldIds":["zh/candidate_dev_query379_00002","zh/candidate_dev_query379_00005"]}
+{"id":"zh-146","sample":"zh","q":"电影《蜘蛛侠》的主角扮演者是哪位演员？","category":"zh","goldIds":["zh/candidate_dev_query146_00000","zh/candidate_dev_query146_00004","zh/candidate_dev_query146_00007","zh/candidate_dev_query146_00012","zh/candidate_dev_query146_00020"]}
+{"id":"zh-34","sample":"zh","q":"法国博物馆有哪些藏品？","category":"zh","goldIds":["zh/candidate_dev_query34_00016","zh/candidate_dev_query34_00023"]}
+{"id":"zh-109","sample":"zh","q":"英国的首相是谁？","category":"zh","goldIds":["zh/candidate_dev_query109_00000"]}
+{"id":"zh-169","sample":"zh","q":"中国有哪些体操奥运冠军？","category":"zh","goldIds":["zh/candidate_dev_query169_00016"]}
+{"id":"zh-194","sample":"zh","q":"香港三大地理分区有哪些？","category":"zh","goldIds":["zh/candidate_dev_query194_00000"]}
+{"id":"zh-35","sample":"zh","q":"美国有哪些流行音乐派别？","category":"zh","goldIds":["zh/candidate_dev_query35_00000","zh/candidate_dev_query35_00005","zh/candidate_dev_query35_00016"]}
+{"id":"zh-317","sample":"zh","q":"亚马逊的总裁是谁？","category":"zh","goldIds":["zh/candidate_dev_query317_00004"]}
+{"id":"zh-28","sample":"zh","q":"修正主义指什么？","category":"zh","goldIds":["zh/candidate_dev_query28_00002","zh/candidate_dev_query28_00005","zh/candidate_dev_query28_00008"]}
+{"id":"zh-3","sample":"zh","q":"意大利首都是哪里？","category":"zh","goldIds":["zh/candidate_dev_query3_00000","zh/candidate_dev_query3_00020"]}
+{"id":"zh-56","sample":"zh","q":"中国围棋有哪些特点？","category":"zh","goldIds":["zh/candidate_dev_query56_00008"]}
+{"id":"zh-236","sample":"zh","q":"福建省副省长是谁？","category":"zh","goldIds":["zh/candidate_dev_query236_00015"]}
+{"id":"zh-291","sample":"zh","q":"郭靖宇导演过哪些作品？","category":"zh","goldIds":["zh/candidate_dev_query291_00001"]}
+{"id":"zh-348","sample":"zh","q":"满洲国的首都是哪里？","category":"zh","goldIds":["zh/candidate_dev_query348_00000","zh/candidate_dev_query348_00002"]}
+{"id":"zh-203","sample":"zh","q":"中欧地区有哪些国家？","category":"zh","goldIds":["zh/candidate_dev_query203_00014"]}
+{"id":"zh-25","sample":"zh","q":"马来西亚有哪些旅游景点？","category":"zh","goldIds":["zh/candidate_dev_query25_00001","zh/candidate_dev_query25_00002","zh/candidate_dev_query25_00003","zh/candidate_dev_query25_00019"]}
+{"id":"zh-5","sample":"zh","q":"大猩猩的脑容量有多大？","category":"zh","goldIds":["zh/candidate_dev_query5_00000"]}
+{"id":"zh-251","sample":"zh","q":"美国独立宣言是哪一年撰写的？","category":"zh","goldIds":["zh/candidate_dev_query251_00001","zh/candidate_dev_query251_00004","zh/candidate_dev_query251_00005","zh/candidate_dev_query251_00016","zh/candidate_dev_query251_00017"]}
+{"id":"zh-8","sample":"zh","q":"印度人口有多少？","category":"zh","goldIds":["zh/candidate_dev_query8_00010"]}
+{"id":"zh-108","sample":"zh","q":"美国知名的摇滚曲有哪些？","category":"zh","goldIds":["zh/candidate_dev_query108_00002"]}
+{"id":"zh-222","sample":"zh","q":"香港最大的酒店是哪个？","category":"zh","goldIds":["zh/candidate_dev_query222_00001"]}
+{"id":"zh-107","sample":"zh","q":"西藏著名佛教寺庙有哪些？","category":"zh","goldIds":["zh/candidate_dev_query107_00000"]}
+{"id":"ja-565","sample":"ja","q":"自由民主党はいつ結成された","category":"ja","goldIds":["ja/candidate_dev_query565_00006"]}
+{"id":"ja-128","sample":"ja","q":"ブリティッシュ・レイランドはいつ設立した","category":"ja","goldIds":["ja/candidate_dev_query128_00007","ja/candidate_dev_query128_00016","ja/candidate_dev_query128_00018"]}
+{"id":"ja-593","sample":"ja","q":"日本で国勢調査が行われる頻度は？","category":"ja","goldIds":["ja/candidate_dev_query593_00000"]}
+{"id":"ja-763","sample":"ja","q":"ロドニー・ハリソンが最初に所属したチームは何？","category":"ja","goldIds":["ja/candidate_dev_query763_00021"]}
+{"id":"ja-378","sample":"ja","q":"イギリスは原子爆弾の開発に成功した？","category":"ja","goldIds":["ja/candidate_dev_query378_00001"]}
+{"id":"ja-581","sample":"ja","q":"古代ギリシャに演劇はあった？","category":"ja","goldIds":["ja/candidate_dev_query581_00007","ja/candidate_dev_query581_00014","ja/candidate_dev_query581_00018"]}
+{"id":"ja-601","sample":"ja","q":"バスク人とは民族ですか？","category":"ja","goldIds":["ja/candidate_dev_query601_00001","ja/candidate_dev_query601_00010","ja/candidate_dev_query601_00018","ja/candidate_dev_query601_00019","ja/candidate_dev_query601_00023"]}
+{"id":"ja-739","sample":"ja","q":"骨髄移植が初めて実施されたのはいつ","category":"ja","goldIds":["ja/candidate_dev_query739_00002"]}
+{"id":"ja-412","sample":"ja","q":"ローバー・グループ が最初に販売した自動車は何","category":"ja","goldIds":["ja/candidate_dev_query412_00022"]}
+{"id":"ja-314","sample":"ja","q":"津軽ダム建設時に住民からの反対はあった？","category":"ja","goldIds":["ja/candidate_dev_query314_00000"]}
+{"id":"ja-516","sample":"ja","q":"ペータースハーゲンが合併したのは何年ですか？","category":"ja","goldIds":["ja/candidate_dev_query516_00004"]}
+{"id":"ja-448","sample":"ja","q":"フクロウオウムの平均寿命は何歳ですか？","category":"ja","goldIds":["ja/candidate_dev_query448_00016"]}
+{"id":"ja-39","sample":"ja","q":"被災者生活再建支援法が制定されたのはいつ","category":"ja","goldIds":["ja/candidate_dev_query39_00000","ja/candidate_dev_query39_00003"]}
+{"id":"ja-331","sample":"ja","q":"フルカラーの映画が作られたのは何年ですか？","category":"ja","goldIds":["ja/candidate_dev_query331_00000","ja/candidate_dev_query331_00005","ja/candidate_dev_query331_00012"]}
+{"id":"ja-506","sample":"ja","q":"アイザック・ブロックの最期のしょくぎょうは何","category":"ja","goldIds":["ja/candidate_dev_query506_00014"]}
+{"id":"ja-718","sample":"ja","q":"『指輪物語』はいつ出版された","category":"ja","goldIds":["ja/candidate_dev_query718_00004","ja/candidate_dev_query718_00011"]}
+{"id":"ja-487","sample":"ja","q":"江の島神社はいつ創られた？","category":"ja","goldIds":["ja/candidate_dev_query487_00012"]}
+{"id":"ja-543","sample":"ja","q":"太陽誘電の創始者は誰","category":"ja","goldIds":["ja/candidate_dev_query543_00005"]}
+{"id":"ja-408","sample":"ja","q":"フョードル・ドストエフスキーはいつ罪と罰を発表した？","category":"ja","goldIds":["ja/candidate_dev_query408_00000","ja/candidate_dev_query408_00018"]}
+{"id":"ja-32","sample":"ja","q":"中條 健一の最終学歴は何？","category":"ja","goldIds":["ja/candidate_dev_query32_00011"]}
+{"id":"ja-196","sample":"ja","q":"地上デジタル放送が始まったのはいつ","category":"ja","goldIds":["ja/candidate_dev_query196_00004"]}
+{"id":"ja-564","sample":"ja","q":"ニコライ・ヴァシーリエヴィチ・ゴーゴリはいつ生まれた","category":"ja","goldIds":["ja/candidate_dev_query564_00000"]}
+{"id":"ja-352","sample":"ja","q":"キックボクシングの起源はいつ","category":"ja","goldIds":["ja/candidate_dev_query352_00015"]}
+{"id":"ja-204","sample":"ja","q":"スウェーデンの首都は何","category":"ja","goldIds":["ja/candidate_dev_query204_00006","ja/candidate_dev_query204_00010","ja/candidate_dev_query204_00012"]}
+{"id":"ja-646","sample":"ja","q":"グイン・サーガの主人公の名前は？","category":"ja","goldIds":["ja/candidate_dev_query646_00001","ja/candidate_dev_query646_00014"]}
+{"id":"ja-153","sample":"ja","q":"電池を発明したのは誰？","category":"ja","goldIds":["ja/candidate_dev_query153_00003"]}
+{"id":"ja-358","sample":"ja","q":"自治州とは何ですか？","category":"ja","goldIds":["ja/candidate_dev_query358_00006","ja/candidate_dev_query358_00018"]}
+{"id":"ja-549","sample":"ja","q":"イスパノ・スイザ社はいつ設立した？","category":"ja","goldIds":["ja/candidate_dev_query549_00004"]}
+{"id":"ja-80","sample":"ja","q":"下久保ダムの建設時、反対運動はあった？","category":"ja","goldIds":["ja/candidate_dev_query80_00000"]}
+{"id":"ja-326","sample":"ja","q":"マタ・ハリはスパイですか？","category":"ja","goldIds":["ja/candidate_dev_query326_00000","ja/candidate_dev_query326_00001","ja/candidate_dev_query326_00003","ja/candidate_dev_query326_00013"]}
+{"id":"ja-407","sample":"ja","q":"GNUの創始者は誰？","category":"ja","goldIds":["ja/candidate_dev_query407_00001","ja/candidate_dev_query407_00020"]}
+{"id":"ja-92","sample":"ja","q":"日本でアナログコンピュータの生産は日本でされたことがある？","category":"ja","goldIds":["ja/candidate_dev_query92_00001"]}
+{"id":"ja-562","sample":"ja","q":"ドイツキリスト教民主同盟はいつ設立された","category":"ja","goldIds":["ja/candidate_dev_query562_00001","ja/candidate_dev_query562_00008"]}
+{"id":"ja-609","sample":"ja","q":"イタリアの面積は？","category":"ja","goldIds":["ja/candidate_dev_query609_00008","ja/candidate_dev_query609_00015"]}
+{"id":"ja-777","sample":"ja","q":"文世光事件での犯人の職業は何？","category":"ja","goldIds":["ja/candidate_dev_query777_00004"]}
+{"id":"ja-587","sample":"ja","q":"カリフォルニア大学ロサンゼルス校 が設置されたのはいつ","category":"ja","goldIds":["ja/candidate_dev_query587_00000"]}
+{"id":"ja-387","sample":"ja","q":"ガウスは数学者ですか？","category":"ja","goldIds":["ja/candidate_dev_query387_00001","ja/candidate_dev_query387_00002","ja/candidate_dev_query387_00003","ja/candidate_dev_query387_00005","ja/candidate_dev_query387_00007","ja/candidate_dev_query387_00011","ja/candidate_dev_query387_00015"]}
+{"id":"ja-687","sample":"ja","q":"ガリッサ大学襲撃事件で犯人は何人いた？","category":"ja","goldIds":["ja/candidate_dev_query687_00000","ja/candidate_dev_query687_00002"]}
+{"id":"ja-372","sample":"ja","q":"中華思想はいつ発生した","category":"ja","goldIds":["ja/candidate_dev_query372_00013"]}
+{"id":"ja-210","sample":"ja","q":"英語教育が日本の義務教育に導入されたのはいつ？","category":"ja","goldIds":["ja/candidate_dev_query210_00000"]}
+{"id":"ko-205","sample":"ko","q":"뇌졸중이 죽음을 일으킬 수 있는가?","category":"ko","goldIds":["ko/candidate_dev_query205_00009"]}
+{"id":"ko-26","sample":"ko","q":"시리아의 수도는 어디인가?","category":"ko","goldIds":["ko/candidate_dev_query26_00006","ko/candidate_dev_query26_00016","ko/candidate_dev_query26_00017","ko/candidate_dev_query26_00023"]}
+{"id":"ko-100","sample":"ko","q":"단당류는 수용성의 결정성 고체인가요?","category":"ko","goldIds":["ko/candidate_dev_query100_00000"]}
+{"id":"ko-1","sample":"ko","q":"룩셈부르크의 수도는 어디인가?","category":"ko","goldIds":["ko/candidate_dev_query1_00000","ko/candidate_dev_query1_00002","ko/candidate_dev_query1_00005"]}
+{"id":"ko-174","sample":"ko","q":"베트남이 독립한 해는 언제인가?","category":"ko","goldIds":["ko/candidate_dev_query174_00005","ko/candidate_dev_query174_00006"]}
+{"id":"ko-41","sample":"ko","q":"1945년 일본 천황은 누구인가요?","category":"ko","goldIds":["ko/candidate_dev_query41_00001","ko/candidate_dev_query41_00010"]}
+{"id":"ko-208","sample":"ko","q":"줄기세포를 연구하는 이유가 무엇인가?","category":"ko","goldIds":["ko/candidate_dev_query208_00000","ko/candidate_dev_query208_00001","ko/candidate_dev_query208_00004"]}
+{"id":"ko-146","sample":"ko","q":"오늘날의 법치주의 사상은 고대 그리스의 플라톤(Plato)의 법사상에 기원을 두고 있나요?","category":"ko","goldIds":["ko/candidate_dev_query146_00000"]}
+{"id":"ko-56","sample":"ko","q":"일본에는 총 몇개의 성이 있나요?","category":"ko","goldIds":["ko/candidate_dev_query56_00003"]}
+{"id":"ko-74","sample":"ko","q":"엽록체는 엽록소가 있어 세포를 관찰했을 때 뚜렷한 녹색이 나타나는 것을 쉽게 확인할 수 있나요?","category":"ko","goldIds":["ko/candidate_dev_query74_00000"]}
+{"id":"ko-5","sample":"ko","q":"세상에서 가장 높은 산이 있는 나라는 어디인가?","category":"ko","goldIds":["ko/candidate_dev_query5_00001"]}
+{"id":"ko-82","sample":"ko","q":"아르헨티나의 수도는 어디인가?","category":"ko","goldIds":["ko/candidate_dev_query82_00000","ko/candidate_dev_query82_00001","ko/candidate_dev_query82_00002","ko/candidate_dev_query82_00004"]}
+{"id":"ko-78","sample":"ko","q":"은나라는 언제 멸망했나요?","category":"ko","goldIds":["ko/candidate_dev_query78_00004"]}
+{"id":"ko-93","sample":"ko","q":"바다는 지구 표면의 몇프로를 차지하나요?","category":"ko","goldIds":["ko/candidate_dev_query93_00000"]}
+{"id":"ko-19","sample":"ko","q":"아일랜드의 수도는 무엇인가?","category":"ko","goldIds":["ko/candidate_dev_query19_00005","ko/candidate_dev_query19_00015"]}
+{"id":"ko-102","sample":"ko","q":"불가리아 수도는 어디인가요?","category":"ko","goldIds":["ko/candidate_dev_query102_00007","ko/candidate_dev_query102_00010","ko/candidate_dev_query102_00016","ko/candidate_dev_query102_00018"]}
+{"id":"ko-29","sample":"ko","q":"플레이스테이션 4 개발사는 어디인가요?","category":"ko","goldIds":["ko/candidate_dev_query29_00006"]}
+{"id":"ko-3","sample":"ko","q":"우라늄의 원자 번호는 무엇인가?","category":"ko","goldIds":["ko/candidate_dev_query3_00000","ko/candidate_dev_query3_00002"]}
+{"id":"ko-188","sample":"ko","q":"히틀러는 몇 년도에 자살했는가?","category":"ko","goldIds":["ko/candidate_dev_query188_00006","ko/candidate_dev_query188_00010","ko/candidate_dev_query188_00018"]}
+{"id":"ko-104","sample":"ko","q":"서양 철학은 자유의지와 관련해 크게 양립가능론(compatibilism), 양립불가론(incompatibilism)으로 나누나요?","category":"ko","goldIds":["ko/candidate_dev_query104_00000"]}
+{"id":"ko-106","sample":"ko","q":"일본에서 야구가 시작된 해는 언제인가?","category":"ko","goldIds":["ko/candidate_dev_query106_00000"]}
+{"id":"ko-60","sample":"ko","q":"월트 디즈니 본사는 어딨나요?","category":"ko","goldIds":["ko/candidate_dev_query60_00000","ko/candidate_dev_query60_00003"]}
+{"id":"ko-169","sample":"ko","q":"빌 클린턴은 미국의 몇번째 대통령인가요?","category":"ko","goldIds":["ko/candidate_dev_query169_00006","ko/candidate_dev_query169_00011","ko/candidate_dev_query169_00012"]}
+{"id":"ko-202","sample":"ko","q":"아프가니스탄의 수도는 어디인가요?","category":"ko","goldIds":["ko/candidate_dev_query202_00000","ko/candidate_dev_query202_00001","ko/candidate_dev_query202_00005","ko/candidate_dev_query202_00006","ko/candidate_dev_query202_00008","ko/candidate_dev_query202_00011","ko/candidate_dev_query202_00020","ko/candidate_dev_query202_00021"]}
+{"id":"ko-12","sample":"ko","q":"도마뱀은 난생을 하는 동물인가요?","category":"ko","goldIds":["ko/candidate_dev_query12_00001","ko/candidate_dev_query12_00004"]}
+{"id":"ko-194","sample":"ko","q":"스칸디나비아에서는 동성결혼이 합법적인가?","category":"ko","goldIds":["ko/candidate_dev_query194_00000"]}
+{"id":"ko-107","sample":"ko","q":"그리스 신화에 등장하는 신은 몇 명인가?","category":"ko","goldIds":["ko/candidate_dev_query107_00018"]}
+{"id":"ko-80","sample":"ko","q":"자유의 여신상은 언제 만들어졌나요?","category":"ko","goldIds":["ko/candidate_dev_query80_00001"]}
+{"id":"ko-135","sample":"ko","q":"레바논의 수도는 어디인가?","category":"ko","goldIds":["ko/candidate_dev_query135_00000","ko/candidate_dev_query135_00001","ko/candidate_dev_query135_00002","ko/candidate_dev_query135_00003","ko/candidate_dev_query135_00004","ko/candidate_dev_query135_00005","ko/candidate_dev_query135_00012","ko/candidate_dev_query135_00017"]}
+{"id":"ko-156","sample":"ko","q":"혜성의 본체는 핵으로 불리나요?","category":"ko","goldIds":["ko/candidate_dev_query156_00000"]}
+{"id":"ko-22","sample":"ko","q":"석가모니의 아명은 무엇인가요?","category":"ko","goldIds":["ko/candidate_dev_query22_00001"]}
+{"id":"ko-150","sample":"ko","q":"수원지로부터 필요한 수량을 취입하는 과정은 무엇인가요?","category":"ko","goldIds":["ko/candidate_dev_query150_00000"]}
+{"id":"ko-27","sample":"ko","q":"버퍼 오버플로는 어떤 상황에서 발생하는 오류인가?","category":"ko","goldIds":["ko/candidate_dev_query27_00001","ko/candidate_dev_query27_00010","ko/candidate_dev_query27_00011","ko/candidate_dev_query27_00013"]}
+{"id":"ko-75","sample":"ko","q":"나트륨의 원자 번호는 무엇인가?","category":"ko","goldIds":["ko/candidate_dev_query75_00002"]}
+{"id":"ko-88","sample":"ko","q":"삼성그룹을 처음 창립한 사람은 누구인가?","category":"ko","goldIds":["ko/candidate_dev_query88_00018"]}
+{"id":"ko-185","sample":"ko","q":"증기기관차를 발명한 사람은 누구인가?","category":"ko","goldIds":["ko/candidate_dev_query185_00000"]}
+{"id":"ko-109","sample":"ko","q":"에비스 마스캇츠의 첫번째 앨범은 무엇인가요?","category":"ko","goldIds":["ko/candidate_dev_query109_00021"]}
+{"id":"ko-20","sample":"ko","q":"하와이주는 미국의 최남단 주인가요?","category":"ko","goldIds":["ko/candidate_dev_query20_00000"]}
+{"id":"ko-51","sample":"ko","q":"오페라는 각본이 있는 음악 장르인가요?","category":"ko","goldIds":["ko/candidate_dev_query51_00000"]}
+{"id":"ko-59","sample":"ko","q":"심리극은 연극의 틀과 기법을 이용한 심리 요법인가요?","category":"ko","goldIds":["ko/candidate_dev_query59_00000"]}
+{"id":"ar-599","sample":"ar","q":"كم يبلغ طول حائط البراق؟","category":"ar","goldIds":["ar/candidate_dev_query599_00000"]}
+{"id":"ar-1398","sample":"ar","q":"أين تقع جزيرة بورنيو؟","category":"ar","goldIds":["ar/candidate_dev_query1398_00000"]}
+{"id":"ar-2269","sample":"ar","q":"ما هو السعال الديكي؟","category":"ar","goldIds":["ar/candidate_dev_query2269_00008","ar/candidate_dev_query2269_00020"]}
+{"id":"ar-2299","sample":"ar","q":"متى توفي الأميرة البريطانية ديانا؟","category":"ar","goldIds":["ar/candidate_dev_query2299_00003","ar/candidate_dev_query2299_00015","ar/candidate_dev_query2299_00016"]}
+{"id":"ar-378","sample":"ar","q":"من هو مؤسس مؤسسة المشاع الإبداعي ؟","category":"ar","goldIds":["ar/candidate_dev_query378_00003"]}
+{"id":"ar-1852","sample":"ar","q":"مامقدار زكاة  الفطر ؟","category":"ar","goldIds":["ar/candidate_dev_query1852_00000","ar/candidate_dev_query1852_00009"]}
+{"id":"ar-1753","sample":"ar","q":"كم ركعة بصلاة العيد؟","category":"ar","goldIds":["ar/candidate_dev_query1753_00004"]}
+{"id":"ar-514","sample":"ar","q":"كم مليوناً انخفض عدد سكان الاتحاد السوفييتي بعد الحرب مع ألمانيا؟","category":"ar","goldIds":["ar/candidate_dev_query514_00000"]}
+{"id":"ar-1839","sample":"ar","q":"كم عدد المشاركين في الألعاب الأولمبية؟","category":"ar","goldIds":["ar/candidate_dev_query1839_00003"]}
+{"id":"ar-1421","sample":"ar","q":"من هو جوردانو برونو؟","category":"ar","goldIds":["ar/candidate_dev_query1421_00000"]}
+{"id":"ar-1120","sample":"ar","q":"أين يقع إقليم ليغوريا ؟","category":"ar","goldIds":["ar/candidate_dev_query1120_00000"]}
+{"id":"ar-2340","sample":"ar","q":"في أي عام تم إنتاج مسلسل جريمة شغف؟","category":"ar","goldIds":["ar/candidate_dev_query2340_00000"]}
+{"id":"ar-2316","sample":"ar","q":"ما هي مدة الحمل عند الأرنب ؟","category":"ar","goldIds":["ar/candidate_dev_query2316_00000"]}
+{"id":"ar-213","sample":"ar","q":"من أخرج فيلم كفرناحوم؟","category":"ar","goldIds":["ar/candidate_dev_query213_00000"]}
+{"id":"ar-1444","sample":"ar","q":"متى تأسست المؤسسة المصرية لحقوق الصم؟","category":"ar","goldIds":["ar/candidate_dev_query1444_00000"]}
+{"id":"ar-354","sample":"ar","q":"من أين يفرز الهرمون البيبتيدي؟","category":"ar","goldIds":["ar/candidate_dev_query354_00001"]}
+{"id":"ar-2414","sample":"ar","q":"أين تقع العَضَلَة الظُنبوبية الخَلفية؟","category":"ar","goldIds":["ar/candidate_dev_query2414_00001"]}
+{"id":"ar-1715","sample":"ar","q":"ما هي نمور التاميل؟","category":"ar","goldIds":["ar/candidate_dev_query1715_00002"]}
+{"id":"ar-1544","sample":"ar","q":"من قام بتأليف مانغا بوروتو ؟","category":"ar","goldIds":["ar/candidate_dev_query1544_00001"]}
+{"id":"ar-777","sample":"ar","q":"ما هي عاصمة جمهورية قبردينو - بلقاريا؟","category":"ar","goldIds":["ar/candidate_dev_query777_00004"]}
+{"id":"ar-394","sample":"ar","q":"ما هو ميزان المراجعة؟","category":"ar","goldIds":["ar/candidate_dev_query394_00001"]}
+{"id":"ar-92","sample":"ar","q":"كم مرة السعي بين الصَّفَا والمَرْوَةُ في مناسك الحج؟","category":"ar","goldIds":["ar/candidate_dev_query92_00000","ar/candidate_dev_query92_00001","ar/candidate_dev_query92_00007"]}
+{"id":"ar-423","sample":"ar","q":"من هو محمد يوسف المقريف؟","category":"ar","goldIds":["ar/candidate_dev_query423_00000","ar/candidate_dev_query423_00002","ar/candidate_dev_query423_00003"]}
+{"id":"ar-1015","sample":"ar","q":"ما هي ملة إبراهيم؟","category":"ar","goldIds":["ar/candidate_dev_query1015_00000","ar/candidate_dev_query1015_00004"]}
+{"id":"ar-203","sample":"ar","q":"متى تم توقيع اتفاق الوحدة اليمنية؟","category":"ar","goldIds":["ar/candidate_dev_query203_00001"]}
+{"id":"ar-2218","sample":"ar","q":"كم دامت سنة الدولة المرابطية؟","category":"ar","goldIds":["ar/candidate_dev_query2218_00013"]}
+{"id":"ar-2593","sample":"ar","q":"في أي عام توفي الرئيس التركي أتاتورك؟","category":"ar","goldIds":["ar/candidate_dev_query2593_00001","ar/candidate_dev_query2593_00004"]}
+{"id":"ar-249","sample":"ar","q":"ما هي محاكم التفتيش؟","category":"ar","goldIds":["ar/candidate_dev_query249_00007","ar/candidate_dev_query249_00011","ar/candidate_dev_query249_00013"]}
+{"id":"ar-2567","sample":"ar","q":"في أي عام نشبت حرب الخلافة الإسبانية؟","category":"ar","goldIds":["ar/candidate_dev_query2567_00000","ar/candidate_dev_query2567_00001"]}
+{"id":"ar-2255","sample":"ar","q":"ما هو اقوى جيش في العالم حاليا ؟","category":"ar","goldIds":["ar/candidate_dev_query2255_00012"]}
+{"id":"ar-1554","sample":"ar","q":"اين توجد جزيرة ايبيزا؟","category":"ar","goldIds":["ar/candidate_dev_query1554_00000"]}
+{"id":"ar-1536","sample":"ar","q":"ما هى جنسية آشانتي شيكويا ؟","category":"ar","goldIds":["ar/candidate_dev_query1536_00011"]}
+{"id":"ar-2602","sample":"ar","q":"ما هي أكبر جزيرة كويتية ؟","category":"ar","goldIds":["ar/candidate_dev_query2602_00000","ar/candidate_dev_query2602_00008"]}
+{"id":"ar-1153","sample":"ar","q":"متى توفي كارلوس الخامس هابسبورغ  ؟","category":"ar","goldIds":["ar/candidate_dev_query1153_00000"]}
+{"id":"ar-833","sample":"ar","q":"متى وقعت الرارنجية؟","category":"ar","goldIds":["ar/candidate_dev_query833_00004","ar/candidate_dev_query833_00006"]}
+{"id":"ar-400","sample":"ar","q":"أين تقع جورجيا الجنوبية ؟","category":"ar","goldIds":["ar/candidate_dev_query400_00000"]}
+{"id":"ar-1052","sample":"ar","q":"كم ثنائية فاز بها نادي برشلونة؟","category":"ar","goldIds":["ar/candidate_dev_query1052_00012"]}
+{"id":"ar-2192","sample":"ar","q":"من هو جمال الدين الأفغاني؟","category":"ar","goldIds":["ar/candidate_dev_query2192_00000","ar/candidate_dev_query2192_00002"]}
+{"id":"ar-135","sample":"ar","q":"كيف تم إعدام ليون كولغوش؟","category":"ar","goldIds":["ar/candidate_dev_query135_00000"]}
+{"id":"ar-2305","sample":"ar","q":"متى قتل الصبي الفلسطيني محمد الدرة؟","category":"ar","goldIds":["ar/candidate_dev_query2305_00000"]}
+{"id":"th-573","sample":"th","q":"เหมียว เฉียวเหว่ย เกิดเมื่อไหร่?","category":"th","goldIds":["th/candidate_dev_query573_00000"]}
+{"id":"th-167","sample":"th","q":"สมเด็จพระราชินีมารีแห่งโรมาเนียทรงสมรสกับใคร?","category":"th","goldIds":["th/candidate_dev_query167_00003","th/candidate_dev_query167_00006"]}
+{"id":"th-274","sample":"th","q":"ประพจน์ หมายถึงอะไร?","category":"th","goldIds":["th/candidate_dev_query274_00000"]}
+{"id":"th-667","sample":"th","q":"ผจญภัยแดนคำสาปราชินีหิมะ มีเค้าโครงมาจากเรื่องอะไร?","category":"th","goldIds":["th/candidate_dev_query667_00000"]}
+{"id":"th-101","sample":"th","q":"ความผิดต่อองค์พระมหากษัตริย์ไทยอยู่ในประมวลกฎหมายอาญา มีโทษสูงสุดคืออะไร?","category":"th","goldIds":["th/candidate_dev_query101_00000"]}
+{"id":"th-389","sample":"th","q":"โรงเรียนนวมินทราชินูทิศ บดินทรเดชา ก่อตั้งขึ้นเมื่อใด?","category":"th","goldIds":["th/candidate_dev_query389_00001","th/candidate_dev_query389_00002","th/candidate_dev_query389_00003"]}
+{"id":"th-630","sample":"th","q":"มหาอำมาตย์ตรี พระยาชัยวิชิตวิศิษฏ์ธรรมธาดา เข้ารับราชการครั้งแรกในตำแหน่งอะไร ?","category":"th","goldIds":["th/candidate_dev_query630_00007"]}
+{"id":"th-79","sample":"th","q":"ราชสกุล คืออะไร ?","category":"th","goldIds":["th/candidate_dev_query79_00021"]}
+{"id":"th-665","sample":"th","q":"ขบวนการนักศึกษาทานตะวัน เกิดขึ้นเพื่อวัตถุประสงค์ใด?","category":"th","goldIds":["th/candidate_dev_query665_00003"]}
+{"id":"th-63","sample":"th","q":"ไบรโอซัวมีเลือดไหม ?","category":"th","goldIds":["th/candidate_dev_query63_00000"]}
+{"id":"th-606","sample":"th","q":"แกะโคลนตัวแรกของโลกชื่ออะไร?","category":"th","goldIds":["th/candidate_dev_query606_00000","th/candidate_dev_query606_00001","th/candidate_dev_query606_00002"]}
+{"id":"th-440","sample":"th","q":"ประเทศอิตาลีติดกับประเทศฝรั่งเศสหรือไม่ ?","category":"th","goldIds":["th/candidate_dev_query440_00000","th/candidate_dev_query440_00001","th/candidate_dev_query440_00007","th/candidate_dev_query440_00012"]}
+{"id":"th-669","sample":"th","q":"จักรวรรดิโรมัน ล่มสลายเมื่อสมัยใด?","category":"th","goldIds":["th/candidate_dev_query669_00001","th/candidate_dev_query669_00003","th/candidate_dev_query669_00006","th/candidate_dev_query669_00007","th/candidate_dev_query669_00011","th/candidate_dev_query669_00021"]}
+{"id":"th-336","sample":"th","q":"สหภาพโซเวียต ก่อตั้งขึ้นเมื่อไหร่?","category":"th","goldIds":["th/candidate_dev_query336_00002","th/candidate_dev_query336_00004"]}
+{"id":"th-619","sample":"th","q":"รัฐธรรมนูญฉบับปัจจุบัน คือ?","category":"th","goldIds":["th/candidate_dev_query619_00000"]}
+{"id":"th-309","sample":"th","q":"ในเหตุการณ์กบฏแมนฮัตตัน  หัวหน้าคณะก่อการคือใคร?","category":"th","goldIds":["th/candidate_dev_query309_00003"]}
+{"id":"th-198","sample":"th","q":"ขุนช้าง เป็นลูกของใคร?","category":"th","goldIds":["th/candidate_dev_query198_00001","th/candidate_dev_query198_00005","th/candidate_dev_query198_00020"]}
+{"id":"th-616","sample":"th","q":"จังหวัดหนองคาย ติดกับประเทศลาวหรือไม่ ?","category":"th","goldIds":["th/candidate_dev_query616_00000","th/candidate_dev_query616_00003","th/candidate_dev_query616_00006","th/candidate_dev_query616_00007"]}
+{"id":"th-643","sample":"th","q":"นครมะดีนะหฺ เป็นสถานที่ทำฮัจห์ของมุสลิมหรือไม่ ?","category":"th","goldIds":["th/candidate_dev_query643_00023"]}
+{"id":"th-295","sample":"th","q":"เจ้าของวิกตอเรียส์ซีเคร็ตคือใคร?","category":"th","goldIds":["th/candidate_dev_query295_00015"]}
+{"id":"th-112","sample":"th","q":"กองทุนสัตว์ป่าโลกสากล มีสัญลักษณ์เป็นรูปสัตว์อะไร?","category":"th","goldIds":["th/candidate_dev_query112_00003"]}
+{"id":"th-719","sample":"th","q":"เจงกีสข่านคือใคร?","category":"th","goldIds":["th/candidate_dev_query719_00002","th/candidate_dev_query719_00003"]}
+{"id":"th-425","sample":"th","q":"การชันสูตรพลิกศพจะทำในกรณีใด ?","category":"th","goldIds":["th/candidate_dev_query425_00000","th/candidate_dev_query425_00006"]}
+{"id":"th-256","sample":"th","q":"แอ๊ด คาราบาวเกิดที่จังหวัดอะไร?","category":"th","goldIds":["th/candidate_dev_query256_00020"]}
+{"id":"th-258","sample":"th","q":"มหาวิทยาลัยพะเยาก่อตั้งขึ้นเมื่อไหร่?","category":"th","goldIds":["th/candidate_dev_query258_00021"]}
+{"id":"th-404","sample":"th","q":"ทักษิณ ชินวัตร เป็นนายกคนที่เท่าไหร่ ?","category":"th","goldIds":["th/candidate_dev_query404_00003","th/candidate_dev_query404_00010"]}
+{"id":"th-371","sample":"th","q":"ตราสารทางการเงิน หมายถึงอะไร?","category":"th","goldIds":["th/candidate_dev_query371_00000"]}
+{"id":"th-724","sample":"th","q":"กฎหมายตราสามดวงถูกใช้ครั้งแรกในประเทศไทยเมื่อไหร่?","category":"th","goldIds":["th/candidate_dev_query724_00006"]}
+{"id":"th-387","sample":"th","q":"สิบสองปันนา หมายถึงอะไร?","category":"th","goldIds":["th/candidate_dev_query387_00000","th/candidate_dev_query387_00001","th/candidate_dev_query387_00004","th/candidate_dev_query387_00009","th/candidate_dev_query387_00013","th/candidate_dev_query387_00017"]}
+{"id":"th-263","sample":"th","q":"เครือข่ายบิตคอยน์ สร้างขึ้นครั้งแรกเมื่อใด ?","category":"th","goldIds":["th/candidate_dev_query263_00012","th/candidate_dev_query263_00016"]}
+{"id":"th-118","sample":"th","q":"อ็องตวน-โอกุสแต็ง กูร์โน จบการศึกษาสูงสุดจากที่ไหน ?","category":"th","goldIds":["th/candidate_dev_query118_00000"]}
+{"id":"th-627","sample":"th","q":"ขี้หูมีอันตรายหรือไม่ ?","category":"th","goldIds":["th/candidate_dev_query627_00007"]}
+{"id":"th-633","sample":"th","q":"หนังสือการ์ตูนเรื่อง ฮายาเตะ พ่อบ้านประจัญบาน มีทั้งหมดกี่เล่ม?","category":"th","goldIds":["th/candidate_dev_query633_00005"]}
+{"id":"th-391","sample":"th","q":"รักกันสนั่นเมือง ออกอากาศทางช่องใด ?","category":"th","goldIds":["th/candidate_dev_query391_00000"]}
+{"id":"th-174","sample":"th","q":"ซัคเซิน-โคบวร์ค และ ซัคเซิน-โกทา ไม่ใช่รัฐเดียวกันใช่หรือไม่ ?","category":"th","goldIds":["th/candidate_dev_query174_00000","th/candidate_dev_query174_00001"]}
+{"id":"th-172","sample":"th","q":"เดอะซิมส์ ภาคแรกวางจำหน่ายเมื่อใด ?","category":"th","goldIds":["th/candidate_dev_query172_00003"]}
+{"id":"th-18","sample":"th","q":"แอมโมนอยด์สูญพันธุ์ไปเมื่อใด ?","category":"th","goldIds":["th/candidate_dev_query18_00001","th/candidate_dev_query18_00002"]}
+{"id":"th-141","sample":"th","q":"เกมส์ไซเลนต์ฮิลล์ ออกวางจำหน่ายครั้งแรกเมื่อไหร่?","category":"th","goldIds":["th/candidate_dev_query141_00003","th/candidate_dev_query141_00005","th/candidate_dev_query141_00013"]}
+{"id":"th-5","sample":"th","q":"ค.ศ. 1951 ใครเป็นนายกรัฐมนตรีของอังกฤษ ?","category":"th","goldIds":["th/candidate_dev_query5_00006"]}
+{"id":"th-417","sample":"th","q":"เจ้าแก้วมงคลทรงถึงแก่พิราลัย ณ เมืองทุ่งศรีภูมิ เมื่อ พ.ศ.ใด?","category":"th","goldIds":["th/candidate_dev_query417_00000","th/candidate_dev_query417_00001","th/candidate_dev_query417_00004","th/candidate_dev_query417_00005"]}

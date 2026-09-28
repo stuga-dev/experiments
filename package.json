@@ -1,0 +1,28 @@
+{
+  "name": "rerank-bench",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Rerankers compared on the same candidates: a System One classifier, LLM judges and cross-encoders, on Stuga's sample workspaces.",
+  "license": "MIT",
+  "type": "module",
+  "packageManager": "pnpm@12.6.0",
+  "engines": {
+    "node": ">=26"
+  },
+  "scripts": {
+    "bench": "node src/run.ts",
+    "report": "node src/report.ts",
+    "typecheck": "tsc --noEmit",
+    "lint": "oxlint . --deny-warnings",
+    "test": "node --test \"test/**/*.test.ts\""
+  },
+  "dependencies": {
+    "@earendil-works/pi-ai": "0.87.1"
+  },
+  "devDependencies": {
+    "@types/node": "~26.6.2",
+    "hyparquet": "^1.31.1",
+    "oxlint": "^1.85.0",
+    "typescript": "^7.0.2"
+  }
+}
