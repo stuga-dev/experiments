@@ -1,6 +1,6 @@
 {
-  "set": "bright-stackoverflow-bm25",
-  "started": "2026-09-28T05:03:18.329Z",
+  "set": "miracl",
+  "started": "2026-09-28T01:14:35.393Z",
   "snippet": "start",
   "node": "v26.10.0",
   "machine": "Apple M6, 32 GB, darwin/arm64",
@@ -39,6 +39,38 @@
       "repeats": 1
     },
     {
+      "id": "gpt-6-sol",
+      "label": "GPT-6 Sol",
+      "kind": "llm",
+      "via": "OpenAI API",
+      "price": {
+        "input": 2,
+        "output": 10,
+        "cacheRead": 0.2,
+        "cacheWrite": 2.5
+      },
+      "repeats": 1,
+      "sent": {
+        "maxTokens": 8192
+      }
+    },
+    {
+      "id": "gpt-6-luna",
+      "label": "GPT-6 Luna",
+      "kind": "llm",
+      "via": "OpenAI API",
+      "price": {
+        "input": 0.1,
+        "output": 0.5,
+        "cacheRead": 0.01,
+        "cacheWrite": 0.125
+      },
+      "repeats": 1,
+      "sent": {
+        "maxTokens": 8192
+      }
+    },
+    {
       "id": "claude-opus-5-5",
       "label": "Claude Opus 5.5",
       "kind": "llm",
@@ -64,22 +96,6 @@
         "output": 11,
         "cacheRead": 0.22,
         "cacheWrite": 2.75
-      },
-      "repeats": 1,
-      "sent": {
-        "maxTokens": 8192
-      }
-    },
-    {
-      "id": "claude-haiku-4-5",
-      "label": "Claude Haiku 4.5",
-      "kind": "llm",
-      "via": "Bedrock us-west-2",
-      "price": {
-        "input": 1.1,
-        "output": 5.5,
-        "cacheRead": 0.11,
-        "cacheWrite": 1.375
       },
       "repeats": 1,
       "sent": {
@@ -261,38 +277,6 @@
       "repeats": 1
     },
     {
-      "id": "gpt-6-sol",
-      "label": "GPT-6 Sol",
-      "kind": "llm",
-      "via": "OpenAI API",
-      "price": {
-        "input": 2,
-        "output": 10,
-        "cacheRead": 0.2,
-        "cacheWrite": 2.5
-      },
-      "repeats": 1,
-      "sent": {
-        "maxTokens": 8192
-      }
-    },
-    {
-      "id": "gpt-6-luna",
-      "label": "GPT-6 Luna",
-      "kind": "llm",
-      "via": "OpenAI API",
-      "price": {
-        "input": 0.1,
-        "output": 0.5,
-        "cacheRead": 0.01,
-        "cacheWrite": 0.125
-      },
-      "repeats": 1,
-      "sent": {
-        "maxTokens": 8192
-      }
-    },
-    {
       "id": "qwen3-reranker-0-6b",
       "label": "Qwen3-Reranker 0.6B (local)",
       "kind": "reranker",
@@ -323,6 +307,38 @@
         "output": 0
       },
       "repeats": 1
+    },
+    {
+      "id": "claude-haiku-4-5",
+      "label": "Claude Haiku 4.5",
+      "kind": "llm",
+      "via": "Bedrock us-west-2",
+      "price": {
+        "input": 1.1,
+        "output": 5.5,
+        "cacheRead": 0.11,
+        "cacheWrite": 1.375
+      },
+      "repeats": 1,
+      "sent": {
+        "maxTokens": 8192
+      }
+    },
+    {
+      "id": "claude-sonnet-5-5",
+      "label": "Claude Sonnet 5.5",
+      "kind": "llm",
+      "via": "Bedrock us-west-2",
+      "price": {
+        "input": 2,
+        "output": 10,
+        "cacheRead": 0.2,
+        "cacheWrite": 2.5
+      },
+      "repeats": 1,
+      "sent": {
+        "maxTokens": 8192
+      }
     }
   ]
 }

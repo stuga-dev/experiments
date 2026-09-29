@@ -323,6 +323,22 @@
         "output": 0
       },
       "repeats": 1
+    },
+    {
+      "id": "claude-sonnet-5-5",
+      "label": "Claude Sonnet 5.5",
+      "kind": "llm",
+      "via": "Bedrock us-west-2",
+      "price": {
+        "input": 2,
+        "output": 10,
+        "cacheRead": 0.2,
+        "cacheWrite": 2.5
+      },
+      "repeats": 1,
+      "sent": {
+        "maxTokens": 8192
+      }
     }
   ]
 }

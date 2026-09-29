@@ -4,6 +4,7 @@ Ranked on 240 questions whose answer was among the 24 candidates. Intervals are 
 |---|---|---|---|---|---|---|---|---|
 | Qwen3-Reranker 4B (local) | reranker | 81% (75%–86%) | 0.886 | 100% | 5.3 s | 8.4 s | — | 0 |
 | Claude Opus 5.5 | llm | 81% (76%–86%) | 0.882 | 99% | 3.5 s | 4.7 s | $37 | 0 |
+| Claude Sonnet 5.5 | llm | 80% (75%–85%) | 0.872 | 99% | 2.0 s | 3.8 s | $20 | 0 |
 | Cohere Rerank 3.5 | reranker | 78% (73%–83%) | 0.870 | 98% | 163 ms | 218 ms | $2.0 | 0 |
 | Claude Sonnet 5 | llm | 80% (75%–85%) | 0.868 | 98% | 3.7 s | 10.3 s | $20 | 0 |
 | Claude Haiku 4.5 | llm | 79% (74%–84%) | 0.866 | 98% | 1.9 s | 4.0 s | $9.3 | 0 |

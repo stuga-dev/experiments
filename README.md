@@ -18,6 +18,7 @@ Ranked on 240 questions whose answer was among the 24 candidates. Intervals are 
 |---|---|---|---|---|---|---|---|---|
 | Qwen3-Reranker 4B (local) | reranker | 81% (75%–86%) | 0.886 | 100% | 5.3 s | 8.4 s | — | 0 |
 | Claude Opus 5.5 | llm | 81% (76%–86%) | 0.882 | 99% | 3.5 s | 4.7 s | $37 | 0 |
+| Claude Sonnet 5.5 | llm | 80% (75%–85%) | 0.872 | 99% | 2.0 s | 3.8 s | $20 | 0 |
 | Cohere Rerank 3.5 | reranker | 78% (73%–83%) | 0.870 | 98% | 163 ms | 218 ms | $2.0 | 0 |
 | Claude Sonnet 5 | llm | 80% (75%–85%) | 0.868 | 98% | 3.7 s | 10.3 s | $20 | 0 |
 | Claude Haiku 4.5 | llm | 79% (74%–84%) | 0.866 | 98% | 1.9 s | 4.0 s | $9.3 | 0 |
@@ -54,6 +55,7 @@ Ranked on 61 questions whose answer was among the 24 candidates (56 retrieval mi
 |---|---|---|---|---|---|---|---|---|
 | GPT-6 Luna | llm | 43% (30%–56%) | 0.561 | 82% | 1.7 s | 2.1 s | $0.92 | 0 |
 | Claude Opus 5.5 | llm | 39% (26%–51%) | 0.548 | 87% | 4.1 s | 5.2 s | $61 | 0 |
+| Claude Sonnet 5.5 | llm | 38% (25%–49%) | 0.543 | 90% | 2.0 s | 3.6 s | $28 | 0 |
 | Amazon Nova 2 Lite | llm | 36% (25%–48%) | 0.511 | 79% | 1.3 s | 1.5 s | $3.0 | 0 |
 | GLM-5 | llm | 36% (25%–48%) | 0.509 | 79% | 2.7 s | 5.3 s | $7.3 | 0 |
 | Llama 4 Maverick | llm | 36% (23%–48%) | 0.504 | 77% | 1.0 s | 1.2 s | $1.8 | 0 |
@@ -87,6 +89,7 @@ Ranked on 47 questions whose answer was among the 24 candidates (70 retrieval mi
 | Claude Opus 5.5 | llm | 57% (43%–72%) | 0.727 | 98% | 4.0 s | 5.4 s | $71 | 0 |
 | GPT-6 Luna | llm | 55% (40%–70%) | 0.686 | 94% | 1.8 s | 2.2 s | $1.2 | 2% |
 | Claude Sonnet 5 | llm | 53% (38%–68%) | 0.673 | 91% | 3.6 s | 7.2 s | $36 | 0 |
+| Claude Sonnet 5.5 | llm | 51% (36%–66%) | 0.670 | 98% | 2.0 s | 3.7 s | $32 | 0 |
 | GLM-5 | llm | 49% (34%–64%) | 0.654 | 96% | 3.0 s | 6.6 s | $8.7 | 0 |
 | GPT-6 Sol | llm | 49% (34%–64%) | 0.652 | 98% | 2.6 s | 3.1 s | $21 | 0 |
 | Grok 4.6 | llm | 47% (32%–62%) | 0.644 | 94% | 11.2 s | 19.8 s | $29 | 0 |
@@ -118,8 +121,8 @@ Ranked on 47 questions whose answer was among the 24 candidates (70 retrieval mi
 calls, looks at why BRIGHT's first-stage order is hard to beat: passage length against the 1,200
 characters a judge sees, BM25 over each question's candidates from whole passages and from those
 characters, the two first stages over every question, and where each ranker kept, gained or lost a
-gold passage in first place. `results/<set>/2026-09-28-excerpt/` holds Jev and Cohere Rerank 3.5 on
-both BRIGHT sets reading the excerpt instead.
+gold passage in first place. `results/<set>/2026-09-28-excerpt/` holds every ranker on both BRIGHT
+sets reading the 1,200 characters that best match the question instead.
 
 ## What is measured
 

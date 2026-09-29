@@ -9,7 +9,7 @@
  * - Given a second run whose judges read the excerpt (`--snippet excerpt`), each ranker's Hit@1
  *   under both on the same questions, and how often the excerpt differs from the start on MIRACL.
  *
- *   node scripts/analyze-bright.ts 2026-09-27 [2026-09-28-excerpt]
+ *   node scripts/analyze-bright.ts 2026-09-28 [2026-09-28-excerpt]
  */
 import { readFileSync, writeFileSync } from "node:fs";
 import { loadCandidates, loadChunks, loadQuestions, setDir, type Chunk, type SetId } from "../src/corpus.ts";

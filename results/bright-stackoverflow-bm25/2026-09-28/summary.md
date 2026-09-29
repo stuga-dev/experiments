@@ -5,6 +5,7 @@ Ranked on 47 questions whose answer was among the 24 candidates (70 retrieval mi
 | Claude Opus 5.5 | llm | 57% (43%–72%) | 0.727 | 98% | 4.0 s | 5.4 s | $71 | 0 |
 | GPT-6 Luna | llm | 55% (40%–70%) | 0.686 | 94% | 1.8 s | 2.2 s | $1.2 | 2% |
 | Claude Sonnet 5 | llm | 53% (38%–68%) | 0.673 | 91% | 3.6 s | 7.2 s | $36 | 0 |
+| Claude Sonnet 5.5 | llm | 51% (36%–66%) | 0.670 | 98% | 2.0 s | 3.7 s | $32 | 0 |
 | GLM-5 | llm | 49% (34%–64%) | 0.654 | 96% | 3.0 s | 6.6 s | $8.7 | 0 |
 | GPT-6 Sol | llm | 49% (34%–64%) | 0.652 | 98% | 2.6 s | 3.1 s | $21 | 0 |
 | Grok 4.6 | llm | 47% (32%–62%) | 0.644 | 94% | 11.2 s | 19.8 s | $29 | 0 |

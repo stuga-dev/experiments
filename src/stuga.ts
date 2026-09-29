@@ -11,7 +11,7 @@ export const SNIPPET_CHARS = 1200;
 
 /**
  * Which characters: the part of a long passage that best matches the query, as Stuga's judges read
- * since 2026-09-28, or its first ones, as they read before and as the 2026-09-27 results measured.
+ * it, or its first ones, as they read before.
  */
 export type Snippet = "excerpt" | "start";
 

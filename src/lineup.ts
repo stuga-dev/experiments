@@ -76,6 +76,18 @@ export function lineup(keys: Keys): Ranker[] {
     out.push(
       bedrock("claude-opus-5-5", "Claude Opus 5.5", "us.anthropic.claude-opus-5-5"),
       bedrock("claude-sonnet-5", "Claude Sonnet 5", "us.anthropic.claude-sonnet-5"),
+      // Not in Pi's catalog yet; Bedrock serves it through the global profile only.
+      llmJudge({
+        id: "claude-sonnet-5-5",
+        label: "Claude Sonnet 5.5",
+        via,
+        provider: "amazon-bedrock",
+        model: "global.anthropic.claude-sonnet-5",
+        baseUrl,
+        hostedAs: { model: "global.anthropic.claude-sonnet-5-5", cost: { input: 2, output: 10, cacheRead: 0.2, cacheWrite: 2.5 } },
+        auth,
+        repeats: 1,
+      }),
       bedrock("claude-haiku-4-5", "Claude Haiku 4.5", "us.anthropic.claude-haiku-4-5-20251001-v1:0"),
       bedrock("grok-4-6", "Grok 4.6", "us.xai.grok-4.6"),
       bedrock("nova-2-lite", "Amazon Nova 2 Lite", "us.amazon.nova-2-lite-v1:0"),

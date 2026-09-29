@@ -3,6 +3,7 @@ Ranked on 47 questions whose answer was among the 24 candidates (70 retrieval mi
 | Ranker | Kind | Hit@1 | MRR | Recall@8 | p50 latency | p95 latency | $ / 1k searches | Unusable answers |
 |---|---|---|---|---|---|---|---|---|
 | Claude Opus 5.5 | llm | 72% (60%–85%) | 0.821 | 100% | 4.4 s | 5.7 s | $69 | 0 |
+| Claude Sonnet 5.5 | llm | 70% (57%–83%) | 0.806 | 98% | 2.0 s | 3.1 s | $31 | 0 |
 | GLM-5 | llm | 68% (53%–81%) | 0.792 | 98% | 3.2 s | 12.0 s | $8.5 | 0 |
 | MiniMax M2.5 | llm | 68% (55%–81%) | 0.791 | 96% | 8.3 s | 12.0 s | $3.4 | 0 |
 | Grok 4.6 | llm | 66% (51%–79%) | 0.774 | 100% | 11.2 s | 19.7 s | $29 | 0 |

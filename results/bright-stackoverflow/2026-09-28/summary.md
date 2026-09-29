@@ -4,6 +4,7 @@ Ranked on 61 questions whose answer was among the 24 candidates (56 retrieval mi
 |---|---|---|---|---|---|---|---|---|
 | GPT-6 Luna | llm | 43% (30%–56%) | 0.561 | 82% | 1.7 s | 2.1 s | $0.92 | 0 |
 | Claude Opus 5.5 | llm | 39% (26%–51%) | 0.548 | 87% | 4.1 s | 5.2 s | $61 | 0 |
+| Claude Sonnet 5.5 | llm | 38% (25%–49%) | 0.543 | 90% | 2.0 s | 3.6 s | $28 | 0 |
 | Amazon Nova 2 Lite | llm | 36% (25%–48%) | 0.511 | 79% | 1.3 s | 1.5 s | $3.0 | 0 |
 | GLM-5 | llm | 36% (25%–48%) | 0.509 | 79% | 2.7 s | 5.3 s | $7.3 | 0 |
 | Llama 4 Maverick | llm | 36% (23%–48%) | 0.504 | 77% | 1.0 s | 1.2 s | $1.8 | 0 |
