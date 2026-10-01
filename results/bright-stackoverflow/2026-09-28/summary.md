@@ -7,6 +7,7 @@ Ranked on 61 questions whose answer was among the 24 candidates (56 retrieval mi
 | Claude Sonnet 5.5 | llm | 38% (25%–49%) | 0.543 | 90% | 2.0 s | 3.6 s | $28 | 0 |
 | Amazon Nova 2 Lite | llm | 36% (25%–48%) | 0.511 | 79% | 1.3 s | 1.5 s | $3.0 | 0 |
 | GLM-5 | llm | 36% (25%–48%) | 0.509 | 79% | 2.7 s | 5.3 s | $7.3 | 0 |
+| GPT-6.1 Sol | llm | 33% (21%–44%) | 0.505 | 80% | 2.2 s | 4.1 s | $20 | 0 |
 | Llama 4 Maverick | llm | 36% (23%–48%) | 0.504 | 77% | 1.0 s | 1.2 s | $1.8 | 0 |
 | Claude Sonnet 5 | llm | 34% (23%–46%) | 0.499 | 77% | 3.6 s | 12.1 s | $32 | 0 |
 | No reranker (first-stage order) | baseline | 36% (25%–48%) | 0.495 | 72% | — | — | — | 0 |

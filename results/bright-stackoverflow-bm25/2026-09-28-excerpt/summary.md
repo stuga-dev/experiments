@@ -7,6 +7,7 @@ Ranked on 47 questions whose answer was among the 24 candidates (70 retrieval mi
 | GLM-5 | llm | 68% (53%–81%) | 0.792 | 98% | 3.2 s | 12.0 s | $8.5 | 0 |
 | MiniMax M2.5 | llm | 68% (55%–81%) | 0.791 | 96% | 8.3 s | 12.0 s | $3.4 | 0 |
 | Grok 4.6 | llm | 66% (51%–79%) | 0.774 | 100% | 11.2 s | 19.7 s | $29 | 0 |
+| GPT-6.1 Sol | llm | 64% (51%–77%) | 0.771 | 100% | 2.3 s | 4.3 s | $23 | 0 |
 | GPT-6 Sol | llm | 64% (51%–77%) | 0.763 | 98% | 1.4 s | 3.2 s | $23 | 0 |
 | Claude Sonnet 5 | llm | 66% (53%–79%) | 0.762 | 98% | 3.8 s | 6.2 s | $35 | 0 |
 | GPT-6 Luna | llm | 64% (51%–77%) | 0.751 | 98% | 1.3 s | 2.5 s | $1.2 | 0 |

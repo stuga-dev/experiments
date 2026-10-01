@@ -40,7 +40,7 @@ export interface JudgeSpec {
   /** Overrides the catalog's base URL, e.g. a Bedrock region's runtime endpoint. */
   baseUrl?: string;
   /** For a model another service hosts: the id it answers to, and its prices, per million tokens. */
-  hostedAs?: { model: string; cost: Model<Api>["cost"] };
+  hostedAs?: { model: string; cost: Model<Api>["cost"]; thinkingLevelMap?: Model<Api>["thinkingLevelMap"] };
   auth: JudgeAuth;
   repeats: number;
 }
@@ -57,6 +57,7 @@ export function llmJudge(spec: JudgeSpec): Ranker {
     ...known,
     ...(spec.baseUrl ? { baseUrl: spec.baseUrl } : {}),
     ...(spec.hostedAs ? { id: spec.hostedAs.model, cost: spec.hostedAs.cost } : {}),
+    ...(spec.hostedAs?.thinkingLevelMap ? { thinkingLevelMap: { ...known.thinkingLevelMap, ...spec.hostedAs.thinkingLevelMap } } : {}),
   };
   const found = APIS[model.api];
   if (!found) throw new Error(`no client for protocol ${model.api}`);

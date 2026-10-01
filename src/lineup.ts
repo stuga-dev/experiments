@@ -3,6 +3,7 @@
  * vendor served on the run date; `results/<set>/<date>/meta.json` records what answered.
  */
 import { readFileSync } from "node:fs";
+import type { Api, Model } from "@earendil-works/pi-ai";
 import { bedrockRerank, crossEncoder, localRerank } from "./rankers/cross-encoder.ts";
 import { llmJudge } from "./rankers/llm-judge.ts";
 import { systemOne } from "./rankers/system-one.ts";
@@ -67,11 +68,20 @@ export function lineup(keys: Keys): Ranker[] {
     // GPT-6 through Bedrock's OpenAI-compatible Responses API and a US inference profile, so it gets
     // the request OpenAI's own API gets. Pi's catalog lists it for OpenAI only; the prices are Bedrock's
     // model-card rates for that profile, per million tokens (OpenAI's plus 10%).
-    const gpt = (id: string, label: string, cost: { input: number; output: number; cacheRead: number; cacheWrite: number }) =>
-      llmJudge({ id, label, via, provider: "openai", model: id, baseUrl: `${baseUrl}/openai/v1`, hostedAs: { model: `us.openai.${id}`, cost }, auth: { apiKey: key }, repeats: 1 });
+    // GPT-6.1 Sol is not in Pi's catalog yet either: it clones GPT-6 Sol's entry (`catalog`), and
+    // since it refuses reasoning "none" its lowest level is "low".
+    const gpt = (
+      id: string,
+      label: string,
+      cost: { input: number; output: number; cacheRead: number; cacheWrite: number },
+      catalog = id,
+      thinkingLevelMap?: Model<Api>["thinkingLevelMap"],
+    ) =>
+      llmJudge({ id, label, via, provider: "openai", model: catalog, baseUrl: `${baseUrl}/openai/v1`, hostedAs: { model: `us.openai.${id}`, cost, thinkingLevelMap }, auth: { apiKey: key }, repeats: 1 });
     out.push(
       gpt("gpt-6-sol", "GPT-6 Sol", { input: 2.2, output: 11, cacheRead: 0.22, cacheWrite: 2.75 }),
       gpt("gpt-6-luna", "GPT-6 Luna", { input: 0.11, output: 0.55, cacheRead: 0.011, cacheWrite: 0.1375 }),
+      gpt("gpt-6.1-sol", "GPT-6.1 Sol", { input: 2.2, output: 11, cacheRead: 0.11, cacheWrite: 2.75 }, "gpt-6-sol", { off: null, minimal: null }),
     );
     out.push(
       bedrock("claude-opus-5-5", "Claude Opus 5.5", "us.anthropic.claude-opus-5-5"),

@@ -1,5 +1,5 @@
 {
-  "_about": "First public release of each model tested: the vendor's own date where it gives one, otherwise its first listing on OpenRouter or Hugging Face. Checked 2026-09-27.",
+  "_about": "First public release of each model tested: the vendor's own date where it gives one, otherwise its first listing on OpenRouter or Hugging Face.",
   "jev": {
     "released": "2026-09-15",
     "source": "https://typesafe.ai/blog/introducing-system-one-models-and-jev"
@@ -11,6 +11,10 @@
   "gpt-6-luna": {
     "released": "2026-09-14",
     "source": "OpenAI API /v1/models, created"
+  },
+  "gpt-6.1-sol": {
+    "released": "2026-09-29",
+    "source": "https://thenextweb.com/news/openai-gpt-6-1-sol-price-astra-devday"
   },
   "claude-opus-5-5": {
     "released": "2026-09-22",

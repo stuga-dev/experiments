@@ -23,6 +23,7 @@ Ranked on 240 questions whose answer was among the 24 candidates. Intervals are 
 | Claude Sonnet 5 | llm | 80% (75%–85%) | 0.868 | 98% | 3.7 s | 10.3 s | $20 | 0 |
 | Claude Haiku 4.5 | llm | 79% (74%–84%) | 0.866 | 98% | 1.9 s | 4.0 s | $9.3 | 0 |
 | Jev, one request per passage | classifier | 78% (73%–83%) | 0.862 | 98% | 244 ms | 350 ms | $0.64 | 0 |
+| GPT-6.1 Sol | llm | 77% (72%–82%) | 0.857 | 99% | 2.2 s | 4.8 s | $14 | 0 |
 | Jev | classifier | 77% (72%–82%) | 0.854 | 99% | 131 ms | 185 ms | $0.37 | 0 |
 | GLM-5 | llm | 77% (72%–83%) | 0.853 | 98% | 2.7 s | 9.5 s | $6.1 | 0 |
 | Grok 4.6 | llm | 76% (70%–81%) | 0.849 | 99% | 11.9 s | 40.9 s | $20 | 0 |
@@ -58,6 +59,7 @@ Ranked on 61 questions whose answer was among the 24 candidates (56 retrieval mi
 | Claude Sonnet 5.5 | llm | 38% (25%–49%) | 0.543 | 90% | 2.0 s | 3.6 s | $28 | 0 |
 | Amazon Nova 2 Lite | llm | 36% (25%–48%) | 0.511 | 79% | 1.3 s | 1.5 s | $3.0 | 0 |
 | GLM-5 | llm | 36% (25%–48%) | 0.509 | 79% | 2.7 s | 5.3 s | $7.3 | 0 |
+| GPT-6.1 Sol | llm | 33% (21%–44%) | 0.505 | 80% | 2.2 s | 4.1 s | $20 | 0 |
 | Llama 4 Maverick | llm | 36% (23%–48%) | 0.504 | 77% | 1.0 s | 1.2 s | $1.8 | 0 |
 | Claude Sonnet 5 | llm | 34% (23%–46%) | 0.499 | 77% | 3.6 s | 12.1 s | $32 | 0 |
 | No reranker (first-stage order) | baseline | 36% (25%–48%) | 0.495 | 72% | — | — | — | 0 |
@@ -90,6 +92,7 @@ Ranked on 47 questions whose answer was among the 24 candidates (70 retrieval mi
 | GPT-6 Luna | llm | 55% (40%–70%) | 0.686 | 94% | 1.8 s | 2.2 s | $1.2 | 2% |
 | Claude Sonnet 5 | llm | 53% (38%–68%) | 0.673 | 91% | 3.6 s | 7.2 s | $36 | 0 |
 | Claude Sonnet 5.5 | llm | 51% (36%–66%) | 0.670 | 98% | 2.0 s | 3.7 s | $32 | 0 |
+| GPT-6.1 Sol | llm | 51% (36%–66%) | 0.669 | 96% | 2.4 s | 4.5 s | $24 | 0 |
 | GLM-5 | llm | 49% (34%–64%) | 0.654 | 96% | 3.0 s | 6.6 s | $8.7 | 0 |
 | GPT-6 Sol | llm | 49% (34%–64%) | 0.652 | 98% | 2.6 s | 3.1 s | $21 | 0 |
 | Grok 4.6 | llm | 47% (32%–62%) | 0.644 | 94% | 11.2 s | 19.8 s | $29 | 0 |
@@ -147,7 +150,7 @@ of the scores.
   judges now read the 1,200 that best match the query ([src/excerpt.ts](src/excerpt.ts), copied from
   Stuga; `--snippet excerpt`, the default). `meta.json` says which a run used.
   - LLMs get Stuga's prompt and settings ([src/stuga.ts](src/stuga.ts)): score each passage 0–10
-    as a JSON array, at the lowest reasoning the model offers, in up to 8,192 output tokens. An
+    as a JSON array, at the lowest reasoning the model offers (`low` for GPT-6.1 Sol, `none` for GPT-6 Sol), in up to 8,192 output tokens. An
     answer that does not parse leaves the first-stage order, as in Stuga. `meta.json` records what
     each judge was sent.
   - Jev gets Stuga's System One request, the query and all 24 passages as state with one yes/no

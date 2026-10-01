@@ -9,6 +9,7 @@ Ranked on 240 questions whose answer was among the 24 candidates. Intervals are 
 | Claude Sonnet 5 | llm | 80% (75%–85%) | 0.868 | 98% | 3.7 s | 10.3 s | $20 | 0 |
 | Claude Haiku 4.5 | llm | 79% (74%–84%) | 0.866 | 98% | 1.9 s | 4.0 s | $9.3 | 0 |
 | Jev, one request per passage | classifier | 78% (73%–83%) | 0.862 | 98% | 244 ms | 350 ms | $0.64 | 0 |
+| GPT-6.1 Sol | llm | 77% (72%–82%) | 0.857 | 99% | 2.2 s | 4.8 s | $14 | 0 |
 | Jev | classifier | 77% (72%–82%) | 0.854 | 99% | 131 ms | 185 ms | $0.37 | 0 |
 | GLM-5 | llm | 77% (72%–83%) | 0.853 | 98% | 2.7 s | 9.5 s | $6.1 | 0 |
 | Grok 4.6 | llm | 76% (70%–81%) | 0.849 | 99% | 11.9 s | 40.9 s | $20 | 0 |
