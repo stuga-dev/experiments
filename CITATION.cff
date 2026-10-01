@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+message: If you use this benchmark or its results, please cite it as below.
+type: software
+title: "rerank-bench: rerankers compared on MIRACL and BRIGHT StackOverflow"
+abstract: >-
+  Rerankers compared on identical candidates: a System One classifier, LLMs used as relevance
+  judges, and dedicated rerankers, hosted and local. Each reorders 24 candidates per question
+  from MIRACL (six languages) and BRIGHT StackOverflow, seeing them the way Stuga's judge does.
+  Code, candidates and every call's result are included.
+authors:
+  - name: Stuga
+    website: https://stuga.dev
+repository-code: https://github.com/stuga-dev/rerank-bench
+url: https://stuga.dev/blog/reranking-with-a-classifier
+license: MIT
+version: 1.0.0
+date-released: 2026-10-01
+keywords:
+  - reranking
+  - information retrieval
+  - benchmark
+  - LLM as judge
+  - MIRACL
+  - BRIGHT

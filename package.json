@@ -2,7 +2,7 @@
   "name": "rerank-bench",
   "version": "0.0.0",
   "private": true,
-  "description": "Rerankers compared on the same candidates: a System One classifier, LLM judges and cross-encoders, on Stuga's sample workspaces.",
+  "description": "Rerankers compared on the same candidates: a System One classifier, LLM judges and cross-encoders, on MIRACL and BRIGHT StackOverflow.",
   "license": "MIT",
   "type": "module",
   "packageManager": "pnpm@12.6.0",
