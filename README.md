@@ -1,5 +1,7 @@
 # rerank-bench
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23089854.svg)](https://doi.org/10.5281/zenodo.23089854)
+
 Rerankers compared on identical candidates: a System One classifier (TypeSafe's Jev), LLMs used as
 relevance judges, and dedicated rerankers, hosted and local. They are tested on two public
 benchmarks whose questions and relevance judgments were made by people: MIRACL in six languages,
