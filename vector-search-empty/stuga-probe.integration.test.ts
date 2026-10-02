@@ -66,7 +66,7 @@ describe("Stuga's search behind a crowd", () => {
 // passages retrieved with Ask's limit of 24 (before Ask reranks them and prefers at most 3 per document, backfilling to its top 8):
 //   before the fix (stuga 0c0a0b3, release 0.1.10 plus a README change):
 //     {"crowd":33000,"docs":["far"],"docsMs":52,"nearPassages":0,"askMs":31}
-//   after the fix (second run; the first, on a cold cache, took 922 ms for search):
+//   after the fix, released in 0.1.11 (second run; the first, on a cold cache, took 922 ms for search):
 //     {"crowd":33000,"docs":["near","far"],"docsMs":94,"nearPassages":5,"askMs":67}
 //   (far's nearest chunk is at cosine distance 0.887, inside the probe's 0.9 cutoff; Bob's crowd at 0.147)
 //   semanticScan, the count taken first: about 1 ms ("index": Liv reads more than 5,000 chunks)
