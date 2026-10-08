@@ -8,6 +8,7 @@
 import { existsSync, mkdirSync, readdirSync, readFileSync, writeFileSync } from "node:fs";
 import type { QuestionScores } from "./eval.ts";
 import { MIRACL_LANGUAGES } from "./sets.ts";
+import { mulberry32 } from "./bootstrap.ts";
 
 const REFERENCE = process.argv[2] ?? "ollama/embeddinggemma-2:270m";
 const OUT = process.argv[3];
@@ -42,15 +43,6 @@ const quantile = (xs: number[], q: number) => {
   return s[Math.min(s.length - 1, Math.max(0, Math.round(q * (s.length - 1))))]!;
 };
 
-/** A seeded generator, so a report is reproducible. */
-function mulberry32(seed: number): () => number {
-  return () => {
-    seed = (seed + 0x6d2b79f5) | 0;
-    let t = Math.imul(seed ^ (seed >>> 15), 1 | seed);
-    t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t;
-    return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
-  };
-}
 
 /** Macro average over the languages both runs have, and its paired bootstrap interval against the reference. */
 function compare(run: Map<string, QuestionScores[]>, ref: Map<string, QuestionScores[]> | undefined, m: Metric, langs: string[]) {

@@ -6,6 +6,7 @@
  *   node scripts/fusion-analysis.ts [out.json]
  */
 import { existsSync, readdirSync, readFileSync, writeFileSync } from "node:fs";
+import { paired as bootstrap } from "../src/bootstrap.ts";
 import type { QuestionScores } from "../src/eval.ts";
 
 const WEIGHTS = ["w1", "w0.75", "w0.5", "w0.25", "w0"] as const;
@@ -15,19 +16,7 @@ function read(file: string): QuestionScores[] | null {
   return existsSync(file) ? (JSON.parse(readFileSync(file, "utf8")) as { scores: QuestionScores[] }).scores : null;
 }
 
-function paired(a: number[], b: number[]): [number, number, number] {
-  const d = a.map((x, i) => b[i]! - x);
-  let seed = 11;
-  const rand = () => (seed = (seed * 1103515245 + 12345) % 2147483648) / 2147483648;
-  const means: number[] = [];
-  for (let k = 0; k < 2000; k++) {
-    let s = 0;
-    for (let i = 0; i < d.length; i++) s += d[Math.floor(rand() * d.length)]!;
-    means.push(s / d.length);
-  }
-  means.sort((x, y) => x - y);
-  return [d.reduce((x, y) => x + y, 0) / d.length, means[50]!, means[1949]!];
-}
+const paired = (a: number[], b: number[]) => bootstrap(a, b, 11);
 
 const pc = (x: number) => (100 * x).toFixed(1);
 const ci = ([m, lo, hi]: [number, number, number]) => `${m >= 0 ? "+" : ""}${pc(m)} [${pc(lo)}, ${pc(hi)}]${lo > 0 ? " better" : hi < 0 ? " worse" : ""}`;

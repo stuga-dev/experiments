@@ -12,6 +12,7 @@ import { cachePath } from "./embedder.ts";
 import { hit1, ndcg, recall, rrf } from "./metrics.ts";
 import { parseRun, runKey } from "./models.ts";
 import { loadSet, SET_NAMES } from "./sets.ts";
+import { mulberry32 } from "./bootstrap.ts";
 
 /** What Stuga hands the reranker. */
 export const CANDIDATES = 24;
@@ -57,15 +58,6 @@ function trecOrder(ids: number[], score: (i: number) => number, pid: (i: number)
   return [...ids].sort((a, b) => score(b) - score(a) || (pid(a) < pid(b) ? 1 : pid(a) > pid(b) ? -1 : 0));
 }
 
-/** A seeded generator, so the random passages are the same for every model. */
-function mulberry32(seed: number): () => number {
-  return () => {
-    seed = (seed + 0x6d2b79f5) | 0;
-    let t = Math.imul(seed ^ (seed >>> 15), 1 | seed);
-    t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t;
-    return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
-  };
-}
 
 const run = parseRun(process.argv[2]!);
 const names = (process.argv[3] ?? SET_NAMES.filter((s) => s.startsWith("miracl-")).join(",")).split(",");

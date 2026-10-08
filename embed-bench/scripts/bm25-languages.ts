@@ -7,6 +7,7 @@
  *   node scripts/bm25-languages.ts miracl-zh,cmteb-du,...
  */
 import postgres from "postgres";
+import { paired as bootstrap } from "../src/bootstrap.ts";
 import { ndcg, recall } from "../src/metrics.ts";
 import { loadSet } from "../src/sets.ts";
 
@@ -14,20 +15,7 @@ const sql = postgres(process.env.BENCH_DATABASE_URL ?? "postgres://bench@127.0.0
 const names = (process.argv[2] ?? "miracl-zh,miracl-ko,miracl-ja").split(",");
 const out: Record<string, Record<string, { ndcg10: number; recall24: number; diff?: { ndcg10: number[]; recall24: number[] } }>> = {};
 
-/** Paired bootstrap of b − a over the same questions: mean and 95% interval. */
-function paired(a: number[], b: number[]): number[] {
-  const d = a.map((x, i) => b[i]! - x);
-  let seed = 7;
-  const rand = () => ((seed = (seed * 1103515245 + 12345) % 2147483648) / 2147483648);
-  const means: number[] = [];
-  for (let k = 0; k < 2000; k++) {
-    let s = 0;
-    for (let i = 0; i < d.length; i++) s += d[Math.floor(rand() * d.length)]!;
-    means.push(s / d.length);
-  }
-  means.sort((x, y) => x - y);
-  return [d.reduce((x, y) => x + y, 0) / d.length, means[50]!, means[1949]!];
-}
+const paired = (a: number[], b: number[]) => bootstrap(a, b, 7);
 for (const name of names) {
   const set = await loadSet(name);
   const lang = set.language;

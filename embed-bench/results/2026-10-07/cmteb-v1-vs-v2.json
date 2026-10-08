@@ -1,0 +1,92 @@
+{
+  "first": "ollama/embeddinggemma-2:270m",
+  "second": "ollama/embeddinggemma:300m",
+  "bootstrap": 2000,
+  "sets": {
+    "cmteb-du": {
+      "questions": 2000,
+      "dense": {
+        "ollama/embeddinggemma-2:270m": 0.7552279194676066,
+        "ollama/embeddinggemma:300m": 0.7881268366172752,
+        "diff": 0.03289891714966949,
+        "low": 0.026040465468327556,
+        "high": 0.03961564919710023
+      },
+      "hybrid": {
+        "ollama/embeddinggemma-2:270m": 0.7193558641652228,
+        "ollama/embeddinggemma:300m": 0.7295530665250657,
+        "diff": 0.010197202359843388,
+        "low": 0.00603842529200252,
+        "high": 0.01427234203495331
+      }
+    },
+    "cmteb-ecom": {
+      "questions": 1000,
+      "dense": {
+        "ollama/embeddinggemma-2:270m": 0.5994911154790382,
+        "ollama/embeddinggemma:300m": 0.5992883399947107,
+        "diff": -0.00020277548432733988,
+        "low": -0.016100369160671195,
+        "high": 0.01620242678514172
+      },
+      "hybrid": {
+        "ollama/embeddinggemma-2:270m": 0.5729259338074927,
+        "ollama/embeddinggemma:300m": 0.5877957426882524,
+        "diff": 0.014869808880759535,
+        "low": 0.004124058274534292,
+        "high": 0.025319510861293814
+      }
+    },
+    "cmteb-medical": {
+      "questions": 1000,
+      "dense": {
+        "ollama/embeddinggemma-2:270m": 0.43075808821234945,
+        "ollama/embeddinggemma:300m": 0.49908943318251847,
+        "diff": 0.06833134497016843,
+        "low": 0.05051787789843688,
+        "high": 0.08540910294675305
+      },
+      "hybrid": {
+        "ollama/embeddinggemma-2:270m": 0.4259915851332205,
+        "ollama/embeddinggemma:300m": 0.4545261563992806,
+        "diff": 0.028534571266060092,
+        "low": 0.017041511527286432,
+        "high": 0.04012707851519899
+      }
+    },
+    "cmteb-covid": {
+      "questions": 949,
+      "dense": {
+        "ollama/embeddinggemma-2:270m": 0.7580038246275329,
+        "ollama/embeddinggemma:300m": 0.7845170608306525,
+        "diff": 0.026513236203119742,
+        "low": 0.01235629231931522,
+        "high": 0.039890899615920364
+      },
+      "hybrid": {
+        "ollama/embeddinggemma-2:270m": 0.8076862521111557,
+        "ollama/embeddinggemma:300m": 0.8201005854292658,
+        "diff": 0.012414333318110479,
+        "low": 0.0016083591476471273,
+        "high": 0.02273315090796448
+      }
+    },
+    "miracl-zh": {
+      "questions": 393,
+      "dense": {
+        "ollama/embeddinggemma-2:270m": 0.5353526827122507,
+        "ollama/embeddinggemma:300m": 0.6301111728130837,
+        "diff": 0.0947584901008332,
+        "low": 0.07067675384436967,
+        "high": 0.12205422975412024
+      },
+      "hybrid": {
+        "ollama/embeddinggemma-2:270m": 0.45979944897734976,
+        "ollama/embeddinggemma:300m": 0.4737309854613731,
+        "diff": 0.01393153648402333,
+        "low": -0.001150717631639397,
+        "high": 0.030182413994592837
+      }
+    }
+  }
+}

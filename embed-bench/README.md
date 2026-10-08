@@ -11,10 +11,13 @@ here, and paid list price for every hosted call.
 
 - **On these MIRACL hard-negative subsets, using Stuga's text-search configuration, EmbeddingGemma 2
   scores below EmbeddingGemma 300m.** Dense nDCG@10 over Korean, Chinese and English, both at bf16:
-  55.5 against 61.1 (Chinese 54.7 against 63.0, English 50.1 against 55.8, Korean 61.7 against
-  64.4); 54.1 for `embeddinggemma-2:270m`, the tested Ollama default tag, which is 4-bit. Fused with
-  BM25, about a point apart (53.4 against 54.4). bge-m3 has the highest dense score among these
-  runs, 63.9. Google's stated gains cover multimodal retrieval and code search
+  55.5 against 61.1, a paired difference of 5.6 [4.2, 7.0] (Chinese 54.7 against 63.0, English 50.1
+  against 55.8, Korean 61.7 against 64.4); 54.1 for `embeddinggemma-2:270m`, the tested Ollama
+  default tag, which is 4-bit. Fused with BM25, about a point apart (53.4 against 54.4; 1.0 [0.1,
+  2.0]). On four C-MTEB Chinese sets, whose corpora were not pooled from BM25, EmbeddingGemma 300m
+  scores higher than the default tag dense on three and the same on e-commerce, by less than on
+  MIRACL Chinese. bge-m3 has the highest dense score among these runs, 63.9. Google's stated gains
+  cover multimodal retrieval and code search
   ([launch post](https://blog.google/innovation-and-ai/technology/developers-tools/embeddinggemma-2)).
   Neither is tested here.
 - **The Korean bf16 scores are close across backends:** 61.7 through Ollama, 62.4 through
@@ -42,10 +45,10 @@ Google's claims from the model card at huggingface.co/google/embeddinggemma-2. -
 | MIRACL English | 799 | 178,768 | the same | all Ollama and Bedrock runs |
 | MIRACL Thai | 733 | 116,649 | the same | EmbeddingGemma 2 (nvfp4) |
 | BRIGHT StackOverflow | 117 | 107,081 | `xlangai/BRIGHT` `3066d29` | 8 runs |
-| C-MTEB DuRetrieval (web search) | 2,000 | 100,001 | `C-MTEB/DuRetrieval` `a1a333e` | Titan V2, EmbeddingGemma 2 (nvfp4) |
-| C-MTEB EcomRetrieval | 1,000 | 100,902 | `C-MTEB/EcomRetrieval` `687de13` | the same two |
-| C-MTEB MedicalRetrieval | 1,000 | 100,999 | `C-MTEB/MedicalRetrieval` `2039188` | the same two |
-| C-MTEB CovidRetrieval | 949 | 100,001 | `C-MTEB/CovidRetrieval` `1271c78` | the same two |
+| C-MTEB DuRetrieval (web search) | 2,000 | 100,001 | `C-MTEB/DuRetrieval` `a1a333e` | Titan V2, EmbeddingGemma 2 (nvfp4), EmbeddingGemma 300m |
+| C-MTEB EcomRetrieval | 1,000 | 100,902 | `C-MTEB/EcomRetrieval` `687de13` | the same three |
+| C-MTEB MedicalRetrieval | 1,000 | 100,999 | `C-MTEB/MedicalRetrieval` `2039188` | the same three |
+| C-MTEB CovidRetrieval | 949 | 100,001 | `C-MTEB/CovidRetrieval` `1271c78` | the same three |
 
 <!-- Questions and passages: results/2026-10-07/runs.json (questions, passages). Revisions: src/sets.ts. -->
 
@@ -66,7 +69,8 @@ revision (the C-MTEB relevance judgments at revisions of their own).
   - Caveat: 117 questions, so a difference of a few points may be noise.
 - **C-MTEB:** four Chinese retrieval sets beside MIRACL's Wikipedia: web search, e-commerce listings,
   medical answers, COVID-19 news and notices. Dev judgments.
-  - Caveat: run for two models only, as a check on the fusion and Chinese-tokenizer results.
+  - Caveat: run for three models only, as a check on the MIRACL Chinese, fusion and Chinese-tokenizer
+    results.
 
 ## Lineup
 
@@ -77,7 +81,7 @@ revision (the C-MTEB relevance judgments at revisions of their own).
 | EmbeddingGemma 2 | Ollama `embeddinggemma-2:270m-mxfp8-text` | mxfp8 | 768 | MIRACL ko zh en |
 | EmbeddingGemma 2, no prompts | Ollama `embeddinggemma-2:270m`, raw text | nvfp4 | 768 | MIRACL ko zh en |
 | EmbeddingGemma 2 | sentence-transformers `google/embeddinggemma-2`, Mac GPU | bf16 | 768 | MIRACL ko |
-| EmbeddingGemma 300m | Ollama `embeddinggemma:300m` | BF16 | 768 | MIRACL ko zh en, BRIGHT |
+| EmbeddingGemma 300m | Ollama `embeddinggemma:300m` | BF16 | 768 | MIRACL ko zh en, BRIGHT, C-MTEB |
 | Qwen3-Embedding 0.6B | Ollama `qwen3-embedding:0.6b` | Q8_0 | 1,024 | MIRACL ko zh en |
 | bge-m3 (dense vectors) | Ollama `bge-m3` | F16 | 1,024 | MIRACL ko zh en, BRIGHT |
 | nomic-embed-text-v2-moe | Ollama `nomic-embed-text-v2-moe` (512-token context) | F16 | 768 | MIRACL ko zh en |
@@ -132,7 +136,8 @@ revision (the C-MTEB relevance judgments at revisions of their own).
     each model. The two agree on every run (`runs.json`, keys `"2"` and `"0.9"`).
 - **Comparisons:** MIRACL figures are macro averages over Korean, Chinese and English. Each model's
   difference from EmbeddingGemma 2 (nvfp4) is paired: the same questions, 2,000 bootstrap draws
-  resampled within each language, 95% interval. An interval that includes zero means the test
+  resampled within each language, 95% interval; `vs-bf16/summary.json` takes EmbeddingGemma 2 at
+  bf16 as the reference instead. Every bootstrap draws from [src/bootstrap.ts](src/bootstrap.ts). An interval that includes zero means the test
   cannot tell the two apart, not that they are equivalent. Intervals are exploratory and not
   adjusted for multiple comparisons.
 - **Cutoffs (exploratory):** for every question, the cosine distance to each relevant passage and to
@@ -212,6 +217,23 @@ From `results/2026-10-07/runs.json` (`miracl-ko`). Over Korean, Chinese and Engl
 From `results/2026-10-07/runs.json` (`bright-so`). Fusion raises nDCG@10 for every model here. The
 paired intervals in `summary.json` cover MIRACL only.
 
+### C-MTEB Chinese: EmbeddingGemma 300m against EmbeddingGemma 2
+
+C-MTEB's corpora were not pooled from BM25, so they check the MIRACL Chinese result. EmbeddingGemma
+300m minus EmbeddingGemma 2 (nvfp4, the default tag; bf16 was not run on C-MTEB), nDCG@10, paired
+95% interval:
+
+| Set | Dense | Hybrid |
+|---|---|---|
+| DuRetrieval | +3.3 [2.6, 4.0] | +1.0 [0.6, 1.4] |
+| EcomRetrieval | 0.0 [−1.6, 1.6] | +1.5 [0.4, 2.5] |
+| MedicalRetrieval | +6.8 [5.1, 8.5] | +2.9 [1.7, 4.0] |
+| CovidRetrieval | +2.7 [1.2, 4.0] | +1.2 [0.2, 2.3] |
+| MIRACL Chinese, for comparison | +9.5 [7.1, 12.2] | +1.4 [−0.1, 3.0] |
+
+From `results/2026-10-07/cmteb-v1-vs-v2.json` ([scripts/pair.ts](scripts/pair.ts)). The gap on
+these sets is smaller than on MIRACL Chinese, and in the same direction.
+
 ### Cutoffs (exploratory)
 
 A fixed cutoff against the floor Stuga measures for each model, on MIRACL Korean, Chinese and
@@ -263,22 +285,22 @@ per run and set:
 | Sets | Rows | Half better | Half worse | Cannot tell |
 |---|---|---|---|---|
 | MIRACL ko, zh, en, th | 38 | 38 | 0 | 0 |
-| BRIGHT StackOverflow | 8 | 0 | 5 | 3 |
-| C-MTEB, Titan V2 and EmbeddingGemma 2 | 8 | 5 | 2 | 1 |
+| BRIGHT StackOverflow | 8 | 0 | 3 | 5 |
+| C-MTEB, Titan V2 and both EmbeddingGemmas | 12 | 8 | 2 | 2 |
 
 From `results/2026-10-07/fusion.json` (`half_vs_equal`, `fusion.txt`).
 
 - On C-MTEB, half the weight also lowers Recall@24 where BM25 is strong: Titan V2 e-commerce −2.7
-  [−4.2, −1.1], Titan V2 COVID −2.3 [−4.4, −1.4], EmbeddingGemma 2 COVID −1.0 [−2.6, −0.2].
+  [−4.2, −1.3], Titan V2 COVID −2.3 [−3.2, −1.4], EmbeddingGemma 2 COVID −1.0 [−1.9, −0.1].
 - MIRACL's negatives were pooled partly from BM25, which may favour a lighter keyword leg there;
   this experiment does not isolate the effect. Stuga keeps equal weights.
 
-| C-MTEB set | BM25 | Titan V2 dense | Titan V2 hybrid | EmbeddingGemma 2 dense | EmbeddingGemma 2 hybrid |
-|---|---|---|---|---|---|
-| DuRetrieval | 61.3 | 73.4 | 71.9 | 75.5 | 71.9 |
-| EcomRetrieval | 48.4 | 48.5 | 54.7 | 59.9 | 57.3 |
-| MedicalRetrieval | 31.4 | 43.4 | 43.5 | 43.1 | 42.6 |
-| CovidRetrieval | 78.8 | 64.2 | 75.7 | 75.8 | 80.8 |
+| C-MTEB set | BM25 | Titan V2 dense | Titan V2 hybrid | EmbeddingGemma 2 dense | EmbeddingGemma 2 hybrid | EmbeddingGemma 300m dense | EmbeddingGemma 300m hybrid |
+|---|---|---|---|---|---|---|---|
+| DuRetrieval | 61.3 | 73.4 | 71.9 | 75.5 | 71.9 | 78.8 | 73.0 |
+| EcomRetrieval | 48.4 | 48.5 | 54.7 | 59.9 | 57.3 | 59.9 | 58.8 |
+| MedicalRetrieval | 31.4 | 43.4 | 43.5 | 43.1 | 42.6 | 49.9 | 45.5 |
+| CovidRetrieval | 78.8 | 64.2 | 75.7 | 75.8 | 80.8 | 78.5 | 82.0 |
 
 nDCG@10 from `results/2026-10-07/runs.json` (`cmteb-*`); EmbeddingGemma 2 is the nvfp4 build.
 
@@ -297,13 +319,13 @@ BM25 alone, nDCG@10:
 From `results/2026-10-07/bm25-zh.json`, which ranks ties in the order Postgres returns them;
 `runs.json` breaks ties by passage id, as MMTEB does, so the two differ by up to 0.2.
 
-- Without folding, jieba beside ICU costs MIRACL Chinese 4.3 [2.0, 6.0] against ICU alone; folded,
-  the two cannot be told apart (−0.9 [−3.9, 1.8]). On the four simplified C-MTEB sets, folded jieba
+- Without folding, jieba beside ICU costs MIRACL Chinese 4.3 [2.6, 5.9] against ICU alone; folded,
+  the two cannot be told apart (−0.9 [−3.2, 1.6]). On the four simplified C-MTEB sets, folded jieba
   beside ICU is within about a point of ICU alone (`bm25-zh.json`).
 - In the hybrid, MIRACL Chinese with EmbeddingGemma 2 scores 46.0 with folding, 43.3 with ICU alone
   and 41.7 without folding; with Titan V2, 45.3, 43.1 and 41.3 (`runs.json`, `miracl-zh`,
-  `miracl-zh.icu`, `miracl-zh.jieba`). Folded jieba beside ICU against ICU alone: +2.7 [0.3, 5.0]
-  for EmbeddingGemma 2, +2.2 [−0.3, 4.4] for Titan V2 (`fusion.json`, `jieba_vs_icu`).
+  `miracl-zh.icu`, `miracl-zh.jieba`). Folded jieba beside ICU against ICU alone: +2.7 [0.3, 5.2]
+  for EmbeddingGemma 2, +2.2 [−0.2, 4.6] for Titan V2 (`fusion.json`, `jieba_vs_icu`).
 
 ## Caveats
 
@@ -312,7 +334,7 @@ From `results/2026-10-07/bm25-zh.json`, which ranks ties in the order Postgres r
   at bf16.
 - Bedrock's models are as served on 2026-10-07; OpenAI's BRIGHT vectors are rerank-bench's.
 - MIRACL's hard negatives were pooled partly from BM25, which may work against fusion there; C-MTEB,
-  the check on that, ran for two models only.
+  the check on that, ran for three models only.
 - BRIGHT has 117 questions, and its model comparisons carry no paired intervals. Long BRIGHT
   passages are cut where each server cuts them; Cohere Embed Multilingual v3 reads the first 2,048
   characters.
@@ -344,6 +366,8 @@ node src/eval.ts ollama:embeddinggemma-2:270m miracl-ko,miracl-zh,miracl-en,brig
 node src/eval.ts ollama:embeddinggemma-2:270m+raw miracl-ko,miracl-zh,miracl-en
 node src/eval.ts bedrock:us.cohere.embed-v4:0 miracl-ko,miracl-zh,miracl-en,bright-so      # each run, from its cached vectors
 node src/report.ts ollama/embeddinggemma-2:270m results/<date> > results/<date>/summary.txt
+node src/report.ts ollama/embeddinggemma-2:270m-bf16-text results/<date>/vs-bf16 > results/<date>/vs-bf16/summary.txt
+node scripts/pair.ts ollama/embeddinggemma-2:270m ollama/embeddinggemma:300m cmteb-du,cmteb-ecom,cmteb-medical,cmteb-covid,miracl-zh results/<date>/cmteb-v1-vs-v2.json
 node src/cutoffs.ts results/<date> > results/<date>/cutoffs.txt
 node scripts/fusion-analysis.ts results/<date>/fusion.json > results/<date>/fusion.txt
 node src/probe-run.ts ollama:embeddinggemma-2:270m results/<date>
