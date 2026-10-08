@@ -1,0 +1,118 @@
+amazon.titan-embed-tex miracl-ko     w1 59.3/80.2  w0.75 60.9/82.9  w0.5 61.9/82.7  w0.25 61.7/80.7  w0 55.8/76.5  dense 55.8/76.5
+      w0.5 vs w1: nDCG +2.7 [1.0, 4.4] better Recall +2.5 [0.1, 5.3] better
+amazon.titan-embed-tex miracl-zh     w1 45.3/78.8  w0.75 48.1/81.5  w0.5 50.7/82.8  w0.25 52.7/82.9  w0 49.2/78.1  dense 49.2/78.1
+      w0.5 vs w1: nDCG +5.4 [4.3, 6.7] better Recall +4.0 [2.7, 6.4] better
+      jieba beside ICU, at w1: nDCG +2.2 [-0.3, 4.4] Recall +3.7 [0.0, 6.1] better | at w0.5: nDCG +3.3 [1.5, 5.5] better Recall -0.8 [-2.2, 1.1]
+amazon.titan-embed-tex miracl-en     w1 50.8/79.5  w0.75 53.0/81.5  w0.5 54.4/82.1  w0.25 54.5/79.0  w0 49.0/74.3  dense 49.0/74.3
+      w0.5 vs w1: nDCG +3.6 [2.6, 4.1] better Recall +2.6 [1.5, 4.7] better
+amazon.titan-embed-tex bright-so     w1 18.4/35.0  w0.75 18.3/37.4  w0.5 17.0/36.1  w0.25 16.6/33.6  w0 12.8/31.9  dense 12.8/31.9
+      w0.5 vs w1: nDCG -1.5 [-3.0, -0.1] worse Recall +1.1 [-2.0, 4.5]
+amazon.titan-embed-tex cmteb-ecom    w1 54.7/80.2  w0.75 54.5/77.6  w0.5 53.9/77.5  w0.25 53.0/76.3  w0 48.5/72.4  dense 48.5/72.4
+      w0.5 vs w1: nDCG -0.9 [-1.5, -0.1] worse Recall -2.7 [-4.2, -1.1] worse
+      jieba beside ICU, at w1: nDCG +0.0 [-0.6, 0.6] Recall +1.1 [-0.1, 1.5] | at w0.5: nDCG +0.4 [-0.3, 1.0] Recall +0.5 [-0.4, 1.0]
+amazon.titan-embed-tex cmteb-medical w1 43.5/56.4  w0.75 44.1/57.7  w0.5 44.8/57.5  w0.25 44.9/57.3  w0 43.5/55.7  dense 43.4/55.7
+      w0.5 vs w1: nDCG +1.3 [0.9, 1.9] better Recall +1.1 [-0.1, 1.9]
+      jieba beside ICU, at w1: nDCG -0.5 [-1.4, -0.0] worse Recall -0.2 [-1.3, 0.3] | at w0.5: nDCG -0.3 [-0.8, 0.4] Recall +0.2 [-0.4, 0.6]
+amazon.titan-embed-tex cmteb-covid   w1 75.7/93.8  w0.75 74.8/91.8  w0.5 73.6/91.6  w0.25 71.2/89.8  w0 64.2/86.1  dense 64.2/86.1
+      w0.5 vs w1: nDCG -2.1 [-2.8, -1.0] worse Recall -2.3 [-4.4, -1.4] worse
+      jieba beside ICU, at w1: nDCG -0.2 [-0.7, 0.2] Recall -0.4 [-0.8, 0.2] | at w0.5: nDCG +0.5 [0.0, 1.2] better Recall +0.1 [-0.6, 0.5]
+amazon.titan-embed-tex cmteb-du      w1 71.9/82.9  w0.75 72.6/83.4  w0.5 73.2/84.1  w0.25 74.1/83.9  w0 73.4/82.5  dense 73.4/82.5
+      w0.5 vs w1: nDCG +1.3 [1.1, 1.7] better Recall +1.3 [0.7, 1.6] better
+      jieba beside ICU, at w1: nDCG +0.1 [-0.1, 0.3] Recall +0.2 [-0.0, 0.4] | at w0.5: nDCG +0.0 [-0.2, 0.1] Recall +0.1 [0.0, 0.3] better
+cohere.embed-multiling miracl-ko     w1 63.1/86.1  w0.75 65.3/90.2  w0.5 66.7/90.4  w0.25 68.3/89.0  w0 66.1/86.3  dense 66.1/86.3
+      w0.5 vs w1: nDCG +3.6 [1.7, 5.1] better Recall +4.3 [2.1, 5.8] better
+cohere.embed-multiling miracl-zh     w1 49.0/80.6  w0.75 52.3/85.8  w0.5 55.9/89.5  w0.25 59.7/89.7  w0 60.9/86.6  dense 60.9/86.6
+      w0.5 vs w1: nDCG +6.9 [5.7, 8.2] better Recall +8.9 [6.3, 12.5] better
+cohere.embed-multiling miracl-en     w1 55.9/84.1  w0.75 58.2/86.0  w0.5 60.6/86.1  w0.25 61.8/84.3  w0 57.7/80.5  dense 57.7/80.5
+      w0.5 vs w1: nDCG +4.7 [3.9, 5.6] better Recall +2.0 [0.9, 3.9] better
+cohere.embed-multiling bright-so     w1 16.3/36.4  w0.75 16.7/34.7  w0.5 16.9/35.9  w0.25 16.3/33.8  w0 15.6/30.6  dense 15.9/30.6
+      w0.5 vs w1: nDCG +0.7 [-0.5, 2.0] Recall -0.4 [-4.0, 2.9]
+us.cohere.embed-v4:0   miracl-ko     w1 61.9/85.3  w0.75 63.6/87.7  w0.5 64.2/87.4  w0.25 65.1/86.7  w0 62.3/84.0  dense 62.3/84.0
+      w0.5 vs w1: nDCG +2.3 [0.6, 3.6] better Recall +2.1 [0.4, 4.5] better
+us.cohere.embed-v4:0   miracl-zh     w1 48.7/78.9  w0.75 51.4/82.6  w0.5 55.4/86.6  w0.25 60.8/86.3  w0 60.9/85.1  dense 60.9/85.1
+      w0.5 vs w1: nDCG +6.7 [5.4, 7.8] better Recall +7.7 [5.2, 12.5] better
+us.cohere.embed-v4:0   miracl-en     w1 53.4/81.6  w0.75 56.0/83.8  w0.5 58.4/85.6  w0.25 60.3/84.6  w0 57.5/81.5  dense 57.5/81.5
+      w0.5 vs w1: nDCG +5.0 [3.9, 5.3] better Recall +3.9 [3.1, 5.2] better
+us.cohere.embed-v4:0   bright-so     w1 16.7/32.8  w0.75 16.3/32.0  w0.5 15.3/32.9  w0.25 13.6/30.7  w0 12.4/27.9  dense 12.7/27.9
+      w0.5 vs w1: nDCG -1.5 [-2.8, -0.3] worse Recall +0.2 [-3.1, 3.4]
+bge-m3                 miracl-ko     w1 63.4/88.3  w0.75 66.4/91.5  w0.5 68.0/91.7  w0.25 69.8/91.3  w0 70.2/89.3  dense 70.2/89.3
+      w0.5 vs w1: nDCG +4.6 [3.2, 6.3] better Recall +3.4 [1.4, 5.0] better
+bge-m3                 miracl-zh     w1 50.2/82.8  w0.75 53.8/87.2  w0.5 57.5/90.5  w0.25 62.2/91.5  w0 63.7/89.7  dense 63.7/89.7
+      w0.5 vs w1: nDCG +7.3 [5.8, 8.8] better Recall +7.6 [5.7, 10.6] better
+bge-m3                 miracl-en     w1 55.4/83.1  w0.75 57.6/84.9  w0.5 59.7/85.9  w0.25 61.3/85.1  w0 57.8/80.9  dense 57.8/80.9
+      w0.5 vs w1: nDCG +4.2 [3.3, 5.2] better Recall +2.8 [2.2, 4.3] better
+bge-m3                 bright-so     w1 14.3/30.3  w0.75 14.6/29.0  w0.5 14.7/29.1  w0.25 12.8/28.2  w0 10.1/24.9  dense 10.2/24.9
+      w0.5 vs w1: nDCG +0.4 [-1.0, 2.1] Recall -1.2 [-4.5, 1.9]
+embeddinggemma-2:270m  miracl-ko     w1 61.4/84.7  w0.75 63.6/87.7  w0.5 63.8/88.2  w0.25 63.7/87.9  w0 59.7/85.5  dense 59.7/85.5
+      w0.5 vs w1: nDCG +2.4 [0.5, 4.5] better Recall +3.6 [1.3, 5.9] better
+embeddinggemma-2:270m  miracl-zh     w1 46.0/79.8  w0.75 47.8/82.6  w0.5 51.0/84.9  w0.25 54.9/85.3  w0 53.5/82.9  dense 53.5/82.9
+      w0.5 vs w1: nDCG +5.0 [3.7, 6.5] better Recall +5.1 [2.7, 7.4] better
+      jieba beside ICU, at w1: nDCG +2.7 [0.3, 5.0] better Recall +3.9 [1.2, 6.3] better | at w0.5: nDCG +1.9 [-0.5, 4.3] Recall +0.7 [-2.1, 2.5]
+embeddinggemma-2:270m  miracl-en     w1 51.7/80.6  w0.75 52.9/82.8  w0.5 54.5/83.8  w0.25 54.9/80.5  w0 49.0/76.0  dense 49.0/76.0
+      w0.5 vs w1: nDCG +2.7 [2.0, 3.5] better Recall +3.2 [1.5, 5.3] better
+embeddinggemma-2:270m  miracl-th     w1 65.3/91.8  w0.75 67.0/93.4  w0.5 69.3/94.9  w0.25 71.9/95.4  w0 72.1/94.4  dense 72.1/94.4
+      w0.5 vs w1: nDCG +4.0 [3.5, 5.1] better Recall +3.2 [2.0, 4.5] better
+embeddinggemma-2:270m  bright-so     w1 17.0/33.4  w0.75 16.5/30.9  w0.5 15.1/29.9  w0.25 14.2/28.5  w0 10.5/22.7  dense 10.5/22.9
+      w0.5 vs w1: nDCG -1.9 [-3.5, -0.7] worse Recall -3.5 [-8.2, 0.6]
+embeddinggemma-2:270m  cmteb-ecom    w1 57.3/82.7  w0.75 58.0/83.5  w0.5 58.5/84.4  w0.25 60.1/84.4  w0 59.9/83.2  dense 59.9/83.2
+      w0.5 vs w1: nDCG +1.2 [0.9, 2.0] better Recall +1.7 [0.7, 2.8] better
+      jieba beside ICU, at w1: nDCG -0.3 [-1.2, 0.4] Recall +0.0 [-1.1, 0.6] | at w0.5: nDCG -0.5 [-1.2, 0.7] Recall +0.3 [-0.2, 0.4]
+embeddinggemma-2:270m  cmteb-medical w1 42.6/58.2  w0.75 43.6/59.0  w0.5 44.4/58.6  w0.25 44.6/58.6  w0 43.1/58.3  dense 43.1/58.3
+      w0.5 vs w1: nDCG +1.8 [1.2, 2.2] better Recall +0.4 [-0.7, 1.6]
+      jieba beside ICU, at w1: nDCG -0.9 [-1.5, -0.3] worse Recall +0.3 [-0.5, 0.8] | at w0.5: nDCG -0.4 [-0.8, 0.1] Recall -0.5 [-1.1, 0.3]
+embeddinggemma-2:270m  cmteb-covid   w1 80.8/96.5  w0.75 80.5/95.4  w0.5 80.3/95.5  w0.25 79.5/94.4  w0 75.8/92.4  dense 75.8/92.4
+      w0.5 vs w1: nDCG -0.4 [-1.0, 0.2] Recall -1.0 [-2.6, -0.2] worse
+      jieba beside ICU, at w1: nDCG -0.5 [-1.0, 0.1] Recall -0.1 [-0.6, 0.3] | at w0.5: nDCG -0.0 [-0.4, 0.4] Recall +0.0 [-0.2, 0.2]
+embeddinggemma-2:270m  cmteb-du      w1 71.9/84.2  w0.75 72.8/85.3  w0.5 74.0/86.6  w0.25 75.3/87.2  w0 75.5/86.3  dense 75.5/86.3
+      w0.5 vs w1: nDCG +2.0 [1.8, 2.5] better Recall +2.5 [1.8, 2.8] better
+      jieba beside ICU, at w1: nDCG -0.1 [-0.4, 0.0] Recall -0.1 [-0.2, 0.2] | at w0.5: nDCG -0.0 [-0.2, 0.1] Recall +0.1 [0.0, 0.3] better
+embeddinggemma-2:270m+ miracl-ko     w1 61.7/84.8  w0.75 64.2/88.1  w0.5 65.0/89.0  w0.25 64.1/88.6  w0 59.3/86.0  dense 59.3/86.0
+      w0.5 vs w1: nDCG +3.2 [1.6, 5.6] better Recall +4.2 [2.3, 6.2] better
+embeddinggemma-2:270m+ miracl-zh     w1 44.0/77.7  w0.75 46.9/79.6  w0.5 49.4/82.3  w0.25 52.3/82.9  w0 49.3/80.9  dense 49.3/80.9
+      w0.5 vs w1: nDCG +5.3 [4.3, 6.6] better Recall +4.6 [2.8, 7.3] better
+embeddinggemma-2:270m+ miracl-en     w1 49.1/78.0  w0.75 50.4/79.8  w0.5 50.8/80.1  w0.25 50.4/76.7  w0 42.8/71.5  dense 42.8/71.5
+      w0.5 vs w1: nDCG +1.7 [0.8, 2.9] better Recall +2.1 [1.0, 3.6] better
+embeddinggemma-2:270m- miracl-ko     w1 61.9/85.8  w0.75 64.6/89.6  w0.5 65.7/90.2  w0.25 65.6/89.4  w0 61.7/88.0  dense 61.7/88.0
+      w0.5 vs w1: nDCG +3.9 [1.8, 5.8] better Recall +4.4 [1.9, 6.4] better
+embeddinggemma-2:270m- miracl-zh     w1 46.1/78.8  w0.75 48.9/82.8  w0.5 52.7/86.3  w0.25 56.4/86.5  w0 54.7/84.8  dense 54.7/84.8
+      w0.5 vs w1: nDCG +6.6 [5.5, 7.8] better Recall +7.5 [5.5, 9.7] better
+embeddinggemma-2:270m- miracl-en     w1 52.2/80.4  w0.75 53.9/82.9  w0.5 55.0/84.3  w0.25 55.7/81.4  w0 50.1/76.2  dense 50.1/76.2
+      w0.5 vs w1: nDCG +2.8 [1.7, 3.6] better Recall +3.9 [2.5, 5.7] better
+embeddinggemma-2:270m- bright-so     w1 17.2/33.7  w0.75 16.8/31.4  w0.5 15.3/31.7  w0.25 14.2/27.7  w0 10.3/24.8  dense 10.4/24.8
+      w0.5 vs w1: nDCG -1.9 [-3.7, -0.3] worse Recall -2.0 [-6.4, 2.2]
+embeddinggemma-2:270m- miracl-ko     w1 61.9/85.8  w0.75 64.3/89.3  w0.5 65.3/90.2  w0.25 66.0/89.0  w0 61.7/86.6  dense 61.7/86.6
+      w0.5 vs w1: nDCG +3.4 [1.3, 5.4] better Recall +4.3 [2.1, 6.4] better
+embeddinggemma-2:270m- miracl-zh     w1 45.9/78.8  w0.75 48.8/82.8  w0.5 52.2/85.8  w0.25 56.4/85.5  w0 54.7/84.8  dense 54.7/84.8
+      w0.5 vs w1: nDCG +6.3 [5.1, 7.8] better Recall +7.0 [5.4, 9.7] better
+embeddinggemma-2:270m- miracl-en     w1 52.0/80.5  w0.75 53.8/83.3  w0.5 54.8/84.4  w0.25 55.6/80.9  w0 49.7/76.0  dense 49.7/76.0
+      w0.5 vs w1: nDCG +2.7 [1.7, 3.5] better Recall +3.9 [1.9, 5.6] better
+embeddinggemma:300m    miracl-ko     w1 62.0/85.7  w0.75 63.9/89.5  w0.5 65.3/89.8  w0.25 67.0/89.4  w0 64.4/87.4  dense 64.4/87.4
+      w0.5 vs w1: nDCG +3.3 [1.0, 4.9] better Recall +4.1 [2.0, 6.0] better
+embeddinggemma:300m    miracl-zh     w1 47.4/80.8  w0.75 50.5/85.7  w0.5 55.5/89.6  w0.25 61.4/90.8  w0 63.0/89.8  dense 63.0/89.8
+      w0.5 vs w1: nDCG +8.1 [6.9, 9.1] better Recall +8.7 [6.6, 12.4] better
+embeddinggemma:300m    miracl-en     w1 53.9/82.4  w0.75 56.5/85.3  w0.5 58.5/86.7  w0.25 59.9/85.5  w0 55.8/80.3  dense 55.8/80.3
+      w0.5 vs w1: nDCG +4.6 [3.7, 5.3] better Recall +4.3 [2.6, 6.6] better
+embeddinggemma:300m    bright-so     w1 19.2/38.6  w0.75 19.1/40.6  w0.5 18.9/41.7  w0.25 18.4/37.5  w0 16.1/35.5  dense 16.4/35.5
+      w0.5 vs w1: nDCG -0.3 [-1.9, 1.3] Recall +3.1 [-0.7, 6.9]
+nomic-embed-text-v2-mo miracl-ko     w1 61.2/85.6  w0.75 63.2/89.5  w0.5 65.0/90.2  w0.25 67.1/89.8  w0 66.6/87.4  dense 66.6/87.4
+      w0.5 vs w1: nDCG +3.8 [1.8, 5.4] better Recall +4.6 [2.3, 6.8] better
+nomic-embed-text-v2-mo miracl-zh     w1 46.5/79.3  w0.75 49.2/84.1  w0.5 53.2/86.7  w0.25 57.8/88.8  w0 61.5/88.6  dense 61.5/88.6
+      w0.5 vs w1: nDCG +6.7 [5.6, 7.6] better Recall +7.4 [5.6, 10.0] better
+nomic-embed-text-v2-mo miracl-en     w1 52.2/81.0  w0.75 54.1/82.6  w0.5 56.6/83.9  w0.25 58.3/83.2  w0 55.5/79.7  dense 55.5/79.7
+      w0.5 vs w1: nDCG +4.4 [3.4, 4.7] better Recall +2.9 [1.8, 4.7] better
+qwen3-embedding:0.6b   miracl-ko     w1 60.7/81.9  w0.75 62.6/84.7  w0.5 63.0/84.6  w0.25 62.7/83.0  w0 57.6/78.2  dense 57.6/78.2
+      w0.5 vs w1: nDCG +2.4 [0.5, 4.0] better Recall +2.7 [0.8, 4.5] better
+qwen3-embedding:0.6b   miracl-zh     w1 47.2/77.0  w0.75 49.7/81.9  w0.5 53.5/85.7  w0.25 58.0/86.1  w0 58.7/84.4  dense 58.7/84.4
+      w0.5 vs w1: nDCG +6.3 [5.2, 7.4] better Recall +8.7 [6.3, 12.4] better
+qwen3-embedding:0.6b   miracl-en     w1 51.7/79.6  w0.75 53.4/81.8  w0.5 55.3/83.2  w0.25 57.3/80.6  w0 53.9/77.1  dense 53.9/77.1
+      w0.5 vs w1: nDCG +3.5 [2.6, 4.0] better Recall +3.6 [2.4, 4.9] better
+snowflake-arctic-embed miracl-ko     w1 62.2/85.2  w0.75 65.2/87.4  w0.5 66.5/88.6  w0.25 68.5/87.2  w0 66.2/85.4  dense 66.2/85.4
+      w0.5 vs w1: nDCG +4.3 [2.3, 5.8] better Recall +3.4 [1.6, 5.6] better
+snowflake-arctic-embed miracl-zh     w1 48.4/80.8  w0.75 51.3/85.1  w0.5 55.4/87.7  w0.25 60.1/87.2  w0 61.3/85.0  dense 61.3/85.0
+      w0.5 vs w1: nDCG +7.0 [5.9, 8.3] better Recall +6.9 [4.7, 9.6] better
+snowflake-arctic-embed miracl-en     w1 52.8/82.0  w0.75 55.4/83.8  w0.5 57.4/84.3  w0.25 58.4/83.3  w0 54.3/78.6  dense 54.3/78.6
+      w0.5 vs w1: nDCG +4.5 [3.7, 5.3] better Recall +2.2 [1.2, 4.0] better
+text-embedding-3-large bright-so     w1 18.0/34.2  w0.75 18.0/35.4  w0.5 16.6/36.7  w0.25 15.9/34.4  w0 12.6/28.1  dense 12.7/28.3
+      w0.5 vs w1: nDCG -1.5 [-3.4, -0.1] worse Recall +2.5 [-0.1, 6.0]
+google_embeddinggemma- miracl-ko     w1 61.9/86.0  w0.75 64.4/88.9  w0.5 65.7/89.8  w0.25 66.3/89.0  w0 62.4/87.9  dense 62.4/87.9
+      w0.5 vs w1: nDCG +3.8 [1.8, 5.5] better Recall +3.8 [1.6, 5.7] better

@@ -1,0 +1,27 @@
+{
+  "name": "embed-bench",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Embedding models compared as Stuga retrieves: dense alone and fused with BM25, on MIRACL and BRIGHT StackOverflow.",
+  "license": "MIT",
+  "type": "module",
+  "packageManager": "pnpm@12.6.0",
+  "engines": {
+    "node": ">=26"
+  },
+  "scripts": {
+    "embed": "node src/embed-run.ts",
+    "typecheck": "tsc --noEmit",
+    "lint": "oxlint . --deny-warnings",
+    "test": "node --test \"test/**/*.test.ts\""
+  },
+  "dependencies": {
+    "hyparquet": "^1.31.2",
+    "postgres": "^3.4.7"
+  },
+  "devDependencies": {
+    "@types/node": "~26.6.4",
+    "oxlint": "^1.86.0",
+    "typescript": "^7.0.2"
+  }
+}

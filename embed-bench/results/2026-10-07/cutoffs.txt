@@ -1,0 +1,74 @@
+
+bedrock/amazon.titan-embed-text-v2:0
+  miracl-ko  relevant p50 0.469  random p1 0.813 p50 0.946  | 0.6 keeps 72.0% lets 0.1%  | balanced 0.813 keeps 97.3%  | from others 0.848 keeps 98.4% lets 2.5%
+  miracl-zh  relevant p50 0.434  random p1 0.834 p50 0.953  | 0.6 keeps 79.7% lets 0.0%  | balanced 0.834 keeps 99.5%  | from others 0.844 keeps 99.7% lets 1.3%
+  miracl-en  relevant p50 0.374  random p1 0.858 p50 0.971  | 0.6 keeps 86.7% lets 0.0%  | balanced 0.858 keeps 99.7%  | from others 0.825 keeps 99.5% lets 0.4%
+  bright-so  relevant p50 0.741  random p1 0.804 p50 0.948  | 0.6 keeps 22.2% lets 0.0%  | balanced 0.804 keeps 70.3%  | from others 0.841 keeps 85.8% lets 2.6%
+
+bedrock/cohere.embed-multilingual-v3
+  miracl-ko  relevant p50 0.279  random p1 0.463 p50 0.654  | 0.6 keeps 100.0% lets 19.6%  | balanced 0.463 keeps 98.7%  | from others 0.505 keeps 99.6% lets 2.3%
+  miracl-zh  relevant p50 0.271  random p1 0.464 p50 0.631  | 0.6 keeps 100.0% lets 29.5%  | balanced 0.464 keeps 99.9%  | from others 0.530 keeps 100.0% lets 5.5%
+  miracl-en  relevant p50 0.315  random p1 0.601 p50 0.773  | 0.6 keeps 99.7% lets 1.0%  | balanced 0.601 keeps 99.7%  | from others 0.464 keeps 96.1% lets 0.1%
+  bright-so  relevant p50 0.474  random p1 0.514 p50 0.673  | 0.6 keeps 97.5% lets 14.1%  | balanced 0.514 keeps 74.1%  | from others 0.498 keeps 64.9% lets 0.6%
+
+bedrock/us.cohere.embed-v4:0
+  miracl-ko  relevant p50 0.401  random p1 0.623 p50 0.820  | 0.6 keeps 97.4% lets 0.7%  | balanced 0.623 keeps 98.5%  | from others 0.739 keeps 100.0% lets 9.9%
+  miracl-zh  relevant p50 0.427  random p1 0.698 p50 0.899  | 0.6 keeps 98.4% lets 0.2%  | balanced 0.698 keeps 99.9%  | from others 0.697 keeps 99.9% lets 1.0%
+  miracl-en  relevant p50 0.433  random p1 0.775 p50 0.934  | 0.6 keeps 96.1% lets 0.1%  | balanced 0.775 keeps 99.8%  | from others 0.662 keeps 98.8% lets 0.1%
+  bright-so  relevant p50 0.607  random p1 0.655 p50 0.831  | 0.6 keeps 45.6% lets 0.1%  | balanced 0.655 keeps 75.1%  | from others 0.697 keeps 88.5% lets 3.2%
+
+ollama/bge-m3
+  miracl-ko  relevant p50 0.335  random p1 0.565 p50 0.759  | 0.6 keeps 99.8% lets 2.0%  | balanced 0.565 keeps 99.5%  | from others 0.600 keeps 99.8% lets 2.0%
+  miracl-zh  relevant p50 0.335  random p1 0.581 p50 0.766  | 0.6 keeps 100.0% lets 1.6%  | balanced 0.581 keeps 100.0%  | from others 0.601 keeps 100.0% lets 1.6%
+  miracl-en  relevant p50 0.349  random p1 0.613 p50 0.774  | 0.6 keeps 99.7% lets 0.7%  | balanced 0.613 keeps 99.8%  | from others 0.574 keeps 99.5% lets 0.4%
+  bright-so  relevant p50 0.444  random p1 0.460 p50 0.604  | 0.6 keeps 99.6% lets 46.9%  | balanced 0.460 keeps 62.3%  | from others 0.594 keeps 99.2% lets 42.6%
+
+ollama/embeddinggemma-2:270m
+  miracl-ko  relevant p50 0.216  random p1 0.340 p50 0.457  | 0.6 keeps 100.0% lets 100.0%  | balanced 0.340 keeps 99.6%  | from others 0.349 keeps 99.6% lets 1.3%
+  miracl-zh  relevant p50 0.219  random p1 0.346 p50 0.453  | 0.6 keeps 100.0% lets 100.0%  | balanced 0.346 keeps 100.0%  | from others 0.349 keeps 100.0% lets 1.1%
+  miracl-en  relevant p50 0.225  random p1 0.366 p50 0.472  | 0.6 keeps 100.0% lets 100.0%  | balanced 0.366 keeps 99.6%  | from others 0.342 keeps 99.1% lets 0.3%
+  miracl-th  relevant p50 0.202  random p1 0.340 p50 0.440  | 0.6 keeps 100.0% lets 100.0%  | balanced 0.340 keeps 100.0%  | from others 0.355 keeps 100.0% lets 2.1%
+  bright-so  relevant p50 0.293  random p1 0.308 p50 0.419  | 0.6 keeps 100.0% lets 100.0%  | balanced 0.308 keeps 62.6%  | from others 0.348 keeps 89.3% lets 6.6%
+
+ollama/embeddinggemma-2:270m+raw
+  miracl-ko  relevant p50 0.193  random p1 0.316 p50 0.432  | 0.6 keeps 100.0% lets 100.0%  | balanced 0.316 keeps 99.1%  | from others 0.331 keeps 99.6% lets 1.7%
+  miracl-zh  relevant p50 0.200  random p1 0.326 p50 0.428  | 0.6 keeps 100.0% lets 100.0%  | balanced 0.326 keeps 99.9%  | from others 0.330 keeps 99.9% lets 1.3%
+  miracl-en  relevant p50 0.205  random p1 0.334 p50 0.445  | 0.6 keeps 100.0% lets 100.0%  | balanced 0.334 keeps 99.4%  | from others 0.321 keeps 99.0% lets 0.5%
+
+ollama/embeddinggemma-2:270m-bf16-text
+  miracl-ko  relevant p50 0.217  random p1 0.341 p50 0.457  | 0.6 keeps 100.0% lets 100.0%  | balanced 0.341 keeps 99.6%  | from others 0.362 keeps 100.0% lets 2.0%
+  miracl-zh  relevant p50 0.221  random p1 0.351 p50 0.456  | 0.6 keeps 100.0% lets 100.0%  | balanced 0.351 keeps 100.0%  | from others 0.363 keeps 100.0% lets 1.7%
+  miracl-en  relevant p50 0.225  random p1 0.369 p50 0.474  | 0.6 keeps 100.0% lets 100.0%  | balanced 0.369 keeps 99.5%  | from others 0.347 keeps 99.1% lets 0.3%
+  bright-so  relevant p50 0.293  random p1 0.307 p50 0.420  | 0.6 keeps 100.0% lets 100.0%  | balanced 0.307 keeps 62.1%  | from others 0.359 keeps 94.1% lets 9.8%
+
+ollama/embeddinggemma-2:270m-mxfp8-text
+  miracl-ko  relevant p50 0.217  random p1 0.340 p50 0.457  | 0.6 keeps 100.0% lets 100.0%  | balanced 0.340 keeps 99.5%  | from others 0.362 keeps 100.0% lets 2.0%
+  miracl-zh  relevant p50 0.220  random p1 0.350 p50 0.455  | 0.6 keeps 100.0% lets 100.0%  | balanced 0.350 keeps 100.0%  | from others 0.363 keeps 100.0% lets 1.8%
+  miracl-en  relevant p50 0.226  random p1 0.370 p50 0.475  | 0.6 keeps 100.0% lets 100.0%  | balanced 0.370 keeps 99.7%  | from others 0.347 keeps 99.1% lets 0.3%
+
+ollama/embeddinggemma:300m
+  miracl-ko  relevant p50 0.423  random p1 0.713 p50 0.945  | 0.6 keeps 95.6% lets 0.2%  | balanced 0.713 keeps 100.0%  | from others 0.776 keeps 100.0% lets 2.7%
+  miracl-zh  relevant p50 0.415  random p1 0.739 p50 0.947  | 0.6 keeps 99.0% lets 0.2%  | balanced 0.739 keeps 100.0%  | from others 0.776 keeps 100.0% lets 1.9%
+  miracl-en  relevant p50 0.425  random p1 0.802 p50 0.976  | 0.6 keeps 96.7% lets 0.1%  | balanced 0.802 keeps 99.9%  | from others 0.728 keeps 99.7% lets 0.3%
+  bright-so  relevant p50 0.485  random p1 0.544 p50 0.771  | 0.6 keeps 84.1% lets 3.2%  | balanced 0.544 keeps 66.9%  | from others 0.764 keeps 99.6% lets 46.6%
+
+ollama/nomic-embed-text-v2-moe
+  miracl-ko  relevant p50 0.410  random p1 0.632 p50 0.845  | 0.6 keeps 97.6% lets 0.5%  | balanced 0.632 keeps 98.9%  | from others 0.707 keeps 100.0% lets 4.6%
+  miracl-zh  relevant p50 0.405  random p1 0.674 p50 0.883  | 0.6 keeps 98.7% lets 0.3%  | balanced 0.674 keeps 99.9%  | from others 0.691 keeps 99.9% lets 1.4%
+  miracl-en  relevant p50 0.417  random p1 0.741 p50 0.917  | 0.6 keeps 97.2% lets 0.1%  | balanced 0.741 keeps 99.8%  | from others 0.653 keeps 99.0% lets 0.2%
+
+ollama/qwen3-embedding:0.6b
+  miracl-ko  relevant p50 0.334  random p1 0.576 p50 0.803  | 0.6 keeps 98.2% lets 1.5%  | balanced 0.576 keeps 97.4%  | from others 0.671 keeps 100.0% lets 5.3%
+  miracl-zh  relevant p50 0.292  random p1 0.639 p50 0.866  | 0.6 keeps 99.9% lets 0.6%  | balanced 0.639 keeps 100.0%  | from others 0.641 keeps 100.0% lets 1.0%
+  miracl-en  relevant p50 0.312  random p1 0.689 p50 0.894  | 0.6 keeps 99.2% lets 0.2%  | balanced 0.689 keeps 99.8%  | from others 0.606 keeps 99.4% lets 0.3%
+
+ollama/snowflake-arctic-embed2
+  miracl-ko  relevant p50 0.410  random p1 0.663 p50 0.900  | 0.6 keeps 96.0% lets 0.4%  | balanced 0.663 keeps 98.5%  | from others 0.727 keeps 99.6% lets 2.9%
+  miracl-zh  relevant p50 0.394  random p1 0.683 p50 0.908  | 0.6 keeps 97.4% lets 0.2%  | balanced 0.683 keeps 99.8%  | from others 0.732 keeps 99.9% lets 2.6%
+  miracl-en  relevant p50 0.418  random p1 0.776 p50 0.973  | 0.6 keeps 95.4% lets 0.1%  | balanced 0.776 keeps 99.7%  | from others 0.677 keeps 99.0% lets 0.2%
+
+openai/text-embedding-3-large
+  bright-so  relevant p50 0.612  random p1 0.685 p50 0.892  | 0.6 keeps 46.4% lets 0.2%  | balanced 0.685 keeps 74.3%
+
+st/google_embeddinggemma-2
+  miracl-ko  relevant p50 0.216  random p1 0.340 p50 0.456  | 0.6 keeps 100.0% lets 100.0%  | balanced 0.340 keeps 99.6%

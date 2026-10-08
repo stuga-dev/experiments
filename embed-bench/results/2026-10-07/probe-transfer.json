@@ -1,0 +1,953 @@
+{
+  "ollama/embeddinggemma-2:270m": {
+    "probe": "8968486f367e8de82b61709d7c577d287cb48174ed6cc9e394c90d7dde2d9058",
+    "levels": {
+      "short": {
+        "strict": 0.307768832813391,
+        "balanced": 0.34306162583861755,
+        "loose": 0.36773022953249035
+      },
+      "question": {
+        "strict": 0.3124708063254759,
+        "balanced": 0.3506194310891404,
+        "loose": 0.3772841755056121
+      }
+    },
+    "sets": {
+      "miracl-ko": {
+        "strict": {
+          "lets": 0.00403462441314554,
+          "keeps": 0.9872029250457038,
+          "within": false
+        },
+        "balanced": {
+          "lets": 0.013497652582159625,
+          "keeps": 0.9963436928702011,
+          "within": true
+        },
+        "loose": {
+          "lets": 0.03396420187793427,
+          "keeps": 1,
+          "within": true
+        },
+        "questions": {
+          "short": 0,
+          "question": 213
+        }
+      },
+      "miracl-zh": {
+        "strict": {
+          "lets": 0.003101145038167939,
+          "keeps": 0.993963782696177,
+          "within": false
+        },
+        "balanced": {
+          "lets": 0.011768447837150127,
+          "keeps": 1,
+          "within": true
+        },
+        "loose": {
+          "lets": 0.03733301526717557,
+          "keeps": 1,
+          "within": true
+        },
+        "questions": {
+          "short": 0,
+          "question": 393
+        }
+      },
+      "miracl-en": {
+        "strict": {
+          "lets": 0.0012711201501877346,
+          "keeps": 0.9673258813413586,
+          "within": true
+        },
+        "balanced": {
+          "lets": 0.004791145181476846,
+          "keeps": 0.9926913155631987,
+          "within": false
+        },
+        "loose": {
+          "lets": 0.017091677096370463,
+          "keeps": 0.9978503869303526,
+          "within": false
+        },
+        "questions": {
+          "short": 0,
+          "question": 799
+        }
+      },
+      "miracl-th": {
+        "strict": {
+          "lets": 0.00266456343792633,
+          "keeps": 0.9947877885331348,
+          "within": false
+        },
+        "balanced": {
+          "lets": 0.01694662346521146,
+          "keeps": 1,
+          "within": true
+        },
+        "loose": {
+          "lets": 0.05719218963165075,
+          "keeps": 1,
+          "within": true
+        },
+        "questions": {
+          "short": 0,
+          "question": 733
+        }
+      }
+    }
+  },
+  "bedrock/amazon.titan-embed-text-v2:0": {
+    "probe": "8968486f367e8de82b61709d7c577d287cb48174ed6cc9e394c90d7dde2d9058",
+    "levels": {
+      "short": {
+        "strict": 0.7573256819131301,
+        "balanced": 0.8174417536011954,
+        "loose": 0.8594610844896668
+      },
+      "question": {
+        "strict": 0.7147675310510013,
+        "balanced": 0.7817564045265729,
+        "loose": 0.8285796177102582
+      }
+    },
+    "sets": {
+      "miracl-ko": {
+        "strict": {
+          "lets": 0.002494131455399061,
+          "keeps": 0.9104204753199269,
+          "within": false
+        },
+        "balanced": {
+          "lets": 0.006528755868544601,
+          "keeps": 0.9634369287020109,
+          "within": true
+        },
+        "loose": {
+          "lets": 0.015331572769953051,
+          "keeps": 0.9762340036563071,
+          "within": false
+        },
+        "questions": {
+          "short": 0,
+          "question": 213
+        }
+      },
+      "miracl-zh": {
+        "strict": {
+          "lets": 0.0015108142493638677,
+          "keeps": 0.9436619718309859,
+          "within": true
+        },
+        "balanced": {
+          "lets": 0.0035384860050890585,
+          "keeps": 0.9818913480885312,
+          "within": false
+        },
+        "loose": {
+          "lets": 0.008786577608142493,
+          "keeps": 0.993963782696177,
+          "within": false
+        },
+        "questions": {
+          "short": 0,
+          "question": 393
+        }
+      },
+      "miracl-en": {
+        "strict": {
+          "lets": 0.0010755632040050063,
+          "keeps": 0.9638865004299226,
+          "within": true
+        },
+        "balanced": {
+          "lets": 0.002112015018773467,
+          "keeps": 0.9879621668099742,
+          "within": false
+        },
+        "loose": {
+          "lets": 0.004693366708385482,
+          "keeps": 0.9961306964746346,
+          "within": false
+        },
+        "questions": {
+          "short": 0,
+          "question": 799
+        }
+      }
+    }
+  },
+  "bedrock/cohere.embed-multilingual-v3": {
+    "probe": "8968486f367e8de82b61709d7c577d287cb48174ed6cc9e394c90d7dde2d9058",
+    "levels": {
+      "short": {
+        "strict": 0.4604752003640089,
+        "balanced": 0.5211903030000709,
+        "loose": 0.5636283385528609
+      },
+      "question": {
+        "strict": 0.441247264129094,
+        "balanced": 0.5084218962989461,
+        "loose": 0.555374949237978
+      }
+    },
+    "sets": {
+      "miracl-ko": {
+        "strict": {
+          "lets": 0.007188967136150234,
+          "keeps": 0.9853747714808044,
+          "within": false
+        },
+        "balanced": {
+          "lets": 0.025601525821596242,
+          "keeps": 0.9963436928702011,
+          "within": false
+        },
+        "loose": {
+          "lets": 0.07365023474178403,
+          "keeps": 1,
+          "within": true
+        },
+        "questions": {
+          "short": 0,
+          "question": 213
+        }
+      },
+      "miracl-zh": {
+        "strict": {
+          "lets": 0.005923982188295165,
+          "keeps": 0.9979879275653923,
+          "within": false
+        },
+        "balanced": {
+          "lets": 0.03033555979643766,
+          "keeps": 1,
+          "within": false
+        },
+        "loose": {
+          "lets": 0.10897741730279899,
+          "keeps": 1,
+          "within": false
+        },
+        "questions": {
+          "short": 0,
+          "question": 393
+        }
+      },
+      "miracl-en": {
+        "strict": {
+          "lets": 0.0007626720901126408,
+          "keeps": 0.9342218400687876,
+          "within": true
+        },
+        "balanced": {
+          "lets": 0.0014275657071339174,
+          "keeps": 0.9858125537403267,
+          "within": false
+        },
+        "loose": {
+          "lets": 0.0036569148936170214,
+          "keeps": 0.9939810834049871,
+          "within": false
+        },
+        "questions": {
+          "short": 0,
+          "question": 799
+        }
+      }
+    }
+  },
+  "bedrock/us.cohere.embed-v4:0": {
+    "probe": "8968486f367e8de82b61709d7c577d287cb48174ed6cc9e394c90d7dde2d9058",
+    "levels": {
+      "short": {
+        "strict": 0.6706697404017855,
+        "balanced": 0.74116037475946,
+        "loose": 0.7904312137620924
+      },
+      "question": {
+        "strict": 0.660245175324176,
+        "balanced": 0.7379141809597742,
+        "loose": 0.7922024861656626
+      }
+    },
+    "sets": {
+      "miracl-ko": {
+        "strict": {
+          "lets": 0.01863262910798122,
+          "keeps": 0.9926873857404022,
+          "within": false
+        },
+        "balanced": {
+          "lets": 0.09675762910798122,
+          "keeps": 1,
+          "within": false
+        },
+        "loose": {
+          "lets": 0.308318661971831,
+          "keeps": 1,
+          "within": false
+        },
+        "questions": {
+          "short": 0,
+          "question": 213
+        }
+      },
+      "miracl-zh": {
+        "strict": {
+          "lets": 0.005049300254452926,
+          "keeps": 0.9969818913480886,
+          "within": false
+        },
+        "balanced": {
+          "lets": 0.020873091603053433,
+          "keeps": 1,
+          "within": false
+        },
+        "loose": {
+          "lets": 0.06576017811704835,
+          "keeps": 1,
+          "within": true
+        },
+        "questions": {
+          "short": 0,
+          "question": 393
+        }
+      },
+      "miracl-en": {
+        "strict": {
+          "lets": 0.001349342928660826,
+          "keeps": 0.9875322441960447,
+          "within": true
+        },
+        "balanced": {
+          "lets": 0.004478254067584481,
+          "keeps": 0.9969905417024936,
+          "within": false
+        },
+        "loose": {
+          "lets": 0.01521433041301627,
+          "keeps": 0.998280309544282,
+          "within": false
+        },
+        "questions": {
+          "short": 0,
+          "question": 799
+        }
+      }
+    }
+  },
+  "ollama/embeddinggemma:300m": {
+    "probe": "8968486f367e8de82b61709d7c577d287cb48174ed6cc9e394c90d7dde2d9058",
+    "levels": {
+      "short": {
+        "strict": 0.6970643027776567,
+        "balanced": 0.7653990836926517,
+        "loose": 0.8131630458051067
+      },
+      "question": {
+        "strict": 0.6824334939160308,
+        "balanced": 0.7510791659078073,
+        "loose": 0.7990604315575482
+      }
+    },
+    "sets": {
+      "miracl-ko": {
+        "strict": {
+          "lets": 0.007482394366197183,
+          "keeps": 0.9945155393053017,
+          "within": false
+        },
+        "balanced": {
+          "lets": 0.017972417840375586,
+          "keeps": 1,
+          "within": true
+        },
+        "loose": {
+          "lets": 0.03594483568075117,
+          "keeps": 1,
+          "within": true
+        },
+        "ownLanguage": {
+          "strict": {
+            "lets": 0.006895539906103286,
+            "keeps": 0.9926873857404022
+          },
+          "balanced": {
+            "lets": 0.014524647887323943,
+            "keeps": 1
+          },
+          "loose": {
+            "lets": 0.029416079812206574,
+            "keeps": 1
+          }
+        },
+        "questions": {
+          "short": 0,
+          "question": 213
+        }
+      },
+      "miracl-zh": {
+        "strict": {
+          "lets": 0.004572201017811705,
+          "keeps": 1,
+          "within": false
+        },
+        "balanced": {
+          "lets": 0.011728689567430025,
+          "keeps": 1,
+          "within": true
+        },
+        "loose": {
+          "lets": 0.02723441475826972,
+          "keeps": 1,
+          "within": true
+        },
+        "ownLanguage": {
+          "strict": {
+            "lets": 0.004134860050890585,
+            "keeps": 1
+          },
+          "balanced": {
+            "lets": 0.009502226463104326,
+            "keeps": 1
+          },
+          "loose": {
+            "lets": 0.01852735368956743,
+            "keeps": 1
+          }
+        },
+        "questions": {
+          "short": 0,
+          "question": 393
+        }
+      },
+      "miracl-en": {
+        "strict": {
+          "lets": 0.0015057884856070087,
+          "keeps": 0.9918314703353397,
+          "within": true
+        },
+        "balanced": {
+          "lets": 0.00371558197747184,
+          "keeps": 0.9978503869303526,
+          "within": false
+        },
+        "loose": {
+          "lets": 0.009308510638297872,
+          "keeps": 0.998280309544282,
+          "within": false
+        },
+        "ownLanguage": {
+          "strict": {
+            "lets": 0.0019360137672090113,
+            "keeps": 0.9948409286328461
+          },
+          "balanced": {
+            "lets": 0.0047520337922403,
+            "keeps": 0.998280309544282
+          },
+          "loose": {
+            "lets": 0.014764549436795995,
+            "keeps": 0.9987102321582115
+          }
+        },
+        "questions": {
+          "short": 0,
+          "question": 799
+        }
+      }
+    }
+  },
+  "ollama/qwen3-embedding:0.6b": {
+    "probe": "8968486f367e8de82b61709d7c577d287cb48174ed6cc9e394c90d7dde2d9058",
+    "levels": {
+      "short": {
+        "strict": 0.6181595638761922,
+        "balanced": 0.6933599904492931,
+        "loose": 0.7459228329371639
+      },
+      "question": {
+        "strict": 0.5481095078608608,
+        "balanced": 0.6278524394252393,
+        "loose": 0.6835903566465598
+      }
+    },
+    "sets": {
+      "miracl-ko": {
+        "strict": {
+          "lets": 0.006455399061032864,
+          "keeps": 0.9616087751371115,
+          "within": false
+        },
+        "balanced": {
+          "lets": 0.024061032863849766,
+          "keeps": 0.9945155393053017,
+          "within": false
+        },
+        "loose": {
+          "lets": 0.07020246478873239,
+          "keeps": 1,
+          "within": true
+        },
+        "ownLanguage": {
+          "strict": {
+            "lets": 0.006455399061032864,
+            "keeps": 0.9616087751371115
+          },
+          "balanced": {
+            "lets": 0.016578638497652582,
+            "keeps": 0.9872029250457038
+          },
+          "loose": {
+            "lets": 0.03983274647887324,
+            "keeps": 1
+          }
+        },
+        "questions": {
+          "short": 0,
+          "question": 213
+        }
+      },
+      "miracl-zh": {
+        "strict": {
+          "lets": 0.002504770992366412,
+          "keeps": 0.9929577464788732,
+          "within": false
+        },
+        "balanced": {
+          "lets": 0.00846851145038168,
+          "keeps": 1,
+          "within": true
+        },
+        "loose": {
+          "lets": 0.019759860050890584,
+          "keeps": 1,
+          "within": false
+        },
+        "ownLanguage": {
+          "strict": {
+            "lets": 0.005168575063613232,
+            "keeps": 0.9989939637826962
+          },
+          "balanced": {
+            "lets": 0.014670801526717557,
+            "keeps": 1
+          },
+          "loose": {
+            "lets": 0.03860527989821883,
+            "keeps": 1
+          }
+        },
+        "questions": {
+          "short": 0,
+          "question": 393
+        }
+      },
+      "miracl-en": {
+        "strict": {
+          "lets": 0.0011928973717146433,
+          "keeps": 0.9746345657781599,
+          "within": true
+        },
+        "balanced": {
+          "lets": 0.0037938047559449312,
+          "keeps": 0.9965606190885641,
+          "within": false
+        },
+        "loose": {
+          "lets": 0.009191176470588236,
+          "keeps": 0.998280309544282,
+          "within": false
+        },
+        "ownLanguage": {
+          "strict": {
+            "lets": 0.004634699624530663,
+            "keeps": 0.9974204643164231
+          },
+          "balanced": {
+            "lets": 0.01480366082603254,
+            "keeps": 0.998280309544282
+          },
+          "loose": {
+            "lets": 0.047872340425531915,
+            "keeps": 0.9987102321582115
+          }
+        },
+        "questions": {
+          "short": 0,
+          "question": 799
+        }
+      }
+    }
+  },
+  "ollama/bge-m3": {
+    "probe": "8968486f367e8de82b61709d7c577d287cb48174ed6cc9e394c90d7dde2d9058",
+    "levels": {
+      "short": {
+        "strict": 0.5005155970688013,
+        "balanced": 0.5587815785204764,
+        "loose": 0.5995077518283961
+      },
+      "question": {
+        "strict": 0.47200683049875186,
+        "balanced": 0.5339652191463118,
+        "loose": 0.5772722743279495
+      }
+    },
+    "sets": {
+      "miracl-ko": {
+        "strict": {
+          "lets": 0.0015404929577464788,
+          "keeps": 0.9451553930530164,
+          "within": true
+        },
+        "balanced": {
+          "lets": 0.004914906103286385,
+          "keeps": 0.9908592321755028,
+          "within": false
+        },
+        "loose": {
+          "lets": 0.012984154929577465,
+          "keeps": 0.9981718464351006,
+          "within": false
+        },
+        "ownLanguage": {
+          "strict": {
+            "lets": 0.0019806338028169014,
+            "keeps": 0.9488117001828154
+          },
+          "balanced": {
+            "lets": 0.004914906103286385,
+            "keeps": 0.9908592321755028
+          },
+          "loose": {
+            "lets": 0.011517018779342723,
+            "keeps": 0.9963436928702011
+          }
+        },
+        "questions": {
+          "short": 0,
+          "question": 213
+        }
+      },
+      "miracl-zh": {
+        "strict": {
+          "lets": 0.0014710559796437658,
+          "keeps": 0.9728370221327968,
+          "within": true
+        },
+        "balanced": {
+          "lets": 0.004333651399491094,
+          "keeps": 0.9959758551307847,
+          "within": false
+        },
+        "loose": {
+          "lets": 0.009303435114503817,
+          "keeps": 1,
+          "within": false
+        },
+        "ownLanguage": {
+          "strict": {
+            "lets": 0.0011529898218829516,
+            "keeps": 0.96579476861167
+          },
+          "balanced": {
+            "lets": 0.003618002544529262,
+            "keeps": 0.9959758551307847
+          },
+          "loose": {
+            "lets": 0.006719147582697201,
+            "keeps": 0.9989939637826962
+          }
+        },
+        "questions": {
+          "short": 0,
+          "question": 393
+        }
+      },
+      "miracl-en": {
+        "strict": {
+          "lets": 0.0007822277847309136,
+          "keeps": 0.9368013757523646,
+          "within": true
+        },
+        "balanced": {
+          "lets": 0.0017991239048811014,
+          "keeps": 0.9879621668099742,
+          "within": false
+        },
+        "loose": {
+          "lets": 0.0039698060075093865,
+          "keeps": 0.9952708512467756,
+          "within": false
+        },
+        "ownLanguage": {
+          "strict": {
+            "lets": 0.0007235607008760952,
+            "keeps": 0.9333619948409286
+          },
+          "balanced": {
+            "lets": 0.0017404568210262828,
+            "keeps": 0.9862424763542562
+          },
+          "loose": {
+            "lets": 0.0038915832290362952,
+            "keeps": 0.9952708512467756
+          }
+        },
+        "questions": {
+          "short": 0,
+          "question": 799
+        }
+      }
+    }
+  },
+  "ollama/nomic-embed-text-v2-moe": {
+    "probe": "8968486f367e8de82b61709d7c577d287cb48174ed6cc9e394c90d7dde2d9058",
+    "levels": {
+      "short": {
+        "strict": 0.6656768804658378,
+        "balanced": 0.7356487104522812,
+        "loose": 0.7845569207613047
+      },
+      "question": {
+        "strict": 0.5943749700233065,
+        "balanced": 0.6651576869228795,
+        "loose": 0.7146326828610892
+      }
+    },
+    "sets": {
+      "miracl-ko": {
+        "strict": {
+          "lets": 0.0048415492957746475,
+          "keeps": 0.9762340036563071,
+          "within": false
+        },
+        "balanced": {
+          "lets": 0.019072769953051644,
+          "keeps": 0.9926873857404022,
+          "within": true
+        },
+        "loose": {
+          "lets": 0.0553843896713615,
+          "keeps": 1,
+          "within": true
+        },
+        "ownLanguage": {
+          "strict": {
+            "lets": 0.004914906103286385,
+            "keeps": 0.9762340036563071
+          },
+          "balanced": {
+            "lets": 0.01965962441314554,
+            "keeps": 0.9926873857404022
+          },
+          "loose": {
+            "lets": 0.05648474178403756,
+            "keeps": 1
+          }
+        },
+        "questions": {
+          "short": 0,
+          "question": 213
+        }
+      },
+      "miracl-zh": {
+        "strict": {
+          "lets": 0.002504770992366412,
+          "keeps": 0.9859154929577465,
+          "within": false
+        },
+        "balanced": {
+          "lets": 0.008667302798982188,
+          "keeps": 0.9989939637826962,
+          "within": true
+        },
+        "loose": {
+          "lets": 0.02325858778625954,
+          "keeps": 1,
+          "within": false
+        },
+        "ownLanguage": {
+          "strict": {
+            "lets": 0.003856552162849873,
+            "keeps": 0.9919517102615694
+          },
+          "balanced": {
+            "lets": 0.012245547073791349,
+            "keeps": 0.9989939637826962
+          },
+          "loose": {
+            "lets": 0.03208492366412214,
+            "keeps": 1
+          }
+        },
+        "questions": {
+          "short": 0,
+          "question": 393
+        }
+      },
+      "miracl-en": {
+        "strict": {
+          "lets": 0.0008995619524405507,
+          "keeps": 0.968615649183147,
+          "within": true
+        },
+        "balanced": {
+          "lets": 0.0022097934918648312,
+          "keeps": 0.9922613929492692,
+          "within": false
+        },
+        "loose": {
+          "lets": 0.006120932415519399,
+          "keeps": 0.9978503869303526,
+          "within": false
+        },
+        "ownLanguage": {
+          "strict": {
+            "lets": 0.0016622340425531915,
+            "keeps": 0.9888220120378332
+          },
+          "balanced": {
+            "lets": 0.0065511576971214016,
+            "keeps": 0.9978503869303526
+          },
+          "loose": {
+            "lets": 0.023975281602002504,
+            "keeps": 0.998280309544282
+          }
+        },
+        "questions": {
+          "short": 0,
+          "question": 799
+        }
+      }
+    }
+  },
+  "ollama/snowflake-arctic-embed2": {
+    "probe": "8968486f367e8de82b61709d7c577d287cb48174ed6cc9e394c90d7dde2d9058",
+    "levels": {
+      "short": {
+        "strict": 0.6635854631160554,
+        "balanced": 0.7402561660198421,
+        "loose": 0.7938466875609476
+      },
+      "question": {
+        "strict": 0.5885306559880741,
+        "balanced": 0.6765679178388009,
+        "loose": 0.7381033231363346
+      }
+    },
+    "sets": {
+      "miracl-ko": {
+        "strict": {
+          "lets": 0.003447769953051643,
+          "keeps": 0.9524680073126143,
+          "within": false
+        },
+        "balanced": {
+          "lets": 0.012177230046948357,
+          "keeps": 0.9890310786106032,
+          "within": true
+        },
+        "loose": {
+          "lets": 0.03587147887323944,
+          "keeps": 0.9963436928702011,
+          "within": true
+        },
+        "ownLanguage": {
+          "strict": {
+            "lets": 0.0037411971830985913,
+            "keeps": 0.9597806215722121
+          },
+          "balanced": {
+            "lets": 0.007042253521126761,
+            "keeps": 0.9817184643510055
+          },
+          "loose": {
+            "lets": 0.022373826291079812,
+            "keeps": 0.9945155393053017
+          }
+        },
+        "questions": {
+          "short": 0,
+          "question": 213
+        }
+      },
+      "miracl-zh": {
+        "strict": {
+          "lets": 0.0020276717557251907,
+          "keeps": 0.96579476861167,
+          "within": false
+        },
+        "balanced": {
+          "lets": 0.008826335877862596,
+          "keeps": 0.9979879275653923,
+          "within": true
+        },
+        "loose": {
+          "lets": 0.0289837786259542,
+          "keeps": 0.9989939637826962,
+          "within": true
+        },
+        "ownLanguage": {
+          "strict": {
+            "lets": 0.00290235368956743,
+            "keeps": 0.9828973843058351
+          },
+          "balanced": {
+            "lets": 0.011967239185750636,
+            "keeps": 0.9979879275653923
+          },
+          "loose": {
+            "lets": 0.03454993638676845,
+            "keeps": 0.9989939637826962
+          }
+        },
+        "questions": {
+          "short": 0,
+          "question": 393
+        }
+      },
+      "miracl-en": {
+        "strict": {
+          "lets": 0.000743116395494368,
+          "keeps": 0.938950988822012,
+          "within": true
+        },
+        "balanced": {
+          "lets": 0.0016426783479349186,
+          "keeps": 0.9901117798796216,
+          "within": false
+        },
+        "loose": {
+          "lets": 0.004556476846057572,
+          "keeps": 0.9965606190885641,
+          "within": false
+        },
+        "ownLanguage": {
+          "strict": {
+            "lets": 0.002444461827284105,
+            "keeps": 0.9926913155631987
+          },
+          "balanced": {
+            "lets": 0.008702284105131415,
+            "keeps": 0.9974204643164231
+          },
+          "loose": {
+            "lets": 0.02595040675844806,
+            "keeps": 0.998280309544282
+          }
+        },
+        "questions": {
+          "short": 0,
+          "question": 799
+        }
+      }
+    }
+  }
+}
