@@ -16,7 +16,7 @@ import { mulberry32 } from "./bootstrap.ts";
 
 /** What Stuga hands the reranker. */
 export const CANDIDATES = 24;
-/** Stuga's old default retrieval cutoff, and none (its default now). */
+/** A fixed retrieval cutoff, and none (Stuga's retrieval takes none). */
 export const CUTOFFS = [0.9, 2] as const;
 /** Keyword-leg weights tried in the fusion, without a cutoff: 1 is Stuga's. */
 export const KEYWORD_WEIGHTS = [1, 0.75, 0.5, 0.25, 0] as const;

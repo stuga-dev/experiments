@@ -132,8 +132,8 @@ revision (the C-MTEB relevance judgments at revisions of their own).
 - **Stuga hybrid** (Hybrid in the tables): the 96 nearest passages and BM25's 96, fused by
   reciprocal rank (k = 60, equal weights, ties shared as SQL's `rank()` shares them), 24 kept: what
   Stuga hands its reranker. The reranker is off. nDCG@10 and Recall@24.
-  - Scored with no distance cutoff and at 0.9, the retrieval cutoff Stuga used before it measured
-    each model. The two agree on every run (`runs.json`, keys `"2"` and `"0.9"`).
+  - Scored with no distance cutoff, as Stuga retrieves, and at a fixed 0.9. The two agree on every
+    run (`runs.json`, keys `"2"` and `"0.9"`).
 - **Comparisons:** MIRACL figures are macro averages over Korean, Chinese and English. Each model's
   difference from EmbeddingGemma 2 (nvfp4) is paired: the same questions, 2,000 bootstrap draws
   resampled within each language, 95% interval; `vs-bf16/summary.json` takes EmbeddingGemma 2 at
@@ -207,8 +207,8 @@ From `results/2026-10-07/runs.json` (`miracl-ko`). Over Korean, Chinese and Engl
 | EmbeddingGemma 300m | Ollama BF16 | 16.4 | 35.5 | 61.0 | 19.2 | 38.6 |
 | Cohere Embed Multilingual v3 | Bedrock | 15.9 | 30.6 | 52.4 | 16.3 | 36.4 |
 | Amazon Titan Text Embeddings V2 | Bedrock | 12.8 | 31.9 | 53.0 | 18.4 | 35.0 |
-| OpenAI text-embedding-3-large | OpenAI | 12.7 | 28.3 | 54.4 | 18.0 | 34.2 |
 | Cohere Embed v4 | Bedrock | 12.7 | 27.9 | 48.1 | 16.7 | 32.8 |
+| OpenAI text-embedding-3-large | OpenAI | 12.7 | 28.3 | 54.4 | 18.0 | 34.2 |
 | EmbeddingGemma 2 | Ollama nvfp4 (default) | 10.5 | 22.9 | 47.0 | 17.0 | 33.4 |
 | EmbeddingGemma 2 | Ollama bf16 | 10.4 | 24.8 | 46.9 | 17.2 | 33.7 |
 | bge-m3 | Ollama F16 | 10.2 | 24.9 | 44.7 | 14.3 | 30.3 |
@@ -369,6 +369,7 @@ node src/report.ts ollama/embeddinggemma-2:270m results/<date> > results/<date>/
 node src/report.ts ollama/embeddinggemma-2:270m-bf16-text results/<date>/vs-bf16 > results/<date>/vs-bf16/summary.txt
 node scripts/pair.ts ollama/embeddinggemma-2:270m ollama/embeddinggemma:300m cmteb-du,cmteb-ecom,cmteb-medical,cmteb-covid,miracl-zh results/<date>/cmteb-v1-vs-v2.json
 node src/cutoffs.ts results/<date> > results/<date>/cutoffs.txt
+node scripts/histograms.ts results/<date>/histograms.json
 node scripts/fusion-analysis.ts results/<date>/fusion.json > results/<date>/fusion.txt
 node src/probe-run.ts ollama:embeddinggemma-2:270m results/<date>
 node scripts/runs-json.ts results/<date>/runs.json

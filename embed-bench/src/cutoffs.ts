@@ -1,7 +1,7 @@
 /**
  * What a cosine-distance cutoff does to each model: the share of relevant passages it keeps and the
- * share of random passages it lets through, at Stuga's old fixed cutoffs (0.6 for search, 0.9 for
- * retrieval) and at each model's own noise floor: the distance below which 0.1%, 1% or 5% of random
+ * share of random passages it lets through, at two fixed cutoffs (0.6 and 0.9) and at each model's
+ * own noise floor: the distance below which 0.1%, 1% or 5% of random
  * query-passage pairs fall. A floor is also set on the other sets and applied to each one, to see
  * whether it carries over between languages.
  *
