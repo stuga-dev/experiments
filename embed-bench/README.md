@@ -64,7 +64,7 @@ revision (the C-MTEB relevance judgments at revisions of their own).
     high, and an unjudged passage counts as not relevant. That may work against a keyword leg, and
     so against fusion; this experiment does not isolate the effect.
 - **BRIGHT StackOverflow:** the subset's whole corpus of long documentation and forum passages.
-  Gold passages are the pages that accepted answers link to. A passage BRIGHT excludes for a question
+  Gold passages are the ones BRIGHT judged relevant to each question. A passage BRIGHT excludes for a question
   is never ranked for it.
   - Caveat: 117 questions, so a difference of a few points may be noise.
 - **C-MTEB:** four Chinese retrieval sets beside MIRACL's Wikipedia: web search, e-commerce listings,

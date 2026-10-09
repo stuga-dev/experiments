@@ -47,8 +47,8 @@
  *     above 0.6). Of the plain questions, the pair taken shares no pg_search token between question
  *     and passage, and has both distances nearest each model's median random distance (so neither is
  *     extreme); it was read and kept.
- * (e) Far relevant passage, BRIGHT: a relevant passage (BRIGHT's gold: pages the accepted answer
- *     links) that v1 puts at or beyond its own 1% floor on BRIGHT (cutoffs.json bright-so
+ * (e) Far relevant passage, BRIGHT: a relevant passage (one BRIGHT judged relevant to the
+ *     question) that v1 puts at or beyond its own 1% floor on BRIGHT (cutoffs.json bright-so
  *     random.p1). Questions with exactly one gold passage are used, so the passage is the one BRIGHT
  *     marks for that question rather than one of many chunks of a long page; they are read in order
  *     of question length, and the first is the example whose passage start shows its subject and
@@ -520,7 +520,7 @@ const eQi = choose(farPool.map((g) => g.qi), READ.brightFar, (qi) => bright.quer
 const eGold = farPool.find((g) => g.qi === eQi)!;
 const eText = bright.passages[eGold.i]!.text;
 const brightFar = {
-  rule: "a relevant BRIGHT passage (gold: a page the accepted answer links) that v1 puts at or beyond its own 1% floor on BRIGHT",
+  rule: "a relevant BRIGHT passage (one BRIGHT judged relevant to the question) that v1 puts at or beyond its own 1% floor on BRIGHT",
   note: "cosine distance: lower is closer. A floor is the distance only 1% of random (unrelated) question–passage pairs fall below; a cutoff there drops everything farther",
   floor1pc: { v1: round(bFloor), v2Default: round(stat("v2Default", "bright-so").random.p1) },
   v1RandomDistance: { p1: round(bFloor), p5: round(stat("v1", "bright-so").random.p5), p50: round(stat("v1", "bright-so").random.p50) },
@@ -554,7 +554,7 @@ const brightFar = {
   source: {
     ...BRIGHT,
     licence: "CC BY 4.0",
-    attribution: "BRIGHT (xlangai/BRIGHT), StackOverflow subset: the question is a Stack Overflow post and the passage a chunk of a page its accepted answer links, as BRIGHT stores them",
+    attribution: "BRIGHT (xlangai/BRIGHT), StackOverflow subset: the question is a Stack Overflow post and the passage one BRIGHT judged relevant to it, as BRIGHT stores them",
   },
 };
 

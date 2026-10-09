@@ -582,7 +582,7 @@
     ]
   },
   "brightFar": {
-    "rule": "a relevant BRIGHT passage (gold: a page the accepted answer links) that v1 puts at or beyond its own 1% floor on BRIGHT",
+    "rule": "a relevant BRIGHT passage (one BRIGHT judged relevant to the question) that v1 puts at or beyond its own 1% floor on BRIGHT",
     "note": "cosine distance: lower is closer. A floor is the distance only 1% of random (unrelated) question–passage pairs fall below; a cutoff there drops everything farther",
     "floor1pc": {
       "v1": 0.5442,
@@ -660,7 +660,7 @@
       "revision": "3066d29c9651a576c8aba4832d249807b181ecae",
       "subset": "stackoverflow",
       "licence": "CC BY 4.0",
-      "attribution": "BRIGHT (xlangai/BRIGHT), StackOverflow subset: the question is a Stack Overflow post and the passage a chunk of a page its accepted answer links, as BRIGHT stores them"
+      "attribution": "BRIGHT (xlangai/BRIGHT), StackOverflow subset: the question is a Stack Overflow post and the passage one BRIGHT judged relevant to it, as BRIGHT stores them"
     }
   }
 }
