@@ -1,0 +1,666 @@
+{
+  "names": {
+    "v1": "EmbeddingGemma v1: Google's EmbeddingGemma, Ollama tag embeddinggemma:300m",
+    "v2": "EmbeddingGemma v2: EmbeddingGemma 2 at bf16, Ollama tag embeddinggemma-2:270m-bf16-text",
+    "v2Default": "EmbeddingGemma v2 at Ollama's default 4-bit (nvfp4) tag, embeddinggemma-2:270m",
+    "v2Raw": "the same default tag sent raw text, without its prompts"
+  },
+  "set": "miracl-en",
+  "source": {
+    "dataset": "mteb/MIRACLRetrievalHardNegatives",
+    "revision": "332a9acb49f5e83d5397683f79d23e588f685916",
+    "split": "dev",
+    "questions": 799,
+    "passages": 178768
+  },
+  "licence": "Question and passage text from MIRACL (MMTEB's MIRACLRetrievalHardNegatives), CC BY-SA 4.0; each passage is from the English Wikipedia article named in its title. brightFar quotes BRIGHT, CC BY 4.0.",
+  "runs": {
+    "v1": "ollama/embeddinggemma:300m",
+    "v2": "ollama/embeddinggemma-2:270m-bf16-text",
+    "v2Default": "ollama/embeddinggemma-2:270m",
+    "v2Raw": "ollama/embeddinggemma-2:270m+raw"
+  },
+  "plainQuestions": 674,
+  "v1VsV2": {
+    "rule": "v1 places a relevant passage first; v2 (bf16) places its first relevant passage at rank 3–10",
+    "count": 70,
+    "plainCount": 60,
+    "medianV2Rank": 4,
+    "opposite": {
+      "rule": "v2 (bf16) places a relevant passage first; v1 places its first relevant passage at rank 3–10",
+      "count": 26
+    },
+    "bothFirst": 272,
+    "v1FirstOnly": 132,
+    "v2FirstOnly": 90,
+    "firstIsRelevant": {
+      "note": "questions (of 799) whose first passage is one MIRACL judged relevant; higher is better",
+      "v1": 404,
+      "v2": 362,
+      "v2Default": 360,
+      "v2Raw": 272
+    },
+    "poolV2FirstJudged": {
+      "note": "in the pool, how MIRACL's annotators judged v2's first passage (unjudged ones may still answer the question)",
+      "judgedNotRelevant": 13,
+      "notJudged": 57
+    },
+    "shortFirstPassage": {
+      "note": "exploratory: questions (of 799) whose first passage has under 80 characters of text (a heading, a list's lead-in, a sentence fragment); lower is better",
+      "corpusShare": 0.1534,
+      "v1": 14,
+      "v2": 58,
+      "v2Default": 60,
+      "v2Raw": 173
+    },
+    "example": {
+      "question": {
+        "id": "1613",
+        "text": "What is the longest snake in the world?"
+      },
+      "relevantCount": 4,
+      "v1": {
+        "top3": [
+          {
+            "id": "46233379#4",
+            "title": "List of largest snakes",
+            "excerpt": "Although it is generally accepted that the reticulated python is the world's longest living snake, most length estimates longer than 6.35 m (20 ft 10 in) have…",
+            "wikipedia": "https://en.wikipedia.org/?curid=46233379",
+            "rank": 1,
+            "relevant": true,
+            "judged": "relevant",
+            "distance": 0.4056
+          },
+          {
+            "id": "19933540#0",
+            "title": "King Cobra (disambiguation)",
+            "excerpt": "The King Cobra is the world's longest venomous snake.",
+            "wikipedia": "https://en.wikipedia.org/?curid=19933540",
+            "rank": 2,
+            "relevant": false,
+            "judged": "not judged",
+            "distance": 0.407
+          },
+          {
+            "id": "88595#0",
+            "title": "Reticulated python",
+            "excerpt": "The reticulated python (\"Python reticulatus\") is a species of python found in South Asia and Southeast Asia. They are the world's longest snakes and longest…",
+            "wikipedia": "https://en.wikipedia.org/?curid=88595",
+            "rank": 3,
+            "relevant": true,
+            "judged": "relevant",
+            "distance": 0.4114
+          }
+        ],
+        "firstRelevantRank": 1
+      },
+      "v2": {
+        "top3": [
+          {
+            "id": "3739603#1",
+            "title": "Hydrophis spiralis",
+            "excerpt": "This is perhaps the longest species of seasnake, up to .",
+            "wikipedia": "https://en.wikipedia.org/?curid=3739603",
+            "rank": 1,
+            "relevant": false,
+            "judged": "not judged",
+            "distance": 0.2035
+          },
+          {
+            "id": "29370#18",
+            "title": "Snake",
+            "excerpt": "The now extinct \"Titanoboa cerrejonensis\" snakes found were in length. By comparison, the largest extant snakes are the reticulated python, which measures…",
+            "wikipedia": "https://en.wikipedia.org/?curid=29370",
+            "rank": 2,
+            "relevant": false,
+            "judged": "not judged",
+            "distance": 0.2063
+          },
+          {
+            "id": "21396352#2",
+            "title": "Titanoboa",
+            "excerpt": "The only known species is \"Titanoboa cerrejonensis\", the largest snake ever discovered, which supplanted the previous record holder, \"Gigantophis\".",
+            "wikipedia": "https://en.wikipedia.org/?curid=21396352",
+            "rank": 3,
+            "relevant": false,
+            "judged": "not judged",
+            "distance": 0.2087
+          }
+        ],
+        "firstRelevantRank": 4
+      },
+      "v1First": {
+        "id": "46233379#4",
+        "title": "List of largest snakes",
+        "text": "Although it is generally accepted that the reticulated python is the world's longest living snake, most length estimates longer than 6.35 m (20 ft 10 in) have been called into question. It has been suggested that confident length records for the largest snakes must be established from a dead body soon after death, or alternatively from a heavily sedated snake, using a steel tape and in the presence of witnesses, and must be published (and preferably recorded on video). At least one reticulated python was measured under full anesthesia at , and somewhat less reliable scientific reports up to have appeared.",
+        "wikipedia": "https://en.wikipedia.org/?curid=46233379",
+        "judged": "relevant",
+        "v1Rank": 1,
+        "v2Rank": 4,
+        "v1Distance": 0.4056,
+        "v2Distance": 0.2136
+      },
+      "v2First": {
+        "id": "3739603#1",
+        "title": "Hydrophis spiralis",
+        "text": "This is perhaps the longest species of seasnake, up to .",
+        "wikipedia": "https://en.wikipedia.org/?curid=3739603",
+        "judged": "not judged",
+        "v2Rank": 1,
+        "v2Distance": 0.2035,
+        "v1Rank": 28,
+        "v1Distance": 0.4869
+      }
+    },
+    "passedOver": [
+      {
+        "id": "796",
+        "text": "What does nerfing mean?",
+        "why": "v2's first passage defines a buff as \"the opposite of a nerf\", which implies the answer"
+      },
+      {
+        "id": "996",
+        "text": "Where was Laura Wright born?",
+        "why": "several people share the name; v2's first passage answers for another Laura Wright"
+      },
+      {
+        "id": "2775",
+        "text": "When was Rockwood Hall built?",
+        "why": "v1's first passage gives the year it was built (1849) only after its first 160 characters"
+      },
+      {
+        "id": "2294",
+        "text": "What is reactive hypoglycemia?",
+        "why": "a medical term, and v2's first passage (its symptoms) is on topic, so the miss takes reading"
+      },
+      {
+        "id": "2597",
+        "text": "How large is Antarctica by area?",
+        "why": "v1's first passage shows no area within its first 160 characters"
+      },
+      {
+        "id": "1480",
+        "text": "What's the alcohol content of cider?",
+        "why": "v2's first passage gives an alcohol content too (5–7%, for Canadian cider)"
+      },
+      {
+        "id": "2249",
+        "text": "How many people live in Wichita Falls?",
+        "why": "v2's first passage gives a population too (the 2000 census)"
+      },
+      {
+        "id": "899",
+        "text": "What years did Glenn \"Pop\" Warner live?",
+        "why": "v2's first passage gives his date of death and age too"
+      }
+    ]
+  },
+  "hybridRescues": {
+    "rule": "v2 (bf16) vectors alone place the first relevant passage below rank 10; Stuga's hybrid places a relevant passage in its top 3",
+    "count": 20,
+    "plainCount": 14,
+    "medianVectorRank": 15,
+    "opposite": {
+      "rule": "vectors alone place a relevant passage in the top 3; hybrid places its first relevant passage below rank 10",
+      "count": 36
+    },
+    "note": "on MIRACL, fusing BM25 lowered nDCG@10 for most runs (README); the opposite count is the honest context for this example",
+    "v2Default": {
+      "count": 24,
+      "opposite": 33
+    },
+    "v1": {
+      "count": 13,
+      "opposite": 35
+    },
+    "example": {
+      "question": {
+        "id": "4271",
+        "text": "How old was Christian von Ehrenfels when he died?"
+      },
+      "relevantCount": 2,
+      "vectors": {
+        "top3": [
+          {
+            "id": "40637586#5",
+            "title": "Christian Stauffer",
+            "excerpt": "A few months after his exile, (April 6, 1672) Christian died of old age in Dirmstein, Germany. He was 93 years old.",
+            "wikipedia": "https://en.wikipedia.org/?curid=40637586",
+            "rank": 1,
+            "relevant": false,
+            "judged": "not judged",
+            "distance": 0.2108
+          },
+          {
+            "id": "22113839#4",
+            "title": "Johann Christian Ritter",
+            "excerpt": "He died at the age of 55.",
+            "wikipedia": "https://en.wikipedia.org/?curid=22113839",
+            "rank": 2,
+            "relevant": false,
+            "judged": "not judged",
+            "distance": 0.2209
+          },
+          {
+            "id": "875526#2",
+            "title": "Christian von Ehrenfels",
+            "excerpt": "There he studied philosophy, was a pupil of Franz Brentano and Alexius Meinong, promoted under supervision of Meinong, following him after his move to the…",
+            "wikipedia": "https://en.wikipedia.org/?curid=875526",
+            "rank": 3,
+            "relevant": false,
+            "judged": "not judged",
+            "distance": 0.2361
+          }
+        ],
+        "firstRelevantRank": 16
+      },
+      "hybrid": {
+        "top3": [
+          {
+            "id": "875526#1",
+            "title": "Christian von Ehrenfels",
+            "excerpt": "Christian von Ehrenfels was born on 20 June 1859 in Rodaun near Vienna and grew up at his father's castle Brunn am Walde in Lower Austria. He joined secondary…",
+            "wikipedia": "https://en.wikipedia.org/?curid=875526",
+            "rank": 1,
+            "relevant": false,
+            "judged": "not judged",
+            "vectorRank": 10,
+            "keywordRank": 2
+          },
+          {
+            "id": "875526#0",
+            "title": "Christian von Ehrenfels",
+            "excerpt": "Christian von Ehrenfels (also \"Maria Christian Julius Leopold Freiherr von Ehrenfels\"; 20 June 1859 – 8 September 1932) was an Austrian philosopher, and is…",
+            "wikipedia": "https://en.wikipedia.org/?curid=875526",
+            "rank": 2,
+            "relevant": true,
+            "judged": "relevant",
+            "vectorRank": 16,
+            "keywordRank": 1
+          },
+          {
+            "id": "40637586#5",
+            "title": "Christian Stauffer",
+            "excerpt": "A few months after his exile, (April 6, 1672) Christian died of old age in Dirmstein, Germany. He was 93 years old.",
+            "wikipedia": "https://en.wikipedia.org/?curid=40637586",
+            "rank": 3,
+            "relevant": false,
+            "judged": "not judged",
+            "vectorRank": 1,
+            "keywordRank": 46
+          }
+        ],
+        "firstRelevantRank": 2
+      },
+      "rescued": {
+        "id": "875526#0",
+        "title": "Christian von Ehrenfels",
+        "text": "Christian von Ehrenfels (also \"Maria Christian Julius Leopold Freiherr von Ehrenfels\"; 20 June 1859 – 8 September 1932) was an Austrian philosopher, and is known as one of the founders and precursors of Gestalt psychology.",
+        "wikipedia": "https://en.wikipedia.org/?curid=875526",
+        "judged": "relevant",
+        "vectorRank": 16,
+        "keywordRank": 1,
+        "hybridRank": 2,
+        "matchedWords": [
+          "Christian",
+          "von",
+          "Ehrenfels"
+        ]
+      },
+      "sameQuestion": {
+        "v2Default": {
+          "vectorsFirstRelevantRank": 9,
+          "hybridFirstRelevantRank": 1
+        },
+        "v1": {
+          "vectorsFirstRelevantRank": 1,
+          "hybridFirstRelevantRank": 1
+        }
+      }
+    },
+    "passedOver": []
+  },
+  "promptsMatter": {
+    "rule": "v2 (nvfp4 tag) with its prompts places a relevant passage first; on raw text its first relevant passage is at rank 3–10",
+    "count": 53,
+    "plainCount": 46,
+    "medianRawRank": 4,
+    "opposite": {
+      "rule": "raw text places a relevant passage first; with its prompts the first relevant passage is at rank 3–10",
+      "count": 13
+    },
+    "promptsFirstOnly": 124,
+    "rawFirstOnly": 36,
+    "prompts": {
+      "query": "task: search result | query: ",
+      "document": "title: none | text: "
+    },
+    "example": {
+      "question": {
+        "id": "2586",
+        "text": "What is a civil war?"
+      },
+      "sent": {
+        "queryWithPrompt": "task: search result | query: What is a civil war?",
+        "queryRaw": "What is a civil war?",
+        "passageWithPrompt": "title: none | text: Civil war\n\nJames Fearon, a scholar of civil wars at Stanford University, defines a civil war as \"a violent conflict…",
+        "passageRaw": "Civil war\n\nJames Fearon, a scholar of civil wars at Stanford University, defines a civil war as \"a violent conflict…"
+      },
+      "relevantCount": 2,
+      "withPrompts": {
+        "top3": [
+          {
+            "id": "7085#3",
+            "title": "Civil war",
+            "excerpt": "James Fearon, a scholar of civil wars at Stanford University, defines a civil war as \"a violent conflict within a country fought by organized groups that aim…",
+            "wikipedia": "https://en.wikipedia.org/?curid=7085",
+            "rank": 1,
+            "relevant": true,
+            "judged": "relevant",
+            "distance": 0.1707
+          },
+          {
+            "id": "1196444#0",
+            "title": "Civil War",
+            "excerpt": "A civil war is an armed conflict within a nation. It is also commonly used is titles or subjects of publication and other works of art, and sometimes in local…",
+            "wikipedia": "https://en.wikipedia.org/?curid=1196444",
+            "rank": 2,
+            "relevant": false,
+            "judged": "not judged",
+            "distance": 0.193
+          },
+          {
+            "id": "7085#1",
+            "title": "Civil war",
+            "excerpt": "A civil war is a high-intensity conflict, often involving regular armed forces, that is sustained, organized and large-scale. Civil wars may result in large…",
+            "wikipedia": "https://en.wikipedia.org/?curid=7085",
+            "rank": 3,
+            "relevant": false,
+            "judged": "not judged",
+            "distance": 0.2018
+          }
+        ],
+        "firstRelevantRank": 1
+      },
+      "raw": {
+        "top3": [
+          {
+            "id": "1196444#1",
+            "title": "Civil War",
+            "excerpt": "Civil War may specifically refer to:",
+            "wikipedia": "https://en.wikipedia.org/?curid=1196444",
+            "rank": 1,
+            "relevant": false,
+            "judged": "not judged",
+            "distance": 0.1092
+          },
+          {
+            "id": "1196444#0",
+            "title": "Civil War",
+            "excerpt": "A civil war is an armed conflict within a nation. It is also commonly used is titles or subjects of publication and other works of art, and sometimes in local…",
+            "wikipedia": "https://en.wikipedia.org/?curid=1196444",
+            "rank": 2,
+            "relevant": false,
+            "judged": "not judged",
+            "distance": 0.154
+          },
+          {
+            "id": "7085#5",
+            "title": "Civil war",
+            "excerpt": "The Geneva Conventions do not specifically define the term \"civil war\"; nevertheless, they do outline the responsibilities of parties in \"armed conflict not of…",
+            "wikipedia": "https://en.wikipedia.org/?curid=7085",
+            "rank": 3,
+            "relevant": false,
+            "judged": "not judged",
+            "distance": 0.1616
+          }
+        ],
+        "firstRelevantRank": 4
+      },
+      "promptsFirst": {
+        "id": "7085#3",
+        "title": "Civil war",
+        "text": "James Fearon, a scholar of civil wars at Stanford University, defines a civil war as \"a violent conflict within a country fought by organized groups that aim to take power at the center or in a region, or to change government policies\". Ann Hironaka further specifies that one side of a civil war is the state. The intensity at which a civil disturbance becomes a civil war is contested by academics. Some political scientists define a civil war as having more than 1000 casualties, while others further specify that at least 100 must come from each side. The Correlates of War, a dataset widely used by scholars of conflict, classifies civil wars as having over 1000 war-related casualties per year of conflict. This rate is a small fraction of the millions killed in the Second Sudanese Civil War and Cambodian Civil War, for example, but excludes several highly publicized conflicts, such as The Troubles of Northern Ireland and the struggle of the African National Congress in Apartheid-era South Africa.",
+        "wikipedia": "https://en.wikipedia.org/?curid=7085",
+        "judged": "relevant",
+        "withPromptsRank": 1,
+        "rawRank": 4
+      },
+      "rawFirst": {
+        "id": "1196444#1",
+        "title": "Civil War",
+        "text": "Civil War may specifically refer to:",
+        "wikipedia": "https://en.wikipedia.org/?curid=1196444",
+        "judged": "not judged",
+        "rawRank": 1,
+        "withPromptsRank": 16
+      }
+    },
+    "passedOver": []
+  },
+  "cutoffPair": {
+    "rule": "one of a question's 64 random passages: v2 (nvfp4 tag) closer than 0.6, v1 beyond its own 1% floor on MIRACL English (0.8015)",
+    "note": "cosine distance: lower is closer; 0 is as close as it gets",
+    "pairs": 51136,
+    "count": 50615,
+    "share": 0.9898,
+    "v1Over06AndV2Under06": 0.999,
+    "under06": {
+      "note": "share of random (unrelated) pairs closer than 0.6, which a 0.6 cutoff lets through; lower is better",
+      "v1": {
+        "share": 0.0008,
+        "cutoffsJson": 0.0008017834793491865
+      },
+      "v2Default": {
+        "share": 0.9998,
+        "cutoffsJson": 0.9998239987484355
+      },
+      "v2": {
+        "share": 0.9998,
+        "cutoffsJson": 0.999784887359199
+      }
+    },
+    "medianRandomDistance": {
+      "v1": 0.9761,
+      "v2Default": 0.4718
+    },
+    "floor1pc": {
+      "v1": 0.8015,
+      "v2Default": 0.3655
+    },
+    "example": {
+      "question": {
+        "id": "3658",
+        "text": "What currency can you use in Norway?"
+      },
+      "randomPassage": {
+        "id": "8900246#0",
+        "title": "Santa Province",
+        "text": "The Santa Province is one of twenty provinces of the Ancash Region in Peru.",
+        "wikipedia": "https://en.wikipedia.org/?curid=8900246",
+        "judged": "not judged",
+        "v1Distance": 0.9758,
+        "v2Distance": 0.4715,
+        "v2Bf16Distance": 0.4703
+      },
+      "relevantPassages": [
+        {
+          "id": "2341370#38",
+          "title": "List of motifs on banknotes",
+          "excerpt": "The official currency of Norway is the Norwegian krone (NOK). The motifs used are:",
+          "wikipedia": "https://en.wikipedia.org/?curid=2341370",
+          "v1Distance": 0.3728,
+          "v2Distance": 0.2619
+        },
+        {
+          "id": "10058273#5",
+          "title": "Norwegian rigsdaler",
+          "excerpt": "The speciedaler (or specie-dollar) was the currency of Norway between 1816 and 1875. It replaced the rigsdaler specie at par and was subdivided into 5 marks or…",
+          "wikipedia": "https://en.wikipedia.org/?curid=10058273",
+          "v1Distance": 0.3868,
+          "v2Distance": 0.2471
+        },
+        {
+          "id": "64149#1",
+          "title": "Norwegian krone",
+          "excerpt": "The krone was the thirteenth most traded currency in the world by value in April 2010, down three positions from 2007.\nThe krone was introduced in 1875…",
+          "wikipedia": "https://en.wikipedia.org/?curid=64149",
+          "v1Distance": 0.4164,
+          "v2Distance": 0.2278
+        },
+        {
+          "id": "64149#0",
+          "title": "Norwegian krone",
+          "excerpt": "The krone (sign: kr; code: NOK), plural \"kroner\", is the currency of Norway and its dependent territories. It is subdivided into 100 \"øre\", which have existed…",
+          "wikipedia": "https://en.wikipedia.org/?curid=64149",
+          "v1Distance": 0.3827,
+          "v2Distance": 0.1809
+        }
+      ]
+    },
+    "alternates": [
+      {
+        "id": "3531",
+        "text": "What is the normal gestation period for a dog?",
+        "passage": {
+          "id": "49994988#8",
+          "title": "474th Searchlight Battery, Royal Artillery",
+          "excerpt": "The battery's reconnaissance and assault groups embarked on 1 June, and the first part of C Troop disembarked on Juno Beach at 14.00 on D-Day (6 June).…",
+          "wikipedia": "https://en.wikipedia.org/?curid=49994988"
+        },
+        "v1Distance": 0.9762,
+        "v2Distance": 0.4726
+      },
+      {
+        "id": "2586",
+        "text": "What is a civil war?",
+        "passage": {
+          "id": "463828#0",
+          "title": "Practice",
+          "excerpt": "Practice or practise may refer to:",
+          "wikipedia": "https://en.wikipedia.org/?curid=463828"
+        },
+        "v1Distance": 0.9767,
+        "v2Distance": 0.4721
+      },
+      {
+        "id": "3234",
+        "text": "What is a Junta government?",
+        "passage": {
+          "id": "27253231#1",
+          "title": "Reputational risk",
+          "excerpt": "This type of risk can be informational in nature that may be difficult to realize financially. Extreme cases may even lead to bankruptcy (as in the case of…",
+          "wikipedia": "https://en.wikipedia.org/?curid=27253231"
+        },
+        "v1Distance": 0.976,
+        "v2Distance": 0.4727
+      },
+      {
+        "id": "1003",
+        "text": "When did the computer game Civilization first come out?",
+        "passage": {
+          "id": "5243763#0",
+          "title": "Rubicon River (California)",
+          "excerpt": "The Rubicon River is a major tributary of the Middle Fork American River in the Sierra Nevada of Northern California, west of Lake Tahoe. Its length is with a…",
+          "wikipedia": "https://en.wikipedia.org/?curid=5243763"
+        },
+        "v1Distance": 0.9761,
+        "v2Distance": 0.4728
+      },
+      {
+        "id": "3120",
+        "text": "Where did Jehovah's Witnesses originate?",
+        "passage": {
+          "id": "47814502#0",
+          "title": "What Is Called Thinking?",
+          "excerpt": "What is called thinking? () is a book by Martin Heidegger, the published version of a lecture course he gave during the winter and summer semesters of 1951 and…",
+          "wikipedia": "https://en.wikipedia.org/?curid=47814502"
+        },
+        "v1Distance": 0.9751,
+        "v2Distance": 0.4718
+      }
+    ]
+  },
+  "brightFar": {
+    "rule": "a relevant BRIGHT passage (gold: a page the accepted answer links) that v1 puts at or beyond its own 1% floor on BRIGHT",
+    "note": "cosine distance: lower is closer. A floor is the distance only 1% of random (unrelated) question–passage pairs fall below; a cutoff there drops everything farther",
+    "floor1pc": {
+      "v1": 0.5442,
+      "v2Default": 0.3077
+    },
+    "v1RandomDistance": {
+      "p1": 0.5442,
+      "p5": 0.6274,
+      "p50": 0.7713
+    },
+    "goldPassages": 478,
+    "questions": 117,
+    "atOrBeyondFloor": 158,
+    "shareAtOrBeyondFloor": 0.3305,
+    "keptByFloor": {
+      "note": "share of relevant passages a cutoff at v1's floor keeps; higher is better",
+      "share": 0.6695,
+      "cutoffsJson": 0.6694560669456067
+    },
+    "questionsWithOne": 41,
+    "questionsWithEveryGoldBeyond": 15,
+    "singleGoldQuestions": 36,
+    "singleGoldAtOrBeyondFloor": 7,
+    "farRanks": {
+      "note": "where v1 ranks the relevant passages at or beyond its floor, among all passages for the question: Stuga's vector leg takes the nearest 96 and hands 24 on",
+      "withinTop24": 0,
+      "withinTop96": 11,
+      "medianRank": 440
+    },
+    "example": {
+      "question": {
+        "id": "73",
+        "firstLine": "Typing a function param to be any JSON serializable object",
+        "text": "Typing a function param to be any JSON serializable object\n\nwhat would be the best type for this function?\nI want basically any input type that` json.dumps` can process (with or without `JSONEncoder`)\n\nFor now i'm using `Union[List[Any], Dict[Any, Any]]` but it's not exhaustive and mypy complains `Explicit \"Any\" is not allowed`.\n\n```\nimport json\nfrom typing import List, Dict\nfrom datetime import date\n\n\ndef my_function_doing_stuff_then_serializing(input: Union[List[Any], Dict[Any, Any]], **kwargs) -> None:\n    json.dumps(input, **kwargs)\n```\n\nso I can do this\n\n```\nimport json\nfrom datetime import date\nfrom somewhere import my_function_doing_stuff_then_serializing\n\n\nclass DateEncoder(json.JSONEncoder):\n    def default(self, obj: Any) -> Any:\n        if isinstance(obj, date):\n            return obj.isoformat()\n        return super().default(obj)\n\nmy_function_doing_stuff_then_serializing([date.today()], cls=DateEncoder)\n```"
+      },
+      "passage": {
+        "id": "python_typing_tokenize/python_typing_2_0.txt",
+        "start": "##  Type aliases  Â¶\n\nA type alias is defined using the [ ` type  `\n](../reference/simple_stmts.html#type) statement, which creates an instance of\n` TypeAliasType  ` . In this example, ` Vector  ` and ` list[float]  ` will be\ntreated equivalently by static type checkers:\n\n    \n    \n    type Vector…",
+        "text": "##  Type aliases  Â¶\n\nA type alias is defined using the [ ` type  `\n](../reference/simple_stmts.html#type) statement, which creates an instance of\n` TypeAliasType  ` . In this example, ` Vector  ` and ` list[float]  ` will be\ntreated equivalently by static type checkers:\n\n    \n    \n    type Vector = list[float]\n    \n    def scale(scalar: float, vector: Vector) -> Vector:\n        return [scalar * num for num in vector]\n    \n    # passes type checking; a list of floats qualifies as a Vector.\n    new_vector = scale(2.0, [1.0, -4.2, 5.4])\n    \n\nType aliases are useful for simplifying complex type signatures. For example:\n\n    \n    \n    from collections.abc import Sequence\n    \n    type ConnectionOptions = dict[str, str]\n    type Address = tuple[str, int]\n    type Server = tuple[Address, ConnectionOptions]\n    \n    def broadcast_message(message: str, servers: Sequence[Server]) -> None:\n        ...\n    \n    # The static type checker will treat the previous type signature as\n    # being exactly equivalent to this one.\n    def broadcast_message(\n            message: str,\n            servers: Sequence[tuple[tuple[str, int], dict[str, str]]]) -> None:\n        ...\n    \n\nThe [ ` type  ` ](../reference/simple_stmts.html#type) statement is new in\nPython 3.12. For backwards compatibility, type aliases can also be created\nthrough simple assignment:\n\n    \n    \n    Vector = list[float]\n    \n\nOr marked with  ` TypeAlias  ` to make it explicit that this is a type alias,\nnot a normal variable assignment:\n\n    \n    \n    from typing import TypeAlias\n    \n    Vector: TypeAlias = list[float]\n    \n\n"
+      },
+      "v1": {
+        "distance": 0.617,
+        "floor": 0.5442,
+        "rank": 1784,
+        "randomCloser": {
+          "note": "share of v1's random BRIGHT pairs nearer than this relevant passage",
+          "share": 0.0418
+        }
+      },
+      "v2Default": {
+        "distance": 0.3147,
+        "floor": 0.3077,
+        "atOrBeyondFloor": true
+      }
+    },
+    "passedOver": [
+      {
+        "id": "81",
+        "firstLine": "python packages installing order",
+        "why": "the passage (pyproject.toml's [build-system] table) does not show at its start how it answers a question about pip's install order"
+      },
+      {
+        "id": "68",
+        "firstLine": "setattr for `__call__` method of an object doesn't work in Python",
+        "why": "the passage starts on Mappings in Python's data model and never mentions __call__ or special method lookup"
+      },
+      {
+        "id": "59",
+        "firstLine": "How can we check the format of the date coming in Payload using Dataweave",
+        "why": "the passage starts with the site's navigation and phone number"
+      }
+    ],
+    "source": {
+      "dataset": "xlangai/BRIGHT",
+      "revision": "3066d29c9651a576c8aba4832d249807b181ecae",
+      "subset": "stackoverflow",
+      "licence": "CC BY 4.0",
+      "attribution": "BRIGHT (xlangai/BRIGHT), StackOverflow subset: the question is a Stack Overflow post and the passage a chunk of a page its accepted answer links, as BRIGHT stores them"
+    }
+  }
+}

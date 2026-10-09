@@ -373,6 +373,7 @@ node scripts/histograms.ts results/<date>/histograms.json
 node scripts/fusion-analysis.ts results/<date>/fusion.json > results/<date>/fusion.txt
 node src/probe-run.ts ollama:embeddinggemma-2:270m results/<date>
 node scripts/runs-json.ts results/<date>/runs.json
+node scripts/examples.ts results/<date>/examples.json      # worked examples: real questions and what each model put first
 ```
 
 - **Keys** come from the file `BENCH_KEYS` names, never from the command line. Bedrock takes an API
@@ -403,4 +404,6 @@ node scripts/runs-json.ts results/<date>/runs.json
 
 Code MIT, including the files copied from Stuga and Stuga's probe texts in `data/probe.json`. Data:
 MMTEB's MIRACL hard negatives are CC BY-SA 4.0 and BRIGHT is CC BY 4.0; the C-MTEB sets state no
-licence on Hugging Face. No set's text is committed here, only scores.
+licence on Hugging Face. No set's text is committed here, only scores, apart from the few MIRACL
+and BRIGHT questions and passages quoted in `results/<date>/examples.json`, each with its source and
+under its set's licence.
