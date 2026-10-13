@@ -1,0 +1,1813 @@
+{
+  "set": "miracl",
+  "dir": "results/miracl/2026-10-11",
+  "questions": 240,
+  "rankable": 240,
+  "candidateRecall": 1,
+  "retrievalMisses": [],
+  "rankers": [
+    {
+      "id": "qwen3-reranker-4b",
+      "label": "Qwen3-Reranker 4B (local)",
+      "kind": "reranker",
+      "via": "llama.cpp on this machine",
+      "released": "2025-06-03",
+      "models": [
+        "qwen3-reranker-4b"
+      ],
+      "repeats": 1,
+      "calls": 240,
+      "failures": 0,
+      "hit1": 0.8083333333333333,
+      "hit1Ci": [
+        0.7541666666666667,
+        0.8583333333333333
+      ],
+      "recall8": 0.9958333333333333,
+      "mrr": 0.8856646825396824,
+      "mrrCi": [
+        0.853643849206349,
+        0.9163916170634919
+      ],
+      "ndcg10": 0.8972161233364919,
+      "latencyP50": 5370.049583499989,
+      "latencyP95": 8626.424781549911,
+      "costPer1k": 0,
+      "inputTokens": 0,
+      "outputTokens": 0,
+      "stability": null,
+      "topTieRate": 0,
+      "reasoningRate": 0,
+      "byCategory": {
+        "en": {
+          "n": 40,
+          "hit1": 0.85,
+          "mrr": 0.9091666666666667
+        },
+        "zh": {
+          "n": 40,
+          "hit1": 0.775,
+          "mrr": 0.8574999999999999
+        },
+        "ja": {
+          "n": 40,
+          "hit1": 0.8,
+          "mrr": 0.8785714285714284
+        },
+        "ko": {
+          "n": 40,
+          "hit1": 0.75,
+          "mrr": 0.8583333333333334
+        },
+        "ar": {
+          "n": 40,
+          "hit1": 0.875,
+          "mrr": 0.93125
+        },
+        "th": {
+          "n": 40,
+          "hit1": 0.8,
+          "mrr": 0.8791666666666667
+        }
+      },
+      "hit1All": 0.8083333333333333,
+      "vsJev": {
+        "diff": 0.04583333333333333,
+        "ci": [
+          -0.016666666666666666,
+          0.10833333333333334
+        ],
+        "ciAdjusted": [
+          -0.04583333333333333,
+          0.14583333333333334
+        ]
+      },
+      "vsFirstStage": {
+        "diff": 0.44583333333333336,
+        "ci": [
+          0.37083333333333335,
+          0.5166666666666667
+        ],
+        "ciAdjusted": [
+          0.3375,
+          0.5541666666666667
+        ]
+      },
+      "fullCoverage": null,
+      "coverageRecorded": 0,
+      "untimedRetries": 0
+    },
+    {
+      "id": "claude-opus-5-5",
+      "label": "Claude Opus 5.5",
+      "kind": "llm",
+      "via": "Bedrock us-east-1",
+      "released": "2026-09-22",
+      "models": [
+        "global.anthropic.claude-opus-5-5",
+        "us.anthropic.claude-opus-5-5"
+      ],
+      "repeats": 1,
+      "calls": 240,
+      "failures": 0,
+      "hit1": 0.7958333333333333,
+      "hit1Ci": [
+        0.7458333333333333,
+        0.8458333333333333
+      ],
+      "recall8": 0.9916666666666667,
+      "mrr": 0.8753967213342212,
+      "mrrCi": [
+        0.8435800588300587,
+        0.9070572127525253
+      ],
+      "ndcg10": 0.8786708807624269,
+      "latencyP50": 4417.177124999929,
+      "latencyP95": 6034.930607999989,
+      "costPer1k": 40.777421666666676,
+      "inputTokens": 7091,
+      "outputTokens": 270,
+      "stability": null,
+      "topTieRate": 0.24166666666666667,
+      "reasoningRate": 0,
+      "byCategory": {
+        "en": {
+          "n": 40,
+          "hit1": 0.75,
+          "mrr": 0.8481547619047618
+        },
+        "zh": {
+          "n": 40,
+          "hit1": 0.85,
+          "mrr": 0.9029166666666667
+        },
+        "ja": {
+          "n": 40,
+          "hit1": 0.775,
+          "mrr": 0.8619047619047618
+        },
+        "ko": {
+          "n": 40,
+          "hit1": 0.725,
+          "mrr": 0.8323208041958041
+        },
+        "ar": {
+          "n": 40,
+          "hit1": 0.85,
+          "mrr": 0.9104166666666667
+        },
+        "th": {
+          "n": 40,
+          "hit1": 0.825,
+          "mrr": 0.8966666666666667
+        }
+      },
+      "hit1All": 0.7958333333333333,
+      "vsJev": {
+        "diff": 0.03333333333333333,
+        "ci": [
+          -0.004270833333333327,
+          0.07093749999999943
+        ],
+        "ciAdjusted": [
+          -0.025931712962962965,
+          0.09583333333333334
+        ]
+      },
+      "vsFirstStage": {
+        "diff": 0.43333333333333335,
+        "ci": [
+          0.35833333333333334,
+          0.5041666666666667
+        ],
+        "ciAdjusted": [
+          0.3221436403508772,
+          0.5416666666666666
+        ]
+      },
+      "fullCoverage": 1,
+      "coverageRecorded": 240,
+      "untimedRetries": 0
+    },
+    {
+      "id": "cohere-rerank-3-5",
+      "label": "Cohere Rerank 3.5",
+      "kind": "reranker",
+      "via": "Bedrock us-west-2",
+      "released": "2024-12-01",
+      "models": [
+        "cohere.rerank-v3-5:0"
+      ],
+      "repeats": 1,
+      "calls": 240,
+      "failures": 0,
+      "hit1": 0.7833333333333333,
+      "hit1Ci": [
+        0.7291666666666666,
+        0.8333333333333334
+      ],
+      "recall8": 0.9791666666666666,
+      "mrr": 0.8702172901989077,
+      "mrrCi": [
+        0.8375471705411963,
+        0.9017920837842714
+      ],
+      "ndcg10": 0.873074771260876,
+      "latencyP50": 316.3398959999995,
+      "latencyP95": 363.14847470000177,
+      "costPer1k": 2.0000000000000013,
+      "inputTokens": 0,
+      "outputTokens": 0,
+      "stability": null,
+      "topTieRate": 0,
+      "reasoningRate": 0,
+      "byCategory": {
+        "en": {
+          "n": 40,
+          "hit1": 0.725,
+          "mrr": 0.8355555555555556
+        },
+        "zh": {
+          "n": 40,
+          "hit1": 0.75,
+          "mrr": 0.8340584415584417
+        },
+        "ja": {
+          "n": 40,
+          "hit1": 0.8,
+          "mrr": 0.86981474407945
+        },
+        "ko": {
+          "n": 40,
+          "hit1": 0.7,
+          "mrr": 0.83625
+        },
+        "ar": {
+          "n": 40,
+          "hit1": 0.875,
+          "mrr": 0.928125
+        },
+        "th": {
+          "n": 40,
+          "hit1": 0.85,
+          "mrr": 0.9175000000000001
+        }
+      },
+      "hit1All": 0.7833333333333333,
+      "vsJev": {
+        "diff": 0.020833333333333332,
+        "ci": [
+          -0.0375,
+          0.075
+        ],
+        "ciAdjusted": [
+          -0.06666666666666667,
+          0.10833333333333334
+        ]
+      },
+      "vsFirstStage": {
+        "diff": 0.42083333333333334,
+        "ci": [
+          0.35,
+          0.49166666666666664
+        ],
+        "ciAdjusted": [
+          0.30833333333333335,
+          0.5291666666666667
+        ]
+      },
+      "fullCoverage": null,
+      "coverageRecorded": 0,
+      "untimedRetries": 0
+    },
+    {
+      "id": "pplx-decider-v1-1-27b",
+      "label": "Perplexity Decider V1.1 27B",
+      "kind": "classifier",
+      "via": "OpenRouter",
+      "released": null,
+      "models": [
+        "perplexity/pplx-decider-v1.1-27b-20261006 (Perplexity)"
+      ],
+      "repeats": 1,
+      "calls": 240,
+      "failures": 0,
+      "hit1": 0.7875,
+      "hit1Ci": [
+        0.7333333333333333,
+        0.8416666666666667
+      ],
+      "recall8": 0.9916666666666667,
+      "mrr": 0.8691501322751322,
+      "mrrCi": [
+        0.8349562665343915,
+        0.9034464285714285
+      ],
+      "ndcg10": 0.8732954627140112,
+      "latencyP50": 4804.806083500007,
+      "latencyP95": 10229.40415384997,
+      "costPer1k": 1.9245300000000003,
+      "inputTokens": 96227,
+      "outputTokens": 24,
+      "stability": null,
+      "topTieRate": 0,
+      "reasoningRate": 0,
+      "byCategory": {
+        "en": {
+          "n": 40,
+          "hit1": 0.725,
+          "mrr": 0.8368055555555556
+        },
+        "zh": {
+          "n": 40,
+          "hit1": 0.725,
+          "mrr": 0.8113095238095237
+        },
+        "ja": {
+          "n": 40,
+          "hit1": 0.775,
+          "mrr": 0.8712500000000001
+        },
+        "ko": {
+          "n": 40,
+          "hit1": 0.675,
+          "mrr": 0.8154761904761905
+        },
+        "ar": {
+          "n": 40,
+          "hit1": 0.9,
+          "mrr": 0.9354166666666666
+        },
+        "th": {
+          "n": 40,
+          "hit1": 0.925,
+          "mrr": 0.9446428571428571
+        }
+      },
+      "hit1All": 0.7875,
+      "vsJev": {
+        "diff": 0.025,
+        "ci": [
+          -0.016666666666666666,
+          0.06677083333333277
+        ],
+        "ciAdjusted": [
+          -0.0375,
+          0.09166666666666666
+        ]
+      },
+      "vsFirstStage": {
+        "diff": 0.425,
+        "ci": [
+          0.3458333333333333,
+          0.5001041666666661
+        ],
+        "ciAdjusted": [
+          0.30833333333333335,
+          0.5416666666666666
+        ]
+      },
+      "fullCoverage": null,
+      "coverageRecorded": 0,
+      "untimedRetries": 0
+    },
+    {
+      "id": "microsoft-decision-1",
+      "label": "Microsoft-Decision-1",
+      "kind": "classifier",
+      "via": "OpenRouter",
+      "released": null,
+      "models": [
+        "microsoft/microsoft-decision-1-20261009 (Azure)"
+      ],
+      "repeats": 1,
+      "calls": 240,
+      "failures": 0,
+      "hit1": 0.7875,
+      "hit1Ci": [
+        0.7333333333333333,
+        0.8375
+      ],
+      "recall8": 0.9958333333333333,
+      "mrr": 0.8661160714285714,
+      "mrrCi": [
+        0.833296130952381,
+        0.8984027777777777
+      ],
+      "ndcg10": 0.8729213834173591,
+      "latencyP50": 547.596020500001,
+      "latencyP95": 874.956166649995,
+      "costPer1k": 0.23691727499999993,
+      "inputTokens": 5641,
+      "outputTokens": 24,
+      "stability": null,
+      "topTieRate": 0,
+      "reasoningRate": 0,
+      "byCategory": {
+        "en": {
+          "n": 40,
+          "hit1": 0.7,
+          "mrr": 0.8095833333333331
+        },
+        "zh": {
+          "n": 40,
+          "hit1": 0.7,
+          "mrr": 0.7995833333333333
+        },
+        "ja": {
+          "n": 40,
+          "hit1": 0.8,
+          "mrr": 0.875
+        },
+        "ko": {
+          "n": 40,
+          "hit1": 0.725,
+          "mrr": 0.8400297619047621
+        },
+        "ar": {
+          "n": 40,
+          "hit1": 0.9,
+          "mrr": 0.9341666666666667
+        },
+        "th": {
+          "n": 40,
+          "hit1": 0.9,
+          "mrr": 0.9383333333333332
+        }
+      },
+      "hit1All": 0.7875,
+      "vsJev": {
+        "diff": 0.025,
+        "ci": [
+          -0.020833333333333332,
+          0.07083333333333333
+        ],
+        "ciAdjusted": [
+          -0.04259837962962963,
+          0.09583333333333334
+        ]
+      },
+      "vsFirstStage": {
+        "diff": 0.425,
+        "ci": [
+          0.3541666666666667,
+          0.49583333333333335
+        ],
+        "ciAdjusted": [
+          0.31666666666666665,
+          0.5333333333333333
+        ]
+      },
+      "fullCoverage": null,
+      "coverageRecorded": 0,
+      "untimedRetries": 0
+    },
+    {
+      "id": "claude-sonnet-5-5",
+      "label": "Claude Sonnet 5.5",
+      "kind": "llm",
+      "via": "Bedrock us-west-2",
+      "released": "2026-09-28",
+      "models": [
+        "global.anthropic.claude-sonnet-5-5"
+      ],
+      "repeats": 1,
+      "calls": 240,
+      "failures": 0,
+      "hit1": 0.7791666666666667,
+      "hit1Ci": [
+        0.725,
+        0.8291666666666667
+      ],
+      "recall8": 0.9833333333333333,
+      "mrr": 0.8634060846560845,
+      "mrrCi": [
+        0.8298922784391534,
+        0.8953577215608464
+      ],
+      "ndcg10": 0.8716848365464241,
+      "latencyP50": 2232.720000000001,
+      "latencyP95": 4035.8180497999997,
+      "costPer1k": 20.46139583333334,
+      "inputTokens": 7091,
+      "outputTokens": 286,
+      "stability": null,
+      "topTieRate": 0.15833333333333333,
+      "reasoningRate": 0,
+      "byCategory": {
+        "en": {
+          "n": 40,
+          "hit1": 0.75,
+          "mrr": 0.8486111111111111
+        },
+        "zh": {
+          "n": 40,
+          "hit1": 0.775,
+          "mrr": 0.8494047619047619
+        },
+        "ja": {
+          "n": 40,
+          "hit1": 0.75,
+          "mrr": 0.8444444444444443
+        },
+        "ko": {
+          "n": 40,
+          "hit1": 0.725,
+          "mrr": 0.8341666666666667
+        },
+        "ar": {
+          "n": 40,
+          "hit1": 0.875,
+          "mrr": 0.9216666666666666
+        },
+        "th": {
+          "n": 40,
+          "hit1": 0.8,
+          "mrr": 0.8821428571428571
+        }
+      },
+      "hit1All": 0.7791666666666667,
+      "vsJev": {
+        "diff": 0.016666666666666666,
+        "ci": [
+          -0.029166666666666667,
+          0.058333333333333334
+        ],
+        "ciAdjusted": [
+          -0.05,
+          0.0875
+        ]
+      },
+      "vsFirstStage": {
+        "diff": 0.4166666666666667,
+        "ci": [
+          0.3458333333333333,
+          0.48760416666666606
+        ],
+        "ciAdjusted": [
+          0.3096436403508772,
+          0.5291666666666667
+        ]
+      },
+      "fullCoverage": 1,
+      "coverageRecorded": 240,
+      "untimedRetries": 0
+    },
+    {
+      "id": "liquid-d1",
+      "label": "Liquid d1",
+      "kind": "classifier",
+      "via": "OpenRouter",
+      "released": null,
+      "models": [
+        "liquid/d1-20260930 (Liquid)"
+      ],
+      "repeats": 1,
+      "calls": 240,
+      "failures": 0,
+      "hit1": 0.7708333333333334,
+      "hit1Ci": [
+        0.7166666666666667,
+        0.8208333333333333
+      ],
+      "recall8": 0.9958333333333333,
+      "mrr": 0.8577847805788982,
+      "mrrCi": [
+        0.8220793723739496,
+        0.8908781147875818
+      ],
+      "ndcg10": 0.8648750771340273,
+      "latencyP50": 845.4229789999954,
+      "latencyP95": 1178.3736586500013,
+      "costPer1k": 4.535715999999997,
+      "inputTokens": 113393,
+      "outputTokens": 0,
+      "stability": null,
+      "topTieRate": 0,
+      "reasoningRate": 0,
+      "byCategory": {
+        "en": {
+          "n": 40,
+          "hit1": 0.75,
+          "mrr": 0.8356372549019607
+        },
+        "zh": {
+          "n": 40,
+          "hit1": 0.7,
+          "mrr": 0.8018749999999999
+        },
+        "ja": {
+          "n": 40,
+          "hit1": 0.725,
+          "mrr": 0.8310416666666667
+        },
+        "ko": {
+          "n": 40,
+          "hit1": 0.7,
+          "mrr": 0.8294047619047618
+        },
+        "ar": {
+          "n": 40,
+          "hit1": 0.825,
+          "mrr": 0.8945833333333333
+        },
+        "th": {
+          "n": 40,
+          "hit1": 0.925,
+          "mrr": 0.9541666666666666
+        }
+      },
+      "hit1All": 0.7708333333333334,
+      "vsJev": {
+        "diff": 0.008333333333333333,
+        "ci": [
+          -0.0375,
+          0.058333333333333334
+        ],
+        "ciAdjusted": [
+          -0.0625,
+          0.08333333333333333
+        ]
+      },
+      "vsFirstStage": {
+        "diff": 0.4083333333333333,
+        "ci": [
+          0.3333333333333333,
+          0.48333333333333334
+        ],
+        "ciAdjusted": [
+          0.29583333333333334,
+          0.5208333333333334
+        ]
+      },
+      "fullCoverage": null,
+      "coverageRecorded": 0,
+      "untimedRetries": 0
+    },
+    {
+      "id": "jev-openrouter",
+      "label": "Jev via OpenRouter",
+      "kind": "classifier",
+      "via": "OpenRouter",
+      "released": null,
+      "models": [
+        "typesafe/jev-1.13-20260917 (TypeSafe)"
+      ],
+      "repeats": 1,
+      "calls": 240,
+      "failures": 0,
+      "hit1": 0.775,
+      "hit1Ci": [
+        0.7208333333333333,
+        0.825
+      ],
+      "recall8": 0.9875,
+      "mrr": 0.8560104016354015,
+      "mrrCi": [
+        0.8193138903920154,
+        0.8905275974025975
+      ],
+      "ndcg10": 0.8625272269669547,
+      "latencyP50": 201.77829199999724,
+      "latencyP95": 259.9267621500047,
+      "costPer1k": 0.3695580000000001,
+      "inputTokens": 8799,
+      "outputTokens": 426,
+      "stability": null,
+      "topTieRate": 0.11666666666666667,
+      "reasoningRate": 0,
+      "byCategory": {
+        "en": {
+          "n": 40,
+          "hit1": 0.75,
+          "mrr": 0.837202380952381
+        },
+        "zh": {
+          "n": 40,
+          "hit1": 0.7,
+          "mrr": 0.7883333333333333
+        },
+        "ja": {
+          "n": 40,
+          "hit1": 0.8,
+          "mrr": 0.8800000000000001
+        },
+        "ko": {
+          "n": 40,
+          "hit1": 0.75,
+          "mrr": 0.851677489177489
+        },
+        "ar": {
+          "n": 40,
+          "hit1": 0.825,
+          "mrr": 0.8813492063492061
+        },
+        "th": {
+          "n": 40,
+          "hit1": 0.825,
+          "mrr": 0.8975
+        }
+      },
+      "hit1All": 0.775,
+      "vsJev": {
+        "diff": 0.0125,
+        "ci": [
+          -0.0125,
+          0.0375
+        ],
+        "ciAdjusted": [
+          -0.025,
+          0.05416666666666667
+        ]
+      },
+      "vsFirstStage": {
+        "diff": 0.4125,
+        "ci": [
+          0.3416666666666667,
+          0.4875
+        ],
+        "ciAdjusted": [
+          0.30416666666666664,
+          0.525
+        ]
+      },
+      "fullCoverage": null,
+      "coverageRecorded": 0,
+      "untimedRetries": 0
+    },
+    {
+      "id": "mercury-decide",
+      "label": "Inception Mercury Decide",
+      "kind": "classifier",
+      "via": "OpenRouter",
+      "released": null,
+      "models": [
+        "inception/mercury-decide-20260930 (Inception)"
+      ],
+      "repeats": 1,
+      "calls": 240,
+      "failures": 0,
+      "hit1": 0.7708333333333334,
+      "hit1Ci": [
+        0.7208333333333333,
+        0.825
+      ],
+      "recall8": 0.9833333333333333,
+      "mrr": 0.8523794492544493,
+      "mrrCi": [
+        0.8182017120610869,
+        0.8864479166666666
+      ],
+      "ndcg10": 0.8597527440041682,
+      "latencyP50": 1006.7021664999993,
+      "latencyP95": 11209.442649699999,
+      "costPer1k": 0.07773291666666667,
+      "inputTokens": 3887,
+      "outputTokens": 24,
+      "stability": null,
+      "topTieRate": 0,
+      "reasoningRate": 0,
+      "byCategory": {
+        "en": {
+          "n": 40,
+          "hit1": 0.7,
+          "mrr": 0.8120833333333334
+        },
+        "zh": {
+          "n": 40,
+          "hit1": 0.725,
+          "mrr": 0.8034036796536796
+        },
+        "ja": {
+          "n": 40,
+          "hit1": 0.75,
+          "mrr": 0.8449404761904763
+        },
+        "ko": {
+          "n": 40,
+          "hit1": 0.7,
+          "mrr": 0.8216666666666667
+        },
+        "ar": {
+          "n": 40,
+          "hit1": 0.85,
+          "mrr": 0.9008333333333333
+        },
+        "th": {
+          "n": 40,
+          "hit1": 0.9,
+          "mrr": 0.9313492063492064
+        }
+      },
+      "hit1All": 0.7708333333333334,
+      "vsJev": {
+        "diff": 0.008333333333333333,
+        "ci": [
+          -0.03333333333333333,
+          0.05
+        ],
+        "ciAdjusted": [
+          -0.058333333333333334,
+          0.075
+        ]
+      },
+      "vsFirstStage": {
+        "diff": 0.4083333333333333,
+        "ci": [
+          0.3375,
+          0.4791666666666667
+        ],
+        "ciAdjusted": [
+          0.3,
+          0.525
+        ]
+      },
+      "fullCoverage": null,
+      "coverageRecorded": 0,
+      "untimedRetries": 0
+    },
+    {
+      "id": "jev",
+      "label": "Jev",
+      "kind": "classifier",
+      "via": "TypeSafe API",
+      "released": "2026-09-15",
+      "models": [
+        "jev-1.13.0"
+      ],
+      "repeats": 1,
+      "calls": 240,
+      "failures": 0,
+      "hit1": 0.7625,
+      "hit1Ci": [
+        0.7041666666666667,
+        0.8166666666666667
+      ],
+      "recall8": 0.9791666666666666,
+      "mrr": 0.8496829287270463,
+      "mrrCi": [
+        0.8130776386943666,
+        0.884608558006536
+      ],
+      "ndcg10": 0.8603647062327878,
+      "latencyP50": 94.12247850000017,
+      "latencyP95": 137.08187325000077,
+      "costPer1k": 0.3695580000000001,
+      "inputTokens": 8799,
+      "outputTokens": 426,
+      "stability": null,
+      "topTieRate": 0.13333333333333333,
+      "reasoningRate": 0,
+      "byCategory": {
+        "en": {
+          "n": 40,
+          "hit1": 0.7,
+          "mrr": 0.8118872549019607
+        },
+        "zh": {
+          "n": 40,
+          "hit1": 0.725,
+          "mrr": 0.8013492063492063
+        },
+        "ja": {
+          "n": 40,
+          "hit1": 0.8,
+          "mrr": 0.8841666666666667
+        },
+        "ko": {
+          "n": 40,
+          "hit1": 0.7,
+          "mrr": 0.8222916666666666
+        },
+        "ar": {
+          "n": 40,
+          "hit1": 0.85,
+          "mrr": 0.8934027777777777
+        },
+        "th": {
+          "n": 40,
+          "hit1": 0.8,
+          "mrr": 0.885
+        }
+      },
+      "hit1All": 0.7625,
+      "vsJev": null,
+      "vsFirstStage": {
+        "diff": 0.4,
+        "ci": [
+          0.325,
+          0.475
+        ],
+        "ciAdjusted": [
+          0.2916666666666667,
+          0.5083333333333333
+        ]
+      },
+      "fullCoverage": null,
+      "coverageRecorded": 0,
+      "untimedRetries": 0
+    },
+    {
+      "id": "clef-flash",
+      "label": "Cloudflare Clef Flash",
+      "kind": "classifier",
+      "via": "OpenRouter",
+      "released": null,
+      "models": [
+        "cloudflare/clef-flash (PrimeIntellect)",
+        "cloudflare/clef-flash (Cloudflare)"
+      ],
+      "repeats": 1,
+      "calls": 240,
+      "failures": 0,
+      "hit1": 0.775,
+      "hit1Ci": [
+        0.725,
+        0.825
+      ],
+      "recall8": 0.9583333333333334,
+      "mrr": 0.8491314855953014,
+      "mrrCi": [
+        0.8133635063234158,
+        0.8840266350060759
+      ],
+      "ndcg10": 0.8213502873566835,
+      "latencyP50": 1090.3385629999939,
+      "latencyP95": 2109.916130949988,
+      "costPer1k": 0.2513479916666667,
+      "inputTokens": 6614,
+      "outputTokens": 0,
+      "stability": null,
+      "topTieRate": 0.004166666666666667,
+      "reasoningRate": 0,
+      "byCategory": {
+        "en": {
+          "n": 40,
+          "hit1": 0.775,
+          "mrr": 0.843923611111111
+        },
+        "zh": {
+          "n": 40,
+          "hit1": 0.775,
+          "mrr": 0.8327191558441559
+        },
+        "ja": {
+          "n": 40,
+          "hit1": 0.7,
+          "mrr": 0.7980171783625731
+        },
+        "ko": {
+          "n": 40,
+          "hit1": 0.725,
+          "mrr": 0.8026289682539682
+        },
+        "ar": {
+          "n": 40,
+          "hit1": 0.825,
+          "mrr": 0.9
+        },
+        "th": {
+          "n": 40,
+          "hit1": 0.85,
+          "mrr": 0.9175000000000001
+        }
+      },
+      "hit1All": 0.775,
+      "vsJev": {
+        "diff": 0.0125,
+        "ci": [
+          -0.041666666666666664,
+          0.06666666666666667
+        ],
+        "ciAdjusted": [
+          -0.07083333333333333,
+          0.09583333333333334
+        ]
+      },
+      "vsFirstStage": {
+        "diff": 0.4125,
+        "ci": [
+          0.3416666666666667,
+          0.48333333333333334
+        ],
+        "ciAdjusted": [
+          0.30416666666666664,
+          0.525
+        ]
+      },
+      "fullCoverage": null,
+      "coverageRecorded": 0,
+      "untimedRetries": 0
+    },
+    {
+      "id": "gpt-6-luna-decisions",
+      "label": "GPT-6 Luna Decisions",
+      "kind": "classifier",
+      "via": "OpenRouter",
+      "released": null,
+      "models": [
+        "openai/gpt-6-luna-decisions-20261006 (OpenAI)"
+      ],
+      "repeats": 1,
+      "calls": 240,
+      "failures": 0,
+      "hit1": 0.775,
+      "hit1Ci": [
+        0.7208333333333333,
+        0.825
+      ],
+      "recall8": 0.9708333333333333,
+      "mrr": 0.8469175305688463,
+      "mrrCi": [
+        0.8091656746031746,
+        0.8826578882101087
+      ],
+      "ndcg10": 0.8436356532913318,
+      "latencyP50": 295.8867294999982,
+      "latencyP95": 456.87848750000154,
+      "costPer1k": 0.8956537499999998,
+      "inputTokens": 8957,
+      "outputTokens": 0,
+      "stability": null,
+      "topTieRate": 0.5083333333333333,
+      "reasoningRate": 0,
+      "byCategory": {
+        "en": {
+          "n": 40,
+          "hit1": 0.625,
+          "mrr": 0.7466179653679653
+        },
+        "zh": {
+          "n": 40,
+          "hit1": 0.85,
+          "mrr": 0.8852083333333333
+        },
+        "ja": {
+          "n": 40,
+          "hit1": 0.775,
+          "mrr": 0.8493749999999999
+        },
+        "ko": {
+          "n": 40,
+          "hit1": 0.775,
+          "mrr": 0.841732456140351
+        },
+        "ar": {
+          "n": 40,
+          "hit1": 0.825,
+          "mrr": 0.8752380952380951
+        },
+        "th": {
+          "n": 40,
+          "hit1": 0.8,
+          "mrr": 0.8833333333333332
+        }
+      },
+      "hit1All": 0.775,
+      "vsJev": {
+        "diff": 0.0125,
+        "ci": [
+          -0.0375,
+          0.0625
+        ],
+        "ciAdjusted": [
+          -0.0625,
+          0.0875
+        ]
+      },
+      "vsFirstStage": {
+        "diff": 0.4125,
+        "ci": [
+          0.3416666666666667,
+          0.4791666666666667
+        ],
+        "ciAdjusted": [
+          0.30833333333333335,
+          0.5166666666666667
+        ]
+      },
+      "fullCoverage": null,
+      "coverageRecorded": 0,
+      "untimedRetries": 0
+    },
+    {
+      "id": "clef",
+      "label": "Cloudflare Clef",
+      "kind": "classifier",
+      "via": "OpenRouter",
+      "released": null,
+      "models": [
+        "cloudflare/clef (PrimeIntellect)",
+        "cloudflare/clef (Cloudflare)"
+      ],
+      "repeats": 1,
+      "calls": 240,
+      "failures": 0,
+      "hit1": 0.7625,
+      "hit1Ci": [
+        0.7083333333333334,
+        0.8125
+      ],
+      "recall8": 0.9708333333333333,
+      "mrr": 0.8425896747587924,
+      "mrrCi": [
+        0.8063590394491131,
+        0.8786424924136321
+      ],
+      "ndcg10": 0.8424405084339305,
+      "latencyP50": 878.7389170000038,
+      "latencyP95": 1816.9961628500002,
+      "costPer1k": 1.587461000000001,
+      "inputTokens": 6614,
+      "outputTokens": 0,
+      "stability": null,
+      "topTieRate": 0,
+      "reasoningRate": 0,
+      "byCategory": {
+        "en": {
+          "n": 40,
+          "hit1": 0.675,
+          "mrr": 0.7956547619047618
+        },
+        "zh": {
+          "n": 40,
+          "hit1": 0.725,
+          "mrr": 0.8058333333333334
+        },
+        "ja": {
+          "n": 40,
+          "hit1": 0.675,
+          "mrr": 0.7769246031746031
+        },
+        "ko": {
+          "n": 40,
+          "hit1": 0.8,
+          "mrr": 0.8675420168067227
+        },
+        "ar": {
+          "n": 40,
+          "hit1": 0.8,
+          "mrr": 0.8820833333333333
+        },
+        "th": {
+          "n": 40,
+          "hit1": 0.9,
+          "mrr": 0.9275
+        }
+      },
+      "hit1All": 0.7625,
+      "vsJev": {
+        "diff": 0,
+        "ci": [
+          -0.04583333333333333,
+          0.04583333333333333
+        ],
+        "ciAdjusted": [
+          -0.07083333333333333,
+          0.075
+        ]
+      },
+      "vsFirstStage": {
+        "diff": 0.4,
+        "ci": [
+          0.32083333333333336,
+          0.4791666666666667
+        ],
+        "ciAdjusted": [
+          0.2791666666666667,
+          0.5208333333333334
+        ]
+      },
+      "fullCoverage": null,
+      "coverageRecorded": 0,
+      "untimedRetries": 0
+    },
+    {
+      "id": "drex-v1-5",
+      "label": "Nace.AI Drex v1.5",
+      "kind": "classifier",
+      "via": "OpenRouter",
+      "released": null,
+      "models": [
+        "nace-ai/drex-v1.5-20261009 (DeepInfra)"
+      ],
+      "repeats": 1,
+      "calls": 240,
+      "failures": 0,
+      "hit1": 0.7333333333333333,
+      "hit1Ci": [
+        0.675,
+        0.7916666666666666
+      ],
+      "recall8": 0.9791666666666666,
+      "mrr": 0.8292376604876603,
+      "mrrCi": [
+        0.792075470536408,
+        0.8674239042207792
+      ],
+      "ndcg10": 0.8366566958972717,
+      "latencyP50": 291.8840420000015,
+      "latencyP95": 917.7500725999948,
+      "costPer1k": 0.22200916666666665,
+      "inputTokens": 5550,
+      "outputTokens": 563,
+      "stability": null,
+      "topTieRate": 0.008333333333333333,
+      "reasoningRate": 0,
+      "byCategory": {
+        "en": {
+          "n": 40,
+          "hit1": 0.675,
+          "mrr": 0.8035714285714285
+        },
+        "zh": {
+          "n": 40,
+          "hit1": 0.7,
+          "mrr": 0.7857722832722831
+        },
+        "ja": {
+          "n": 40,
+          "hit1": 0.75,
+          "mrr": 0.8314880952380953
+        },
+        "ko": {
+          "n": 40,
+          "hit1": 0.675,
+          "mrr": 0.8139880952380952
+        },
+        "ar": {
+          "n": 40,
+          "hit1": 0.8,
+          "mrr": 0.8658333333333331
+        },
+        "th": {
+          "n": 40,
+          "hit1": 0.8,
+          "mrr": 0.8747727272727273
+        }
+      },
+      "hit1All": 0.7333333333333333,
+      "vsJev": {
+        "diff": -0.029166666666666667,
+        "ci": [
+          -0.075,
+          0.016666666666666666
+        ],
+        "ciAdjusted": [
+          -0.1,
+          0.041666666666666664
+        ]
+      },
+      "vsFirstStage": {
+        "diff": 0.37083333333333335,
+        "ci": [
+          0.3,
+          0.44583333333333336
+        ],
+        "ciAdjusted": [
+          0.2625,
+          0.48333333333333334
+        ]
+      },
+      "fullCoverage": null,
+      "coverageRecorded": 0,
+      "untimedRetries": 0
+    },
+    {
+      "id": "tev1-4b",
+      "label": "Together Tev1 4B Experimental",
+      "kind": "classifier",
+      "via": "OpenRouter",
+      "released": null,
+      "models": [
+        "togethercomputer/tev1-4b-experimental-20260923 (Together)"
+      ],
+      "repeats": 1,
+      "calls": 240,
+      "failures": 5,
+      "hit1": 0.7416666666666667,
+      "hit1Ci": [
+        0.6833333333333333,
+        0.7958333333333333
+      ],
+      "recall8": 0.975,
+      "mrr": 0.8225415089869423,
+      "mrrCi": [
+        0.7828426521287878,
+        0.8601063635903998
+      ],
+      "ndcg10": 0.8252712727971214,
+      "latencyP50": 1226.8362084999972,
+      "latencyP95": 1752.224029150017,
+      "costPer1k": 3.7619739499999993,
+      "inputTokens": 89571,
+      "outputTokens": 47,
+      "stability": null,
+      "topTieRate": 0,
+      "reasoningRate": 0,
+      "byCategory": {
+        "en": {
+          "n": 40,
+          "hit1": 0.6,
+          "mrr": 0.7350778388278387
+        },
+        "zh": {
+          "n": 40,
+          "hit1": 0.8,
+          "mrr": 0.8286197110423117
+        },
+        "ja": {
+          "n": 40,
+          "hit1": 0.775,
+          "mrr": 0.8467658730158728
+        },
+        "ko": {
+          "n": 40,
+          "hit1": 0.675,
+          "mrr": 0.8014880952380953
+        },
+        "ar": {
+          "n": 40,
+          "hit1": 0.8,
+          "mrr": 0.8810897435897436
+        },
+        "th": {
+          "n": 40,
+          "hit1": 0.8,
+          "mrr": 0.8422077922077922
+        }
+      },
+      "hit1All": 0.7416666666666667,
+      "vsJev": {
+        "diff": -0.020833333333333332,
+        "ci": [
+          -0.07083333333333333,
+          0.025
+        ],
+        "ciAdjusted": [
+          -0.1,
+          0.050931712962968355
+        ]
+      },
+      "vsFirstStage": {
+        "diff": 0.37916666666666665,
+        "ci": [
+          0.30833333333333335,
+          0.45416666666666666
+        ],
+        "ciAdjusted": [
+          0.2708333333333333,
+          0.4875
+        ]
+      },
+      "fullCoverage": null,
+      "coverageRecorded": 0,
+      "untimedRetries": 0
+    },
+    {
+      "id": "clef-omni",
+      "label": "Cloudflare Clef Omni",
+      "kind": "classifier",
+      "via": "OpenRouter",
+      "released": null,
+      "models": [
+        "cloudflare/clef-omni-20261009 (Cloudflare)"
+      ],
+      "repeats": 1,
+      "calls": 240,
+      "failures": 0,
+      "hit1": 0.6958333333333333,
+      "hit1Ci": [
+        0.6375,
+        0.75
+      ],
+      "recall8": 0.95,
+      "mrr": 0.796598468592954,
+      "mrrCi": [
+        0.7560989865169555,
+        0.8354003894644977
+      ],
+      "ndcg10": 0.7846390690996192,
+      "latencyP50": 351.25027049999926,
+      "latencyP95": 541.1698305999939,
+      "costPer1k": 1.0774543749999996,
+      "inputTokens": 7183,
+      "outputTokens": 0,
+      "stability": null,
+      "topTieRate": 0,
+      "reasoningRate": 0,
+      "byCategory": {
+        "en": {
+          "n": 40,
+          "hit1": 0.6,
+          "mrr": 0.7400108225108224
+        },
+        "zh": {
+          "n": 40,
+          "hit1": 0.675,
+          "mrr": 0.7648199023199023
+        },
+        "ja": {
+          "n": 40,
+          "hit1": 0.7,
+          "mrr": 0.7949378501400559
+        },
+        "ko": {
+          "n": 40,
+          "hit1": 0.675,
+          "mrr": 0.7589889032536091
+        },
+        "ar": {
+          "n": 40,
+          "hit1": 0.75,
+          "mrr": 0.8416666666666666
+        },
+        "th": {
+          "n": 40,
+          "hit1": 0.775,
+          "mrr": 0.8791666666666668
+        }
+      },
+      "hit1All": 0.6958333333333333,
+      "vsJev": {
+        "diff": -0.06666666666666667,
+        "ci": [
+          -0.12083333333333333,
+          -0.020729166666667236
+        ],
+        "ciAdjusted": [
+          -0.15,
+          0.016666666666666666
+        ]
+      },
+      "vsFirstStage": {
+        "diff": 0.3333333333333333,
+        "ci": [
+          0.25833333333333336,
+          0.4125
+        ],
+        "ciAdjusted": [
+          0.21666666666666667,
+          0.45
+        ]
+      },
+      "fullCoverage": null,
+      "coverageRecorded": 0,
+      "untimedRetries": 0
+    },
+    {
+      "id": "gpt-6-luna",
+      "label": "GPT-6 Luna",
+      "kind": "llm",
+      "via": "Bedrock us-west-2",
+      "released": "2026-09-14",
+      "models": [
+        "us.openai.gpt-6-luna"
+      ],
+      "repeats": 1,
+      "calls": 240,
+      "failures": 36,
+      "hit1": 0.7125,
+      "hit1Ci": [
+        0.6582291666666666,
+        0.7708333333333334
+      ],
+      "recall8": 0.9291666666666667,
+      "mrr": 0.7933137555608197,
+      "mrrCi": [
+        0.7488789527527863,
+        0.8377016787726216
+      ],
+      "ndcg10": 0.7932802297200843,
+      "latencyP50": 1528.6767499999987,
+      "latencyP95": 2534.414175199979,
+      "costPer1k": 0.684059841666667,
+      "inputTokens": 4301,
+      "outputTokens": 177,
+      "stability": null,
+      "topTieRate": 0.2696078431372549,
+      "reasoningRate": 0,
+      "byCategory": {
+        "en": {
+          "n": 40,
+          "hit1": 0.725,
+          "mrr": 0.8038798701298703
+        },
+        "zh": {
+          "n": 40,
+          "hit1": 0.675,
+          "mrr": 0.7612780377302435
+        },
+        "ja": {
+          "n": 40,
+          "hit1": 0.65,
+          "mrr": 0.7434083850931678
+        },
+        "ko": {
+          "n": 40,
+          "hit1": 0.65,
+          "mrr": 0.757095010252905
+        },
+        "ar": {
+          "n": 40,
+          "hit1": 0.775,
+          "mrr": 0.8362599206349206
+        },
+        "th": {
+          "n": 40,
+          "hit1": 0.8,
+          "mrr": 0.8579613095238094
+        }
+      },
+      "hit1All": 0.7125,
+      "vsJev": {
+        "diff": -0.05,
+        "ci": [
+          -0.10416666666666667,
+          0.004166666666666667
+        ],
+        "ciAdjusted": [
+          -0.12916666666666668,
+          0.025
+        ]
+      },
+      "vsFirstStage": {
+        "diff": 0.35,
+        "ci": [
+          0.2791666666666667,
+          0.42083333333333334
+        ],
+        "ciAdjusted": [
+          0.24583333333333332,
+          0.45416666666666666
+        ]
+      },
+      "fullCoverage": 1,
+      "coverageRecorded": 204,
+      "untimedRetries": 0
+    },
+    {
+      "id": "kev-4b-openrouter",
+      "label": "Kev 4B via OpenRouter",
+      "kind": "classifier",
+      "via": "OpenRouter",
+      "released": null,
+      "models": [
+        "jaredpalmer/kev-4b-20260924 (SiliconFlow)"
+      ],
+      "repeats": 1,
+      "calls": 240,
+      "failures": 5,
+      "hit1": 0.6875,
+      "hit1Ci": [
+        0.6291666666666667,
+        0.7458333333333333
+      ],
+      "recall8": 0.9291666666666667,
+      "mrr": 0.7831295399861578,
+      "mrrCi": [
+        0.7417402595702225,
+        0.827696845689033
+      ],
+      "ndcg10": 0.7798351180703887,
+      "latencyP50": 958.4717915000001,
+      "latencyP95": 1827.071483049999,
+      "costPer1k": 0.22384232500000004,
+      "inputTokens": 5330,
+      "outputTokens": 551,
+      "stability": null,
+      "topTieRate": 0,
+      "reasoningRate": 0,
+      "byCategory": {
+        "en": {
+          "n": 40,
+          "hit1": 0.675,
+          "mrr": 0.7823519984917043
+        },
+        "zh": {
+          "n": 40,
+          "hit1": 0.65,
+          "mrr": 0.7458624708624708
+        },
+        "ja": {
+          "n": 40,
+          "hit1": 0.675,
+          "mrr": 0.7997727272727273
+        },
+        "ko": {
+          "n": 40,
+          "hit1": 0.65,
+          "mrr": 0.7533838383838384
+        },
+        "ar": {
+          "n": 40,
+          "hit1": 0.8,
+          "mrr": 0.8673214285714286
+        },
+        "th": {
+          "n": 40,
+          "hit1": 0.675,
+          "mrr": 0.7500847763347763
+        }
+      },
+      "hit1All": 0.6875,
+      "vsJev": {
+        "diff": -0.075,
+        "ci": [
+          -0.12927083333333333,
+          -0.020833333333333332
+        ],
+        "ciAdjusted": [
+          -0.15833333333333333,
+          0.008333333333333333
+        ]
+      },
+      "vsFirstStage": {
+        "diff": 0.325,
+        "ci": [
+          0.25,
+          0.3958333333333333
+        ],
+        "ciAdjusted": [
+          0.22083333333333333,
+          0.42916666666666664
+        ]
+      },
+      "fullCoverage": null,
+      "coverageRecorded": 0,
+      "untimedRetries": 0
+    },
+    {
+      "id": "solar-decide-flash",
+      "label": "Upstage Solar Decide Flash",
+      "kind": "classifier",
+      "via": "OpenRouter",
+      "released": null,
+      "models": [
+        "upstage/solar-decide-flash-20261008 (Upstage)"
+      ],
+      "repeats": 1,
+      "calls": 240,
+      "failures": 0,
+      "hit1": 0.5416666666666666,
+      "hit1Ci": [
+        0.4791666666666667,
+        0.6041666666666666
+      ],
+      "recall8": 0.9333333333333333,
+      "mrr": 0.6777172191234692,
+      "mrrCi": [
+        0.6294015566320252,
+        0.7219482564599752
+      ],
+      "ndcg10": 0.6959476257645084,
+      "latencyP50": 2475.0173749999885,
+      "latencyP95": 3276.6765895999997,
+      "costPer1k": 5.655949999999997,
+      "inputTokens": 113119,
+      "outputTokens": 24,
+      "stability": null,
+      "topTieRate": 0,
+      "reasoningRate": 0,
+      "byCategory": {
+        "en": {
+          "n": 40,
+          "hit1": 0.55,
+          "mrr": 0.6870932539682542
+        },
+        "zh": {
+          "n": 40,
+          "hit1": 0.525,
+          "mrr": 0.6497306166056166
+        },
+        "ja": {
+          "n": 40,
+          "hit1": 0.45,
+          "mrr": 0.6318907828282827
+        },
+        "ko": {
+          "n": 40,
+          "hit1": 0.475,
+          "mrr": 0.6253556166056164
+        },
+        "ar": {
+          "n": 40,
+          "hit1": 0.5,
+          "mrr": 0.6521636002886002
+        },
+        "th": {
+          "n": 40,
+          "hit1": 0.75,
+          "mrr": 0.8200694444444444
+        }
+      },
+      "hit1All": 0.5416666666666666,
+      "vsJev": {
+        "diff": -0.22083333333333333,
+        "ci": [
+          -0.29583333333333334,
+          -0.15
+        ],
+        "ciAdjusted": [
+          -0.32916666666666666,
+          -0.1125
+        ]
+      },
+      "vsFirstStage": {
+        "diff": 0.17916666666666667,
+        "ci": [
+          0.09166666666666666,
+          0.2625
+        ],
+        "ciAdjusted": [
+          0.04714364035087719,
+          0.3111896929824676
+        ]
+      },
+      "fullCoverage": null,
+      "coverageRecorded": 0,
+      "untimedRetries": 0
+    },
+    {
+      "id": "fusion",
+      "label": "No reranker (first-stage order)",
+      "kind": "baseline",
+      "via": "the set's first stage",
+      "released": null,
+      "models": [
+        "first stage"
+      ],
+      "repeats": 1,
+      "calls": 240,
+      "failures": 0,
+      "hit1": 0.3625,
+      "hit1Ci": [
+        0.30416666666666664,
+        0.425
+      ],
+      "recall8": 0.8041666666666667,
+      "mrr": 0.5147082145912113,
+      "mrrCi": [
+        0.4658714385119475,
+        0.5645015354430538
+      ],
+      "ndcg10": 0.5281485878979153,
+      "latencyP50": 0,
+      "latencyP95": 0,
+      "costPer1k": 0,
+      "inputTokens": 0,
+      "outputTokens": 0,
+      "stability": null,
+      "topTieRate": 0,
+      "reasoningRate": 0,
+      "byCategory": {
+        "en": {
+          "n": 40,
+          "hit1": 0.225,
+          "mrr": 0.41974562352851824
+        },
+        "zh": {
+          "n": 40,
+          "hit1": 0.25,
+          "mrr": 0.41153312728293373
+        },
+        "ja": {
+          "n": 40,
+          "hit1": 0.275,
+          "mrr": 0.4387072630942515
+        },
+        "ko": {
+          "n": 40,
+          "hit1": 0.5,
+          "mrr": 0.626595323536113
+        },
+        "ar": {
+          "n": 40,
+          "hit1": 0.525,
+          "mrr": 0.6557013125763126
+        },
+        "th": {
+          "n": 40,
+          "hit1": 0.4,
+          "mrr": 0.5359666375291375
+        }
+      },
+      "hit1All": 0.3625,
+      "vsJev": {
+        "diff": -0.4,
+        "ci": [
+          -0.475,
+          -0.325
+        ],
+        "ciAdjusted": [
+          -0.5083333333333333,
+          -0.2916666666666667
+        ]
+      },
+      "vsFirstStage": null,
+      "fullCoverage": null,
+      "coverageRecorded": 0,
+      "untimedRetries": 0
+    }
+  ]
+}
