@@ -10,6 +10,8 @@ import type { Passage, Ranker, RankResult } from "../types.ts";
 
 interface Answer {
   model?: string;
+  /** Who served it, when a router answers. */
+  provider?: string;
   answers?: Record<string, { noul?: number }>;
   usage?: { input_tokens?: number; output_tokens?: number };
 }
@@ -63,7 +65,8 @@ export function systemOne(spec: SystemOneSpec): Ranker {
           Object.fromEntries(ids.map((id) => [id, systemOneQuestion(id)])),
         );
         const ms = performance.now() - t0;
-        return { scores: ids.map((id) => probability(a, id)), model: a.model ?? spec.model, inputTokens: a.usage?.input_tokens ?? 0, outputTokens: a.usage?.output_tokens ?? 0, ms, attempts: 1 };
+        const model = a.model ?? spec.model;
+        return { scores: ids.map((id) => probability(a, id)), model: a.provider ? `${model} (${a.provider})` : model, inputTokens: a.usage?.input_tokens ?? 0, outputTokens: a.usage?.output_tokens ?? 0, ms, attempts: 1 };
       }
       const all = await Promise.all(
         passages.map((p) => {

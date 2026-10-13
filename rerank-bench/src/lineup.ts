@@ -12,6 +12,7 @@ import type { Ranker } from "./types.ts";
 export interface Keys {
   openai?: string;
   typesafe?: string;
+  openrouter?: string;
   bedrock?: { region: string; key: string };
 }
 
@@ -25,6 +26,29 @@ export function readKeys(): Keys {
 /** Bedrock bills rerankers per query of up to 100 documents: Cohere Rerank 3.5 at $2 per 1,000; its pricing page lists no price for Amazon Rerank 1.0. */
 const COHERE_RERANK_PER_SEARCH = 0.002;
 const JEV_INPUT_PRICE = 0.042;
+
+/**
+ * Decision models OpenRouter serves over System One, with its input price per million tokens on
+ * 2026-10-11 (none bills output). Each is asked as Stuga asks Jev: one request, 24 questions.
+ */
+const OPENROUTER_DECISION_MODELS = [
+  { id: "jev-openrouter", label: "Jev via OpenRouter", model: "~typesafe/jev-latest", input: 0.042 },
+  { id: "microsoft-decision-1", label: "Microsoft-Decision-1", model: "microsoft/microsoft-decision-1", input: 0.042 },
+  { id: "gpt-6-luna-decisions", label: "GPT-6 Luna Decisions", model: "openai/gpt-6-luna-decisions", input: 0.1 },
+  { id: "pplx-decider-v1-1-27b", label: "Perplexity Decider V1.1 27B", model: "perplexity/pplx-decider-v1.1-27b", input: 0.02 },
+  { id: "liquid-d1", label: "Liquid d1", model: "liquid/d1", input: 0.04 },
+  { id: "clef", label: "Cloudflare Clef", model: "cloudflare/clef", input: 0.24 },
+  { id: "clef-flash", label: "Cloudflare Clef Flash", model: "cloudflare/clef-flash", input: 0.038 },
+  { id: "clef-omni", label: "Cloudflare Clef Omni", model: "cloudflare/clef-omni", input: 0.15 },
+  { id: "mercury-decide", label: "Inception Mercury Decide", model: "inception/mercury-decide", input: 0.02 },
+  { id: "solar-decide", label: "Upstage Solar Decide", model: "upstage/solar-decide", input: 0.05 },
+  { id: "solar-decide-flash", label: "Upstage Solar Decide Flash", model: "upstage/solar-decide-flash", input: 0.05 },
+  { id: "drex-v1-5", label: "Nace.AI Drex v1.5", model: "nace-ai/drex-v1.5", input: 0.04 },
+  { id: "tev1-4b", label: "Together Tev1 4B Experimental", model: "togethercomputer/tev1-4b-experimental", input: 0.042 },
+  { id: "span-01", label: "Respan Span-01", model: "respan/span-01", input: 0.02 },
+  { id: "span-01-lite", label: "Respan Span-01 Lite", model: "respan/span-01-lite", input: 0 },
+  { id: "kev-4b-openrouter", label: "Kev 4B via OpenRouter", model: "jaredpalmer/kev-4b", input: 0.042 },
+];
 
 /** llama-server --rerank instances on this machine, one per model. */
 const LOCAL_RERANKERS = [
@@ -49,6 +73,15 @@ export function lineup(keys: Keys): Ranker[] {
     const base = { baseUrl: "https://api.typesafe.ai/v1", model: "jev-latest", apiKey: keys.typesafe, inputPrice: JEV_INPUT_PRICE, repeats: 1 };
     out.push(systemOne({ ...base, id: "jev", label: "Jev", mode: "batched" }));
     out.push(systemOne({ ...base, id: "jev-per-pair", label: "Jev, one request per passage", mode: "per-pair" }));
+    out.push(systemOne({ ...base, id: "jev-preview", label: "Jev Preview", model: "jev-preview", mode: "batched" }));
+  }
+
+  if (keys.openrouter) {
+    for (const m of OPENROUTER_DECISION_MODELS) {
+      out.push(
+        systemOne({ id: m.id, label: m.label, baseUrl: "https://openrouter.ai/api/v1", model: m.model, apiKey: keys.openrouter, inputPrice: m.input, via: "OpenRouter", repeats: 1, mode: "batched" }),
+      );
+    }
   }
 
   // GPT-6 goes through Bedrock when there is a Bedrock key, below.
@@ -84,7 +117,17 @@ export function lineup(keys: Keys): Ranker[] {
       gpt("gpt-6.1-sol", "GPT-6.1 Sol", { input: 2.2, output: 11, cacheRead: 0.11, cacheWrite: 2.75 }, "gpt-6-sol", { off: null, minimal: null }),
     );
     out.push(
-      bedrock("claude-opus-5-5", "Claude Opus 5.5", "us.anthropic.claude-opus-5-5"),
+      // The US profile answered 503 to every call on 2026-10-11; the global profile in us-east-1 answers.
+      llmJudge({
+        id: "claude-opus-5-5",
+        label: "Claude Opus 5.5",
+        via: "Bedrock us-east-1",
+        provider: "amazon-bedrock",
+        model: "global.anthropic.claude-opus-5-5",
+        baseUrl: "https://bedrock-runtime.us-east-1.amazonaws.com",
+        auth: { apiKey: key, env: { AWS_REGION: "us-east-1" } },
+        repeats: 1,
+      }),
       bedrock("claude-sonnet-5", "Claude Sonnet 5", "us.anthropic.claude-sonnet-5"),
       // Not in Pi's catalog yet; Bedrock serves it through the global profile only.
       llmJudge({
